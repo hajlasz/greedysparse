@@ -1,0 +1,1709 @@
+N_cdets / N_tdets = 0.0500   (series convention: 0.0500)
+==============================================================
+ tag        : O3_asci_c1M_t20M
+ checkpoint : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+ archive    : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/iters_O3_asci_c1M_t20M
+ logs       : /home/nh2429/o3_20M_logs_O3_asci_c1M_t20M
+ eps2       : 1e-7   PT2 from iteration 1
+==============================================================
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.7P   49T  99% /scratch/nh2429
+
+########## ITERATION 1 ##########
+INFO:    FUSE2FS (3): Warning: Mounting unchecked fs, running e2fsck is recommended.
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 1
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15700695_it1
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: false
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=1  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15700695_it1
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     FALSE (fresh start)
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 1, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15700695_it1
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  Starting fresh. Initial energy estimate: -292.3591666356
+═══════════════════════════════════════════════════════════
+
+--- Iteration 1 ---
+  |S| = 1, |v| = 1,  E = -292.3591666356
+  asci_search_ooc:
+    |S| = 1, k = 20000000, batch_size = 500, n_batches = 1
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15700695_it1
+    batch 1/1: expand 1.11s, p1 0.07s, p2 0.46s
+    drain done in 2.3s.  Total spill on disk: 0.00 GB
+    merge+topk: 0.58s  → returning 91156 entries (total 2.95s)
+  search+merge (OOC): 3.72s,  generators = 1,  |S_new| = 91157
+  build state: 0.03s
+  ARPACK: niter=3, nmult=40, nconv=1
+  build sparse A: 12.52s  (nnz=220710691, 2421 nnz/row, 3.29 GiB)
+  freed A: live heap 3.8 GiB, RSS 4.4 GiB
+  ARPACK: 16.26s
+  Energy estimate: -293.0299015617
+  Iteration total: 32.98s
+  checkpoint: 0.02s (2.8 MB)
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.0299015617
+  Final |S|:    91157
+  Iterations:   1 (run from 1)
+═══════════════════════════════════════════════════════════
+  ASCI iteration 1: exit=0
+  Energy estimate: -293.0299015617
+  PT2 iteration 1 at eps2 = 1e-7 ...
+  [it 1] SPILL 0.0 GiB
+  [it 1] SPILL 46.2 GiB
+  [it 1] SPILL 153.1 GiB
+  [it 1] SPILL 226.2 GiB
+  [it 1] SPILL 226.2 GiB
+  PT2 iter 1: exit=0  MEASURED PEAK = 226.2 GiB
+
+########## ITERATION 2 ##########
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 2
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15700695_it2
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: true
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=2  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15700695_it2
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     TRUE
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 2, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15700695_it2
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  ▶ RESUMED from checkpoint at iteration 1
+  ▶ Energy at resume: -293.0299015617 Ha,  |S| = 91157
+═══════════════════════════════════════════════════════════
+
+--- Iteration 2 ---
+  |S| = 91157, |v| = 91157,  E = -293.0299015617
+  asci_search_ooc:
+    |S| = 91157, k = 20000000, batch_size = 500, n_batches = 183
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15700695_it2
+    batch 1/183: expand 3.94s, p1 0.41s, p2 1.20s
+    batch 10/183: expand 1.41s, p1 0.12s, p2 0.59s
+    batch 20/183: expand 1.33s, p1 0.13s, p2 0.48s
+    batch 30/183: expand 1.40s, p1 0.11s, p2 0.47s
+    batch 40/183: expand 1.96s, p1 0.11s, p2 0.55s
+    batch 50/183: expand 1.30s, p1 0.11s, p2 0.48s
+    batch 60/183: expand 1.34s, p1 0.12s, p2 0.60s
+    batch 70/183: expand 1.37s, p1 0.11s, p2 0.58s
+    batch 80/183: expand 1.28s, p1 0.11s, p2 0.48s
+    batch 90/183: expand 1.27s, p1 0.13s, p2 0.50s
+    batch 100/183: expand 1.29s, p1 0.12s, p2 0.48s
+    batch 110/183: expand 1.31s, p1 0.11s, p2 0.50s
+    batch 120/183: expand 1.28s, p1 0.12s, p2 0.52s
+    batch 130/183: expand 1.28s, p1 0.13s, p2 0.60s
+    batch 140/183: expand 1.32s, p1 0.13s, p2 0.58s
+    batch 150/183: expand 1.62s, p1 0.12s, p2 0.48s
+    batch 160/183: expand 1.33s, p1 0.10s, p2 0.51s
+    batch 170/183: expand 1.40s, p1 0.11s, p2 0.45s
+    batch 180/183: expand 1.29s, p1 0.10s, p2 0.50s
+    batch 183/183: expand 0.41s, p1 0.07s, p2 0.11s
+    drain done in 377.1s.  Total spill on disk: 426.36 GB
+    merge+topk: 560.46s  → returning 20000000 entries (total 937.60s)
+  search+merge (OOC): 966.23s,  generators = 91157,  |S_new| = 20000000
+  build state: 6.70s
+  ARPACK: niter=4, nmult=50, nconv=1
+  build sparse A: 7454.04s  (nnz=33260857616, 1663 nnz/row, 495.77 GiB)
+  freed A: live heap 502.6 GiB, RSS 503.9 GiB
+  ARPACK: 10479.15s
+  Energy estimate: -293.1506784964
+  Iteration total: 18909.94s
+  checkpoint: 1.22s (610.4 MB)
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.1506784964
+  Final |S|:    20000000
+  Iterations:   2 (run from 2)
+═══════════════════════════════════════════════════════════
+  ASCI iteration 2: exit=0
+  Energy estimate: -293.1506784964
+  PT2 iteration 2 at eps2 = 1e-7 ...
+  [it 2] SPILL 0.0 GiB
+  [it 2] SPILL 30.1 GiB
+  [it 2] SPILL 134.1 GiB
+  [it 2] SPILL 253.0 GiB
+  [it 2] SPILL 370.2 GiB
+  [it 2] SPILL 496.0 GiB
+  [it 2] SPILL 626.7 GiB
+  [it 2] SPILL 750.7 GiB
+  [it 2] SPILL 784.9 GiB
+  [it 2] SPILL 805.5 GiB
+  [it 2] SPILL 823.4 GiB
+  [it 2] SPILL 841.4 GiB
+  [it 2] SPILL 470.9 GiB
+  [it 2] SPILL 488.9 GiB
+  [it 2] SPILL 508.6 GiB
+  [it 2] SPILL 526.4 GiB
+  [it 2] SPILL 543.8 GiB
+  [it 2] SPILL 195.1 GiB
+  [it 2] SPILL 328.2 GiB
+  [it 2] SPILL 468.9 GiB
+  [it 2] SPILL 609.4 GiB
+  [it 2] SPILL 738.9 GiB
+  [it 2] SPILL 822.8 GiB
+  [it 2] SPILL 849.9 GiB
+  [it 2] SPILL 874.0 GiB
+  [it 2] SPILL 899.1 GiB
+  [it 2] SPILL 597.3 GiB
+  [it 2] SPILL 624.7 GiB
+  [it 2] SPILL 650.1 GiB
+  [it 2] SPILL 676.3 GiB
+  [it 2] SPILL 408.2 GiB
+  [it 2] SPILL 546.6 GiB
+  [it 2] SPILL 690.4 GiB
+  [it 2] SPILL 829.1 GiB
+  [it 2] SPILL 885.7 GiB
+  [it 2] SPILL 913.2 GiB
+  [it 2] SPILL 941.5 GiB
+  [it 2] SPILL 713.1 GiB
+  [it 2] SPILL 740.8 GiB
+  [it 2] SPILL 769.8 GiB
+  [it 2] SPILL 581.1 GiB
+  [it 2] SPILL 727.3 GiB
+  [it 2] SPILL 869.4 GiB
+  [it 2] SPILL 956.4 GiB
+  [it 2] SPILL 985.1 GiB
+  [it 2] SPILL 939.9 GiB
+  [it 2] SPILL 835.2 GiB
+  [it 2] SPILL 863.9 GiB
+  [it 2] SPILL 710.6 GiB
+  [it 2] SPILL 853.5 GiB
+  [it 2] SPILL 997.3 GiB
+  [it 2] SPILL 1048.4 GiB
+  [it 2] SPILL 1078.5 GiB
+  [it 2] SPILL 931.1 GiB
+  [it 2] SPILL 959.7 GiB
+  [it 2] SPILL 845.2 GiB
+  [it 2] SPILL 988.9 GiB
+  [it 2] SPILL 1109.4 GiB
+  [it 2] SPILL 1139.2 GiB
+  [it 2] SPILL 1016.5 GiB
+  [it 2] SPILL 1045.9 GiB
+  [it 2] SPILL 955.5 GiB
+  [it 2] SPILL 1098.8 GiB
+  [it 2] SPILL 1190.0 GiB
+  [it 2] SPILL 1219.9 GiB
+  [it 2] SPILL 1114.6 GiB
+  [it 2] SPILL 1077.4 GiB
+  [it 2] SPILL 1134.4 GiB
+  [it 2] SPILL 1251.2 GiB
+  [it 2] SPILL 1280.9 GiB
+  [it 2] SPILL 1191.7 GiB
+  [it 2] SPILL 1101.8 GiB
+  [it 2] SPILL 1236.4 GiB
+  [it 2] SPILL 1325.3 GiB
+  [it 2] SPILL 1249.4 GiB
+  [it 2] SPILL 1278.9 GiB
+  [it 2] SPILL 1272.1 GiB
+  [it 2] SPILL 1379.7 GiB
+  [it 2] SPILL 1317.2 GiB
+  [it 2] SPILL 1345.5 GiB
+  [it 2] SPILL 1358.7 GiB
+  [it 2] SPILL 1442.2 GiB
+  [it 2] SPILL 1386.1 GiB
+  [it 2] SPILL 1347.8 GiB
+  [it 2] SPILL 1481.0 GiB
+  [it 2] SPILL 1438.8 GiB
+  [it 2] SPILL 1410.0 GiB
+  [it 2] SPILL 1512.5 GiB
+  [it 2] SPILL 1545.1 GiB
+  [it 2] SPILL 1453.8 GiB
+  [it 2] SPILL 1570.1 GiB
+  [it 2] SPILL 1539.6 GiB
+  [it 2] SPILL 1528.4 GiB
+  [it 2] SPILL 1627.8 GiB
+  [it 2] SPILL 1597.4 GiB
+  [it 2] SPILL 1634.3 GiB
+  [it 2] SPILL 1627.5 GiB
+  [it 2] SPILL 1627.0 GiB
+  [it 2] SPILL 1710.0 GiB
+  [it 2] SPILL 1634.2 GiB
+  [it 2] SPILL 1738.2 GiB
+  [it 2] SPILL 1719.7 GiB
+  [it 2] SPILL 1768.4 GiB
+  [it 2] SPILL 1753.1 GiB
+  [it 2] SPILL 1801.0 GiB
+  [it 2] SPILL 1787.8 GiB
+  [it 2] SPILL 1835.0 GiB
+  [it 2] SPILL 1783.1 GiB
+  [it 2] SPILL 1870.2 GiB
+  [it 2] SPILL 1843.6 GiB
+  [it 2] SPILL 1870.6 GiB
+  [it 2] SPILL 1909.2 GiB
+  [it 2] SPILL 1876.4 GiB
+  [it 2] SPILL 1953.1 GiB
+  [it 2] SPILL 1954.8 GiB
+  [it 2] SPILL 1935.9 GiB
+  [it 2] SPILL 1974.6 GiB
+  [it 2] SPILL 2015.0 GiB
+  [it 2] SPILL 2008.4 GiB
+  [it 2] SPILL 2026.9 GiB
+  [it 2] SPILL 2040.9 GiB
+  [it 2] SPILL 2079.8 GiB
+  [it 2] SPILL 2092.4 GiB
+  [it 2] SPILL 2097.6 GiB
+  [it 2] SPILL 2105.1 GiB
+  [it 2] SPILL 2117.1 GiB
+  [it 2] SPILL 2128.8 GiB
+  [it 2] SPILL 2149.9 GiB
+  [it 2] SPILL 2177.0 GiB
+  [it 2] SPILL 2191.7 GiB
+  [it 2] SPILL 2194.4 GiB
+  [it 2] SPILL 2212.3 GiB
+  [it 2] SPILL 2232.4 GiB
+  [it 2] SPILL 2256.3 GiB
+  [it 2] SPILL 2278.4 GiB
+  [it 2] SPILL 2299.3 GiB
+  [it 2] SPILL 2311.4 GiB
+  [it 2] SPILL 2320.2 GiB
+  [it 2] SPILL 2330.7 GiB
+  [it 2] SPILL 2357.6 GiB
+  [it 2] SPILL 2362.9 GiB
+  [it 2] SPILL 2372.0 GiB
+  [it 2] SPILL 2399.8 GiB
+  [it 2] SPILL 2407.7 GiB
+  [it 2] SPILL 2423.7 GiB
+  [it 2] SPILL 2435.3 GiB
+  [it 2] SPILL 2451.9 GiB
+  [it 2] SPILL 2464.7 GiB
+  [it 2] SPILL 2481.0 GiB
+  [it 2] SPILL 2491.1 GiB
+  [it 2] SPILL 2505.2 GiB
+  [it 2] SPILL 2515.4 GiB
+  [it 2] SPILL 2530.6 GiB
+  [it 2] SPILL 2535.1 GiB
+  [it 2] SPILL 2552.0 GiB
+  [it 2] SPILL 2568.1 GiB
+  [it 2] SPILL 2574.7 GiB
+  [it 2] SPILL 2581.7 GiB
+  [it 2] SPILL 2596.5 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  [it 2] SPILL 2606.4 GiB
+  PT2 iter 2: exit=0  MEASURED PEAK = 2606.4 GiB
+
+########## ITERATION 3 ##########
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 3
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15700695_it3
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: true
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=3  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15700695_it3
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     TRUE
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 3, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15700695_it3
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  ▶ RESUMED from checkpoint at iteration 2
+  ▶ Energy at resume: -293.1506784964 Ha,  |S| = 20000000
+═══════════════════════════════════════════════════════════
+
+--- Iteration 3 ---
+  |S| = 20000000, |v| = 20000000,  E = -293.1506784964
+  asci_search_ooc:
+    |S| = 1000000, k = 20000000, batch_size = 500, n_batches = 2000
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15700695_it3
+    batch 1/2000: expand 3.55s, p1 0.33s, p2 1.05s
+    batch 100/2000: expand 1.33s, p1 0.11s, p2 0.53s
+    [batch 200] lazy compaction: 786.0s, disk after = 103.25 GB
+    batch 200/2000: expand 1.32s, p1 0.12s, p2 0.51s
+    batch 300/2000: expand 1.52s, p1 0.11s, p2 0.51s
+    [batch 400] lazy compaction: 830.2s, disk after = 254.56 GB
+    batch 400/2000: expand 1.30s, p1 0.10s, p2 0.51s
+    batch 500/2000: expand 1.37s, p1 0.10s, p2 0.51s
+    [batch 600] lazy compaction: 833.7s, disk after = 423.71 GB
+    batch 600/2000: expand 1.40s, p1 0.10s, p2 0.56s
+    batch 700/2000: expand 1.59s, p1 0.11s, p2 0.49s
+    [batch 800] lazy compaction: 846.9s, disk after = 602.19 GB
+    batch 800/2000: expand 1.27s, p1 0.13s, p2 0.57s
+    batch 900/2000: expand 1.26s, p1 0.11s, p2 0.50s
+    [batch 1000] lazy compaction: 874.5s, disk after = 786.91 GB
+    batch 1000/2000: expand 1.27s, p1 0.11s, p2 0.51s
+    batch 1100/2000: expand 1.83s, p1 0.14s, p2 0.66s
+    [batch 1200] lazy compaction: 983.6s, disk after = 975.82 GB
+    batch 1200/2000: expand 1.63s, p1 0.13s, p2 0.70s
+    batch 1300/2000: expand 1.51s, p1 0.15s, p2 0.77s
+    [batch 1400] lazy compaction: 970.3s, disk after = 1167.86 GB
+    batch 1400/2000: expand 1.62s, p1 0.12s, p2 0.59s
+    batch 1500/2000: expand 2.03s, p1 0.11s, p2 0.64s
+    [batch 1600] lazy compaction: 975.8s, disk after = 1362.48 GB
+    batch 1600/2000: expand 1.67s, p1 0.13s, p2 0.80s
+    batch 1700/2000: expand 1.52s, p1 0.13s, p2 0.78s
+    [batch 1800] lazy compaction: 978.2s, disk after = 1559.24 GB
+    batch 1800/2000: expand 1.48s, p1 0.12s, p2 0.59s
+    batch 1900/2000: expand 1.49s, p1 0.19s, p2 0.64s
+    batch 2000/2000: expand 1.44s, p1 0.13s, p2 0.67s
+    drain done in 12476.9s.  Total spill on disk: 2084.94 GB
+    merge+topk: 5152.57s  → returning 20000000 entries (total 17629.46s)
+  search+merge (OOC): 17705.69s,  generators = 1000000,  |S_new| = 20000000
+  build state: 7.90s
+  ARPACK: niter=3, nmult=40, nconv=1
+  build sparse A: 8682.30s  (nnz=28659883766, 1433 nnz/row, 427.21 GiB)
+  freed A: live heap 434.1 GiB, RSS 435.0 GiB
+  ARPACK: 8011.89s
+  Energy estimate: -293.1611107430
+  Iteration total: 34412.62s
+  checkpoint: 0.82s (610.4 MB)
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.1611107430
+  Final |S|:    20000000
+  Iterations:   3 (run from 3)
+═══════════════════════════════════════════════════════════
+  ASCI iteration 3: exit=0
+  Energy estimate: -293.1611107430
+  PT2 iteration 3 at eps2 = 1e-7 ...
+  [it 3] SPILL 0.0 GiB
+  [it 3] SPILL 23.9 GiB
+  [it 3] SPILL 109.9 GiB
+  [it 3] SPILL 227.2 GiB
+  [it 3] SPILL 329.5 GiB
+  [it 3] SPILL 437.7 GiB
+  [it 3] SPILL 529.8 GiB
+  [it 3] SPILL 641.2 GiB
+  [it 3] SPILL 754.6 GiB
+  [it 3] SPILL 855.9 GiB
+  [it 3] SPILL 907.9 GiB
+  [it 3] SPILL 926.1 GiB
+  [it 3] SPILL 944.2 GiB
+  [it 3] SPILL 959.9 GiB
+  [it 3] SPILL 975.5 GiB
+  [it 3] SPILL 991.5 GiB
+  [it 3] SPILL 552.8 GiB
+  [it 3] SPILL 569.4 GiB
+  [it 3] SPILL 587.7 GiB
+  [it 3] SPILL 603.2 GiB
+  [it 3] SPILL 618.0 GiB
+  [it 3] SPILL 633.4 GiB
+  [it 3] SPILL 195.4 GiB
+  [it 3] SPILL 274.1 GiB
+  [it 3] SPILL 377.8 GiB
+  [it 3] SPILL 478.7 GiB
+  [it 3] SPILL 594.4 GiB
+  [it 3] SPILL 691.1 GiB
+  [it 3] SPILL 798.4 GiB
+  [it 3] SPILL 888.5 GiB
+  [it 3] SPILL 911.5 GiB
+  [it 3] SPILL 933.6 GiB
+  [it 3] SPILL 953.7 GiB
+  [it 3] SPILL 975.6 GiB
+  [it 3] SPILL 649.3 GiB
+  [it 3] SPILL 671.3 GiB
+  [it 3] SPILL 693.2 GiB
+  [it 3] SPILL 714.3 GiB
+  [it 3] SPILL 736.4 GiB
+  [it 3] SPILL 418.0 GiB
+  [it 3] SPILL 524.6 GiB
+  [it 3] SPILL 641.6 GiB
+  [it 3] SPILL 768.5 GiB
+  [it 3] SPILL 891.8 GiB
+  [it 3] SPILL 963.2 GiB
+  [it 3] SPILL 986.7 GiB
+  [it 3] SPILL 1009.0 GiB
+  [it 3] SPILL 1033.9 GiB
+  [it 3] SPILL 781.3 GiB
+  [it 3] SPILL 804.5 GiB
+  [it 3] SPILL 826.4 GiB
+  [it 3] SPILL 851.6 GiB
+  [it 3] SPILL 627.2 GiB
+  [it 3] SPILL 741.6 GiB
+  [it 3] SPILL 853.2 GiB
+  [it 3] SPILL 965.1 GiB
+  [it 3] SPILL 1048.0 GiB
+  [it 3] SPILL 1073.0 GiB
+  [it 3] SPILL 1096.5 GiB
+  [it 3] SPILL 909.9 GiB
+  [it 3] SPILL 918.3 GiB
+  [it 3] SPILL 943.4 GiB
+  [it 3] SPILL 903.2 GiB
+  [it 3] SPILL 806.4 GiB
+  [it 3] SPILL 908.8 GiB
+  [it 3] SPILL 1017.4 GiB
+  [it 3] SPILL 1141.7 GiB
+  [it 3] SPILL 1221.9 GiB
+  [it 3] SPILL 1244.3 GiB
+  [it 3] SPILL 1267.0 GiB
+  [it 3] SPILL 1099.9 GiB
+  [it 3] SPILL 1077.0 GiB
+  [it 3] SPILL 1098.3 GiB
+  [it 3] SPILL 1122.3 GiB
+  [it 3] SPILL 956.3 GiB
+  [it 3] SPILL 1080.7 GiB
+  [it 3] SPILL 1207.0 GiB
+  [it 3] SPILL 1261.7 GiB
+  [it 3] SPILL 1288.2 GiB
+  [it 3] SPILL 1138.7 GiB
+  [it 3] SPILL 1164.5 GiB
+  [it 3] SPILL 1190.3 GiB
+  [it 3] SPILL 1085.0 GiB
+  [it 3] SPILL 1213.8 GiB
+  [it 3] SPILL 1335.0 GiB
+  [it 3] SPILL 1360.6 GiB
+  [it 3] SPILL 1387.4 GiB
+  [it 3] SPILL 1257.5 GiB
+  [it 3] SPILL 1284.2 GiB
+  [it 3] SPILL 1194.6 GiB
+  [it 3] SPILL 1317.4 GiB
+  [it 3] SPILL 1422.7 GiB
+  [it 3] SPILL 1449.7 GiB
+  [it 3] SPILL 1336.4 GiB
+  [it 3] SPILL 1361.4 GiB
+  [it 3] SPILL 1246.3 GiB
+  [it 3] SPILL 1369.3 GiB
+  [it 3] SPILL 1497.5 GiB
+  [it 3] SPILL 1522.9 GiB
+  [it 3] SPILL 1422.9 GiB
+  [it 3] SPILL 1448.2 GiB
+  [it 3] SPILL 1371.0 GiB
+  [it 3] SPILL 1494.4 GiB
+  [it 3] SPILL 1579.7 GiB
+  [it 3] SPILL 1606.0 GiB
+  [it 3] SPILL 1518.3 GiB
+  [it 3] SPILL 1464.9 GiB
+  [it 3] SPILL 1540.4 GiB
+  [it 3] SPILL 1643.1 GiB
+  [it 3] SPILL 1670.4 GiB
+  [it 3] SPILL 1591.4 GiB
+  [it 3] SPILL 1512.3 GiB
+  [it 3] SPILL 1627.6 GiB
+  [it 3] SPILL 1712.4 GiB
+  [it 3] SPILL 1715.5 GiB
+  [it 3] SPILL 1670.3 GiB
+  [it 3] SPILL 1650.5 GiB
+  [it 3] SPILL 1765.1 GiB
+  [it 3] SPILL 1791.9 GiB
+  [it 3] SPILL 1729.6 GiB
+  [it 3] SPILL 1707.1 GiB
+  [it 3] SPILL 1821.4 GiB
+  [it 3] SPILL 1848.4 GiB
+  [it 3] SPILL 1792.7 GiB
+  [it 3] SPILL 1791.0 GiB
+  [it 3] SPILL 1881.1 GiB
+  [it 3] SPILL 1831.8 GiB
+  [it 3] SPILL 1788.4 GiB
+  [it 3] SPILL 1890.5 GiB
+  [it 3] SPILL 1942.4 GiB
+  [it 3] SPILL 1897.5 GiB
+  [it 3] SPILL 1893.5 GiB
+  [it 3] SPILL 1979.9 GiB
+  [it 3] SPILL 1940.9 GiB
+  [it 3] SPILL 1927.5 GiB
+  [it 3] SPILL 2022.1 GiB
+  [it 3] SPILL 1987.0 GiB
+  [it 3] SPILL 1978.1 GiB
+  [it 3] SPILL 2066.6 GiB
+  [it 3] SPILL 2035.3 GiB
+  [it 3] SPILL 2044.2 GiB
+  [it 3] SPILL 2113.8 GiB
+  [it 3] SPILL 2085.5 GiB
+  [it 3] SPILL 2123.3 GiB
+  [it 3] SPILL 2110.8 GiB
+  [it 3] SPILL 2106.6 GiB
+  [it 3] SPILL 2184.9 GiB
+  [it 3] SPILL 2163.2 GiB
+  [it 3] SPILL 2205.1 GiB
+  [it 3] SPILL 2190.9 GiB
+  [it 3] SPILL 2210.1 GiB
+  [it 3] SPILL 2235.5 GiB
+  [it 3] SPILL 2224.4 GiB
+  [it 3] SPILL 2291.3 GiB
+  [it 3] SPILL 2244.7 GiB
+  [it 3] SPILL 2320.1 GiB
+  [it 3] SPILL 2275.5 GiB
+  [it 3] SPILL 2349.8 GiB
+  [it 3] SPILL 2311.2 GiB
+  [it 3] SPILL 2381.4 GiB
+  [it 3] SPILL 2356.3 GiB
+  [it 3] SPILL 2377.5 GiB
+  [it 3] SPILL 2402.2 GiB
+  [it 3] SPILL 2412.5 GiB
+  [it 3] SPILL 2452.6 GiB
+  [it 3] SPILL 2422.8 GiB
+  [it 3] SPILL 2487.1 GiB
+  [it 3] SPILL 2481.8 GiB
+  [it 3] SPILL 2492.2 GiB
+  [it 3] SPILL 2529.4 GiB
+  [it 3] SPILL 2520.8 GiB
+  [it 3] SPILL 2539.1 GiB
+  [it 3] SPILL 2577.6 GiB
+  [it 3] SPILL 2582.6 GiB
+  [it 3] SPILL 2567.7 GiB
+  [it 3] SPILL 2598.2 GiB
+  [it 3] SPILL 2633.1 GiB
+  [it 3] SPILL 2631.4 GiB
+  [it 3] SPILL 2624.3 GiB
+  [it 3] SPILL 2658.6 GiB
+  [it 3] SPILL 2694.4 GiB
+  [it 3] SPILL 2706.7 GiB
+  [it 3] SPILL 2709.4 GiB
+  [it 3] SPILL 2710.8 GiB
+  [it 3] SPILL 2736.1 GiB
+  [it 3] SPILL 2749.0 GiB
+  [it 3] SPILL 2780.8 GiB
+  [it 3] SPILL 2792.6 GiB
+  [it 3] SPILL 2804.1 GiB
+  [it 3] SPILL 2816.9 GiB
+  [it 3] SPILL 2830.6 GiB
+  [it 3] SPILL 2845.8 GiB
+  [it 3] SPILL 2858.5 GiB
+  [it 3] SPILL 2871.6 GiB
+  [it 3] SPILL 2887.7 GiB
+  [it 3] SPILL 2905.2 GiB
+  [it 3] SPILL 2920.2 GiB
+  [it 3] SPILL 2933.4 GiB
+  [it 3] SPILL 2948.7 GiB
+  [it 3] SPILL 2954.6 GiB
+  [it 3] SPILL 2964.1 GiB
+  [it 3] SPILL 2978.6 GiB
+  [it 3] SPILL 2982.4 GiB
+  [it 3] SPILL 3004.7 GiB
+  [it 3] SPILL 3025.2 GiB
+  [it 3] SPILL 3040.8 GiB
+  [it 3] SPILL 3043.0 GiB
+  [it 3] SPILL 3050.1 GiB
+  [it 3] SPILL 3073.2 GiB
+  [it 3] SPILL 3092.1 GiB
+  [it 3] SPILL 3096.2 GiB
+  [it 3] SPILL 3107.7 GiB
+  [it 3] SPILL 3130.7 GiB
+  [it 3] SPILL 3128.3 GiB
+  [it 3] SPILL 3148.1 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 3164.5 GiB
+  [it 3] SPILL 263.7 GiB
+  PT2 iter 3: exit=0  MEASURED PEAK = 3164.5 GiB
+
+########## ITERATION 4 ##########
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 4
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15700695_it4
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: true
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=4  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15700695_it4
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     TRUE
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 4, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15700695_it4
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  ▶ RESUMED from checkpoint at iteration 3
+  ▶ Energy at resume: -293.1611107430 Ha,  |S| = 20000000
+═══════════════════════════════════════════════════════════
+
+--- Iteration 4 ---
+  |S| = 20000000, |v| = 20000000,  E = -293.1611107430
+  asci_search_ooc:
+    |S| = 1000000, k = 20000000, batch_size = 500, n_batches = 2000
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15700695_it4
+    batch 1/2000: expand 3.84s, p1 0.37s, p2 1.06s
+    batch 100/2000: expand 1.36s, p1 0.13s, p2 0.55s
+    [batch 200] lazy compaction: 836.9s, disk after = 105.06 GB
+    batch 200/2000: expand 1.39s, p1 0.10s, p2 0.57s
+    batch 300/2000: expand 1.54s, p1 0.15s, p2 0.69s
+    [batch 400] lazy compaction: 909.9s, disk after = 257.21 GB
+    batch 400/2000: expand 1.38s, p1 0.13s, p2 0.54s
+    batch 500/2000: expand 1.43s, p1 0.11s, p2 0.63s
+    [batch 600] lazy compaction: 926.7s, disk after = 427.25 GB
+    batch 600/2000: expand 1.46s, p1 0.11s, p2 0.58s
+    batch 700/2000: expand 1.39s, p1 0.12s, p2 0.63s
+    [batch 800] lazy compaction: 924.4s, disk after = 606.89 GB
+    batch 800/2000: expand 1.40s, p1 0.10s, p2 0.70s
+    batch 900/2000: expand 1.40s, p1 0.11s, p2 0.69s
+    [batch 1000] lazy compaction: 940.7s, disk after = 792.98 GB
+    batch 1000/2000: expand 1.40s, p1 0.11s, p2 0.59s
+    batch 1100/2000: expand 1.37s, p1 0.11s, p2 0.68s
+    [batch 1200] lazy compaction: 943.2s, disk after = 983.64 GB
+    batch 1200/2000: expand 1.63s, p1 0.12s, p2 0.66s
+    batch 1300/2000: expand 1.40s, p1 0.11s, p2 0.67s
+    [batch 1400] lazy compaction: 951.7s, disk after = 1177.65 GB
+    batch 1400/2000: expand 1.41s, p1 0.11s, p2 0.57s
+    batch 1500/2000: expand 2.58s, p1 0.12s, p2 0.65s
+    [batch 1600] lazy compaction: 1026.8s, disk after = 1374.21 GB
+    batch 1600/2000: expand 1.52s, p1 0.12s, p2 0.62s
+    batch 1700/2000: expand 1.55s, p1 0.14s, p2 0.65s
+    [batch 1800] lazy compaction: 1034.3s, disk after = 1573.20 GB
+    batch 1800/2000: expand 1.65s, p1 0.13s, p2 0.69s
+    batch 1900/2000: expand 1.48s, p1 0.13s, p2 0.59s
+    batch 2000/2000: expand 1.49s, p1 0.12s, p2 0.57s
+    drain done in 13044.3s.  Total spill on disk: 2100.01 GB
+    merge+topk: 4997.88s  → returning 20000000 entries (total 18042.24s)
+  search+merge (OOC): 18115.07s,  generators = 1000000,  |S_new| = 20000000
+  build state: 20.57s
+  ARPACK: niter=3, nmult=40, nconv=1
+  build sparse A: 8821.81s  (nnz=28187206764, 1409 nnz/row, 420.17 GiB)
+  freed A: live heap 427.0 GiB, RSS 427.9 GiB
+  ARPACK: 7018.41s
+  Energy estimate: -293.1613842011
+  Iteration total: 33981.00s
+  checkpoint: 1.16s (610.4 MB)
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.1613842011
+  Final |S|:    20000000
+  Iterations:   4 (run from 4)
+═══════════════════════════════════════════════════════════
+  ASCI iteration 4: exit=0
+  Energy estimate: -293.1613842011
+  PT2 iteration 4 at eps2 = 1e-7 ...
+  [it 4] SPILL 0.0 GiB
+  [it 4] SPILL 15.4 GiB
+  [it 4] SPILL 71.5 GiB
+  [it 4] SPILL 130.5 GiB
+  [it 4] SPILL 189.9 GiB
+  [it 4] SPILL 249.2 GiB
+  [it 4] SPILL 325.8 GiB
+  [it 4] SPILL 402.7 GiB
+  [it 4] SPILL 461.2 GiB
+  [it 4] SPILL 533.0 GiB
+  [it 4] SPILL 589.9 GiB
+  [it 4] SPILL 662.2 GiB
+  [it 4] SPILL 731.9 GiB
+  [it 4] SPILL 813.7 GiB
+  [it 4] SPILL 882.3 GiB
+  [it 4] SPILL 920.9 GiB
+  [it 4] SPILL 938.1 GiB
+  [it 4] SPILL 955.9 GiB
+  [it 4] SPILL 970.4 GiB
+  [it 4] SPILL 984.7 GiB
+  [it 4] SPILL 1000.2 GiB
+  [it 4] SPILL 590.3 GiB
+  [it 4] SPILL 571.1 GiB
+  [it 4] SPILL 588.4 GiB
+  [it 4] SPILL 605.2 GiB
+  [it 4] SPILL 620.7 GiB
+  [it 4] SPILL 635.6 GiB
+  [it 4] SPILL 640.8 GiB
+  [it 4] SPILL 215.0 GiB
+  [it 4] SPILL 278.9 GiB
+  [it 4] SPILL 356.7 GiB
+  [it 4] SPILL 432.6 GiB
+  [it 4] SPILL 506.8 GiB
+  [it 4] SPILL 579.1 GiB
+  [it 4] SPILL 649.8 GiB
+  [it 4] SPILL 718.9 GiB
+  [it 4] SPILL 789.5 GiB
+  [it 4] SPILL 865.8 GiB
+  [it 4] SPILL 921.7 GiB
+  [it 4] SPILL 944.4 GiB
+  [it 4] SPILL 966.9 GiB
+  [it 4] SPILL 986.6 GiB
+  [it 4] SPILL 1006.9 GiB
+  [it 4] SPILL 791.9 GiB
+  [it 4] SPILL 687.7 GiB
+  [it 4] SPILL 710.6 GiB
+  [it 4] SPILL 730.6 GiB
+  [it 4] SPILL 750.6 GiB
+  [it 4] SPILL 764.6 GiB
+  [it 4] SPILL 444.1 GiB
+  [it 4] SPILL 519.5 GiB
+  [it 4] SPILL 592.7 GiB
+  [it 4] SPILL 664.9 GiB
+  [it 4] SPILL 735.1 GiB
+  [it 4] SPILL 803.7 GiB
+  [it 4] SPILL 870.8 GiB
+  [it 4] SPILL 936.5 GiB
+  [it 4] SPILL 1001.9 GiB
+  [it 4] SPILL 1026.0 GiB
+  [it 4] SPILL 1049.9 GiB
+  [it 4] SPILL 1072.2 GiB
+  [it 4] SPILL 1074.0 GiB
+  [it 4] SPILL 823.1 GiB
+  [it 4] SPILL 847.3 GiB
+  [it 4] SPILL 870.8 GiB
+  [it 4] SPILL 893.2 GiB
+  [it 4] SPILL 627.4 GiB
+  [it 4] SPILL 701.3 GiB
+  [it 4] SPILL 778.8 GiB
+  [it 4] SPILL 848.4 GiB
+  [it 4] SPILL 920.3 GiB
+  [it 4] SPILL 997.3 GiB
+  [it 4] SPILL 1066.8 GiB
+  [it 4] SPILL 1116.1 GiB
+  [it 4] SPILL 1140.0 GiB
+  [it 4] SPILL 1162.5 GiB
+  [it 4] SPILL 1167.2 GiB
+  [it 4] SPILL 962.6 GiB
+  [it 4] SPILL 987.6 GiB
+  [it 4] SPILL 1011.3 GiB
+  [it 4] SPILL 785.2 GiB
+  [it 4] SPILL 851.3 GiB
+  [it 4] SPILL 911.3 GiB
+  [it 4] SPILL 984.7 GiB
+  [it 4] SPILL 1056.7 GiB
+  [it 4] SPILL 1127.1 GiB
+  [it 4] SPILL 1191.0 GiB
+  [it 4] SPILL 1216.4 GiB
+  [it 4] SPILL 1240.5 GiB
+  [it 4] SPILL 1067.3 GiB
+  [it 4] SPILL 1084.4 GiB
+  [it 4] SPILL 1108.2 GiB
+  [it 4] SPILL 946.4 GiB
+  [it 4] SPILL 990.9 GiB
+  [it 4] SPILL 1057.1 GiB
+  [it 4] SPILL 1128.9 GiB
+  [it 4] SPILL 1208.7 GiB
+  [it 4] SPILL 1280.8 GiB
+  [it 4] SPILL 1310.9 GiB
+  [it 4] SPILL 1336.2 GiB
+  [it 4] SPILL 1182.6 GiB
+  [it 4] SPILL 1207.0 GiB
+  [it 4] SPILL 1231.8 GiB
+  [it 4] SPILL 1098.3 GiB
+  [it 4] SPILL 1168.3 GiB
+  [it 4] SPILL 1238.4 GiB
+  [it 4] SPILL 1312.8 GiB
+  [it 4] SPILL 1381.1 GiB
+  [it 4] SPILL 1406.4 GiB
+  [it 4] SPILL 1433.1 GiB
+  [it 4] SPILL 1298.6 GiB
+  [it 4] SPILL 1323.4 GiB
+  [it 4] SPILL 1198.7 GiB
+  [it 4] SPILL 1269.9 GiB
+  [it 4] SPILL 1338.3 GiB
+  [it 4] SPILL 1404.9 GiB
+  [it 4] SPILL 1467.8 GiB
+  [it 4] SPILL 1492.5 GiB
+  [it 4] SPILL 1389.3 GiB
+  [it 4] SPILL 1402.4 GiB
+  [it 4] SPILL 1411.9 GiB
+  [it 4] SPILL 1342.3 GiB
+  [it 4] SPILL 1413.0 GiB
+  [it 4] SPILL 1485.2 GiB
+  [it 4] SPILL 1547.5 GiB
+  [it 4] SPILL 1572.2 GiB
+  [it 4] SPILL 1470.0 GiB
+  [it 4] SPILL 1495.1 GiB
+  [it 4] SPILL 1397.2 GiB
+  [it 4] SPILL 1468.3 GiB
+  [it 4] SPILL 1533.1 GiB
+  [it 4] SPILL 1600.8 GiB
+  [it 4] SPILL 1636.9 GiB
+  [it 4] SPILL 1557.5 GiB
+  [it 4] SPILL 1573.3 GiB
+  [it 4] SPILL 1492.6 GiB
+  [it 4] SPILL 1556.6 GiB
+  [it 4] SPILL 1626.6 GiB
+  [it 4] SPILL 1690.4 GiB
+  [it 4] SPILL 1716.4 GiB
+  [it 4] SPILL 1636.2 GiB
+  [it 4] SPILL 1652.7 GiB
+  [it 4] SPILL 1619.1 GiB
+  [it 4] SPILL 1691.3 GiB
+  [it 4] SPILL 1755.3 GiB
+  [it 4] SPILL 1781.6 GiB
+  [it 4] SPILL 1709.6 GiB
+  [it 4] SPILL 1639.3 GiB
+  [it 4] SPILL 1709.2 GiB
+  [it 4] SPILL 1779.7 GiB
+  [it 4] SPILL 1826.7 GiB
+  [it 4] SPILL 1763.5 GiB
+  [it 4] SPILL 1790.4 GiB
+  [it 4] SPILL 1755.9 GiB
+  [it 4] SPILL 1819.1 GiB
+  [it 4] SPILL 1879.0 GiB
+  [it 4] SPILL 1822.1 GiB
+  [it 4] SPILL 1847.1 GiB
+  [it 4] SPILL 1814.8 GiB
+  [it 4] SPILL 1879.5 GiB
+  [it 4] SPILL 1933.0 GiB
+  [it 4] SPILL 1880.6 GiB
+  [it 4] SPILL 1907.2 GiB
+  [it 4] SPILL 1889.1 GiB
+  [it 4] SPILL 1959.2 GiB
+  [it 4] SPILL 1997.4 GiB
+  [it 4] SPILL 1952.0 GiB
+  [it 4] SPILL 1924.0 GiB
+  [it 4] SPILL 1988.6 GiB
+  [it 4] SPILL 2036.2 GiB
+  [it 4] SPILL 1994.1 GiB
+  [it 4] SPILL 1960.1 GiB
+  [it 4] SPILL 2027.5 GiB
+  [it 4] SPILL 2078.3 GiB
+  [it 4] SPILL 2041.6 GiB
+  [it 4] SPILL 2017.8 GiB
+  [it 4] SPILL 2086.3 GiB
+  [it 4] SPILL 2127.9 GiB
+  [it 4] SPILL 2092.3 GiB
+  [it 4] SPILL 2078.7 GiB
+  [it 4] SPILL 2142.7 GiB
+  [it 4] SPILL 2176.0 GiB
+  [it 4] SPILL 2116.5 GiB
+  [it 4] SPILL 2153.0 GiB
+  [it 4] SPILL 2202.7 GiB
+  [it 4] SPILL 2176.1 GiB
+  [it 4] SPILL 2176.0 GiB
+  [it 4] SPILL 2235.4 GiB
+  [it 4] SPILL 2210.6 GiB
+  [it 4] SPILL 2204.9 GiB
+  [it 4] SPILL 2254.7 GiB
+  [it 4] SPILL 2241.0 GiB
+  [it 4] SPILL 2226.7 GiB
+  [it 4] SPILL 2289.6 GiB
+  [it 4] SPILL 2278.7 GiB
+  [it 4] SPILL 2273.7 GiB
+  [it 4] SPILL 2332.2 GiB
+  [it 4] SPILL 2316.6 GiB
+  [it 4] SPILL 2318.9 GiB
+  [it 4] SPILL 2373.5 GiB
+  [it 4] SPILL 2321.0 GiB
+  [it 4] SPILL 2390.0 GiB
+  [it 4] SPILL 2382.8 GiB
+  [it 4] SPILL 2406.1 GiB
+  [it 4] SPILL 2410.2 GiB
+  [it 4] SPILL 2421.1 GiB
+  [it 4] SPILL 2468.3 GiB
+  [it 4] SPILL 2442.8 GiB
+  [it 4] SPILL 2496.0 GiB
+  [it 4] SPILL 2472.2 GiB
+  [it 4] SPILL 2521.0 GiB
+  [it 4] SPILL 2500.9 GiB
+  [it 4] SPILL 2517.8 GiB
+  [it 4] SPILL 2535.2 GiB
+  [it 4] SPILL 2543.8 GiB
+  [it 4] SPILL 2561.4 GiB
+  [it 4] SPILL 2569.7 GiB
+  [it 4] SPILL 2596.4 GiB
+  [it 4] SPILL 2577.4 GiB
+  [it 4] SPILL 2629.8 GiB
+  [it 4] SPILL 2606.8 GiB
+  [it 4] SPILL 2657.2 GiB
+  [it 4] SPILL 2647.9 GiB
+  [it 4] SPILL 2661.0 GiB
+  [it 4] SPILL 2686.6 GiB
+  [it 4] SPILL 2670.6 GiB
+  [it 4] SPILL 2720.2 GiB
+  [it 4] SPILL 2713.9 GiB
+  [it 4] SPILL 2724.2 GiB
+  [it 4] SPILL 2749.0 GiB
+  [it 4] SPILL 2735.3 GiB
+  [it 4] SPILL 2757.3 GiB
+  [it 4] SPILL 2782.4 GiB
+  [it 4] SPILL 2774.1 GiB
+  [it 4] SPILL 2794.2 GiB
+  [it 4] SPILL 2821.5 GiB
+  [it 4] SPILL 2819.9 GiB
+  [it 4] SPILL 2815.5 GiB
+  [it 4] SPILL 2858.8 GiB
+  [it 4] SPILL 2862.5 GiB
+  [it 4] SPILL 2862.4 GiB
+  [it 4] SPILL 2877.3 GiB
+  [it 4] SPILL 2904.6 GiB
+  [it 4] SPILL 2908.9 GiB
+  [it 4] SPILL 2908.4 GiB
+  [it 4] SPILL 2911.8 GiB
+  [it 4] SPILL 2934.7 GiB
+  [it 4] SPILL 2959.0 GiB
+  [it 4] SPILL 2965.9 GiB
+  [it 4] SPILL 2969.4 GiB
+  [it 4] SPILL 2976.4 GiB
+  [it 4] SPILL 2980.9 GiB
+  [it 4] SPILL 3003.0 GiB
+  [it 4] SPILL 3026.8 GiB
+  [it 4] SPILL 3036.3 GiB
+  [it 4] SPILL 3047.1 GiB
+  [it 4] SPILL 3056.8 GiB
+  [it 4] SPILL 3065.1 GiB
+  [it 4] SPILL 3074.2 GiB
+  [it 4] SPILL 3085.8 GiB
+  [it 4] SPILL 3098.7 GiB
+  [it 4] SPILL 3109.5 GiB
+  [it 4] SPILL 3121.2 GiB
+  [it 4] SPILL 3132.8 GiB
+  [it 4] SPILL 3145.8 GiB
+  [it 4] SPILL 3156.3 GiB
+  [it 4] SPILL 3161.3 GiB
+  [it 4] SPILL 3169.1 GiB
+  [it 4] SPILL 3171.2 GiB
+  [it 4] SPILL 3186.8 GiB
+  [it 4] SPILL 3201.1 GiB
+  [it 4] SPILL 3214.1 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 3228.4 GiB
+  [it 4] SPILL 2959.4 GiB
+  PT2 iter 4: exit=0  MEASURED PEAK = 3228.4 GiB
+
+########## ITERATION 5 ##########
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 5
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15700695_it5
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: true
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=5  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15700695_it5
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     TRUE
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 5, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15700695_it5
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  ▶ RESUMED from checkpoint at iteration 4
+  ▶ Energy at resume: -293.1613842011 Ha,  |S| = 20000000
+═══════════════════════════════════════════════════════════
+
+--- Iteration 5 ---
+  |S| = 20000000, |v| = 20000000,  E = -293.1613842011
+  asci_search_ooc:
+    |S| = 1000000, k = 20000000, batch_size = 500, n_batches = 2000
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15700695_it5
+    batch 1/2000: expand 3.61s, p1 0.41s, p2 1.28s
+    batch 100/2000: expand 1.51s, p1 0.15s, p2 0.82s
+    [batch 200] lazy compaction: 831.0s, disk after = 105.17 GB
+    batch 200/2000: expand 1.41s, p1 0.12s, p2 0.67s
+    batch 300/2000: expand 1.45s, p1 0.14s, p2 0.85s
+    [batch 400] lazy compaction: 923.0s, disk after = 257.36 GB
+    batch 400/2000: expand 1.42s, p1 0.12s, p2 0.68s
+    batch 500/2000: expand 1.53s, p1 0.13s, p2 0.84s
+    [batch 600] lazy compaction: 957.2s, disk after = 427.41 GB
+    batch 600/2000: expand 1.42s, p1 0.12s, p2 0.73s
+    batch 700/2000: expand 1.60s, p1 0.14s, p2 0.80s
+    [batch 800] lazy compaction: 973.5s, disk after = 607.07 GB
+    batch 800/2000: expand 1.45s, p1 0.10s, p2 0.67s
+    batch 900/2000: expand 1.47s, p1 0.12s, p2 0.76s
+    [batch 1000] lazy compaction: 978.4s, disk after = 793.21 GB
+    batch 1000/2000: expand 1.43s, p1 0.12s, p2 0.68s
+    batch 1100/2000: expand 1.57s, p1 0.11s, p2 0.72s
+    [batch 1200] lazy compaction: 980.1s, disk after = 983.85 GB
+    batch 1200/2000: expand 1.60s, p1 0.16s, p2 0.79s
+    batch 1300/2000: expand 1.48s, p1 0.14s, p2 0.70s
+    [batch 1400] lazy compaction: 982.3s, disk after = 1177.95 GB
+    batch 1400/2000: expand 1.48s, p1 0.15s, p2 0.82s
+    batch 1500/2000: expand 1.53s, p1 0.18s, p2 0.97s
+    [batch 1600] lazy compaction: 986.3s, disk after = 1374.60 GB
+    batch 1600/2000: expand 1.43s, p1 0.13s, p2 0.72s
+    batch 1700/2000: expand 1.44s, p1 0.11s, p2 0.76s
+    [batch 1800] lazy compaction: 1004.8s, disk after = 1573.55 GB
+    batch 1800/2000: expand 1.48s, p1 0.16s, p2 0.72s
+    batch 1900/2000: expand 1.55s, p1 0.14s, p2 0.75s
+    batch 2000/2000: expand 1.48s, p1 0.10s, p2 0.76s
+    drain done in 13457.3s.  Total spill on disk: 2100.32 GB
+    merge+topk: 5227.89s  → returning 20000000 entries (total 18685.20s)
+  search+merge (OOC): 18758.21s,  generators = 1000000,  |S_new| = 20000000
+  build state: 7.83s
+  ARPACK: niter=2, nmult=30, nconv=1
+  build sparse A: 9363.70s  (nnz=28153786074, 1408 nnz/row, 419.67 GiB)
+  freed A: live heap 426.5 GiB, RSS 427.5 GiB
+  ARPACK: 6385.24s
+  Energy estimate: -293.1613879841
+  Iteration total: 34521.10s
+  checkpoint: 0.95s (610.4 MB)
+  ✓ Converged: |ΔE| = 3.78e-06 < 1.00e-04 Ha
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.1613879841
+  Final |S|:    20000000
+  Iterations:   5 (run from 5)
+═══════════════════════════════════════════════════════════
+  ASCI iteration 5: exit=0
+  Energy estimate: -293.1613879841
+  ✓ Converged: |ΔE| = 3.78e-06 < 1.00e-04 Ha
+  PT2 iteration 5 at eps2 = 1e-7 ...
+  [it 5] SPILL 0.0 GiB
+  [it 5] SPILL 15.4 GiB
+  [it 5] SPILL 52.4 GiB
+  [it 5] SPILL 110.8 GiB
+  [it 5] SPILL 164.2 GiB
+  [it 5] SPILL 223.5 GiB
+  [it 5] SPILL 269.1 GiB
+  [it 5] SPILL 327.6 GiB
+  [it 5] SPILL 403.4 GiB
+  [it 5] SPILL 461.4 GiB
+  [it 5] SPILL 517.3 GiB
+  [it 5] SPILL 590.2 GiB
+  [it 5] SPILL 661.7 GiB
+  [it 5] SPILL 728.6 GiB
+  [it 5] SPILL 782.7 GiB
+  [it 5] SPILL 849.7 GiB
+  [it 5] SPILL 915.4 GiB
+  [it 5] SPILL 926.4 GiB
+  [it 5] SPILL 942.6 GiB
+  [it 5] SPILL 958.2 GiB
+  [it 5] SPILL 971.2 GiB
+  [it 5] SPILL 984.8 GiB
+  [it 5] SPILL 998.5 GiB
+  [it 5] SPILL 1004.4 GiB
+  [it 5] SPILL 564.0 GiB
+  [it 5] SPILL 578.9 GiB
+  [it 5] SPILL 594.5 GiB
+  [it 5] SPILL 609.4 GiB
+  [it 5] SPILL 623.8 GiB
+  [it 5] SPILL 637.6 GiB
+  [it 5] SPILL 651.7 GiB
+  [it 5] SPILL 215.1 GiB
+  [it 5] SPILL 278.9 GiB
+  [it 5] SPILL 356.9 GiB
+  [it 5] SPILL 424.2 GiB
+  [it 5] SPILL 492.3 GiB
+  [it 5] SPILL 555.3 GiB
+  [it 5] SPILL 622.0 GiB
+  [it 5] SPILL 678.0 GiB
+  [it 5] SPILL 746.6 GiB
+  [it 5] SPILL 813.7 GiB
+  [it 5] SPILL 879.4 GiB
+  [it 5] SPILL 925.6 GiB
+  [it 5] SPILL 947.2 GiB
+  [it 5] SPILL 968.4 GiB
+  [it 5] SPILL 987.6 GiB
+  [it 5] SPILL 1008.2 GiB
+  [it 5] SPILL 829.5 GiB
+  [it 5] SPILL 684.6 GiB
+  [it 5] SPILL 705.9 GiB
+  [it 5] SPILL 726.3 GiB
+  [it 5] SPILL 746.2 GiB
+  [it 5] SPILL 765.6 GiB
+  [it 5] SPILL 418.8 GiB
+  [it 5] SPILL 482.3 GiB
+  [it 5] SPILL 544.5 GiB
+  [it 5] SPILL 617.1 GiB
+  [it 5] SPILL 677.6 GiB
+  [it 5] SPILL 747.2 GiB
+  [it 5] SPILL 815.7 GiB
+  [it 5] SPILL 882.7 GiB
+  [it 5] SPILL 948.1 GiB
+  [it 5] SPILL 1005.8 GiB
+  [it 5] SPILL 1027.6 GiB
+  [it 5] SPILL 1051.2 GiB
+  [it 5] SPILL 1072.9 GiB
+  [it 5] SPILL 1061.9 GiB
+  [it 5] SPILL 822.5 GiB
+  [it 5] SPILL 845.0 GiB
+  [it 5] SPILL 866.4 GiB
+  [it 5] SPILL 888.2 GiB
+  [it 5] SPILL 619.9 GiB
+  [it 5] SPILL 666.6 GiB
+  [it 5] SPILL 729.4 GiB
+  [it 5] SPILL 800.3 GiB
+  [it 5] SPILL 870.6 GiB
+  [it 5] SPILL 944.0 GiB
+  [it 5] SPILL 1012.1 GiB
+  [it 5] SPILL 1085.8 GiB
+  [it 5] SPILL 1120.3 GiB
+  [it 5] SPILL 1144.2 GiB
+  [it 5] SPILL 1166.5 GiB
+  [it 5] SPILL 1046.9 GiB
+  [it 5] SPILL 965.4 GiB
+  [it 5] SPILL 988.1 GiB
+  [it 5] SPILL 1011.9 GiB
+  [it 5] SPILL 785.7 GiB
+  [it 5] SPILL 844.6 GiB
+  [it 5] SPILL 911.5 GiB
+  [it 5] SPILL 976.5 GiB
+  [it 5] SPILL 1048.7 GiB
+  [it 5] SPILL 1119.3 GiB
+  [it 5] SPILL 1188.6 GiB
+  [it 5] SPILL 1212.0 GiB
+  [it 5] SPILL 1234.8 GiB
+  [it 5] SPILL 1205.5 GiB
+  [it 5] SPILL 1078.5 GiB
+  [it 5] SPILL 1101.6 GiB
+  [it 5] SPILL 1121.8 GiB
+  [it 5] SPILL 968.9 GiB
+  [it 5] SPILL 1038.0 GiB
+  [it 5] SPILL 1107.9 GiB
+  [it 5] SPILL 1178.5 GiB
+  [it 5] SPILL 1253.1 GiB
+  [it 5] SPILL 1299.0 GiB
+  [it 5] SPILL 1323.5 GiB
+  [it 5] SPILL 1348.8 GiB
+  [it 5] SPILL 1192.3 GiB
+  [it 5] SPILL 1215.2 GiB
+  [it 5] SPILL 1162.5 GiB
+  [it 5] SPILL 1110.1 GiB
+  [it 5] SPILL 1181.5 GiB
+  [it 5] SPILL 1254.6 GiB
+  [it 5] SPILL 1325.5 GiB
+  [it 5] SPILL 1384.8 GiB
+  [it 5] SPILL 1408.8 GiB
+  [it 5] SPILL 1434.6 GiB
+  [it 5] SPILL 1297.7 GiB
+  [it 5] SPILL 1320.0 GiB
+  [it 5] SPILL 1182.3 GiB
+  [it 5] SPILL 1246.2 GiB
+  [it 5] SPILL 1316.1 GiB
+  [it 5] SPILL 1383.5 GiB
+  [it 5] SPILL 1452.7 GiB
+  [it 5] SPILL 1485.3 GiB
+  [it 5] SPILL 1510.8 GiB
+  [it 5] SPILL 1391.3 GiB
+  [it 5] SPILL 1413.3 GiB
+  [it 5] SPILL 1295.2 GiB
+  [it 5] SPILL 1363.0 GiB
+  [it 5] SPILL 1426.5 GiB
+  [it 5] SPILL 1495.7 GiB
+  [it 5] SPILL 1550.6 GiB
+  [it 5] SPILL 1574.2 GiB
+  [it 5] SPILL 1471.8 GiB
+  [it 5] SPILL 1496.0 GiB
+  [it 5] SPILL 1392.7 GiB
+  [it 5] SPILL 1464.1 GiB
+  [it 5] SPILL 1532.1 GiB
+  [it 5] SPILL 1600.3 GiB
+  [it 5] SPILL 1635.8 GiB
+  [it 5] SPILL 1660.3 GiB
+  [it 5] SPILL 1568.0 GiB
+  [it 5] SPILL 1487.1 GiB
+  [it 5] SPILL 1538.3 GiB
+  [it 5] SPILL 1601.8 GiB
+  [it 5] SPILL 1668.5 GiB
+  [it 5] SPILL 1704.9 GiB
+  [it 5] SPILL 1631.7 GiB
+  [it 5] SPILL 1648.9 GiB
+  [it 5] SPILL 1577.1 GiB
+  [it 5] SPILL 1639.5 GiB
+  [it 5] SPILL 1701.2 GiB
+  [it 5] SPILL 1758.4 GiB
+  [it 5] SPILL 1781.1 GiB
+  [it 5] SPILL 1707.3 GiB
+  [it 5] SPILL 1719.9 GiB
+  [it 5] SPILL 1688.8 GiB
+  [it 5] SPILL 1751.6 GiB
+  [it 5] SPILL 1815.7 GiB
+  [it 5] SPILL 1840.0 GiB
+  [it 5] SPILL 1775.0 GiB
+  [it 5] SPILL 1711.0 GiB
+  [it 5] SPILL 1775.8 GiB
+  [it 5] SPILL 1843.8 GiB
+  [it 5] SPILL 1885.7 GiB
+  [it 5] SPILL 1827.1 GiB
+  [it 5] SPILL 1850.3 GiB
+  [it 5] SPILL 1813.3 GiB
+  [it 5] SPILL 1874.8 GiB
+  [it 5] SPILL 1931.3 GiB
+  [it 5] SPILL 1949.9 GiB
+  [it 5] SPILL 1901.8 GiB
+  [it 5] SPILL 1869.6 GiB
+  [it 5] SPILL 1932.4 GiB
+  [it 5] SPILL 1984.1 GiB
+  [it 5] SPILL 1937.4 GiB
+  [it 5] SPILL 1959.8 GiB
+  [it 5] SPILL 1941.4 GiB
+  [it 5] SPILL 2002.9 GiB
+  [it 5] SPILL 2040.2 GiB
+  [it 5] SPILL 1996.8 GiB
+  [it 5] SPILL 1961.5 GiB
+  [it 5] SPILL 2023.1 GiB
+  [it 5] SPILL 2077.3 GiB
+  [it 5] SPILL 2037.7 GiB
+  [it 5] SPILL 1999.3 GiB
+  [it 5] SPILL 2061.8 GiB
+  [it 5] SPILL 2119.5 GiB
+  [it 5] SPILL 2084.8 GiB
+  [it 5] SPILL 2056.2 GiB
+  [it 5] SPILL 2117.5 GiB
+  [it 5] SPILL 2165.2 GiB
+  [it 5] SPILL 2132.5 GiB
+  [it 5] SPILL 2115.6 GiB
+  [it 5] SPILL 2175.2 GiB
+  [it 5] SPILL 2211.1 GiB
+  [it 5] SPILL 2182.5 GiB
+  [it 5] SPILL 2180.7 GiB
+  [it 5] SPILL 2236.3 GiB
+  [it 5] SPILL 2210.4 GiB
+  [it 5] SPILL 2202.7 GiB
+  [it 5] SPILL 2266.2 GiB
+  [it 5] SPILL 2245.1 GiB
+  [it 5] SPILL 2230.3 GiB
+  [it 5] SPILL 2285.7 GiB
+  [it 5] SPILL 2320.9 GiB
+  [it 5] SPILL 2260.1 GiB
+  [it 5] SPILL 2320.3 GiB
+  [it 5] SPILL 2317.8 GiB
+  [it 5] SPILL 2300.7 GiB
+  [it 5] SPILL 2362.9 GiB
+  [it 5] SPILL 2350.3 GiB
+  [it 5] SPILL 2352.2 GiB
+  [it 5] SPILL 2403.2 GiB
+  [it 5] SPILL 2389.4 GiB
+  [it 5] SPILL 2404.1 GiB
+  [it 5] SPILL 2442.6 GiB
+  [it 5] SPILL 2401.3 GiB
+  [it 5] SPILL 2456.8 GiB
+  [it 5] SPILL 2445.9 GiB
+  [it 5] SPILL 2462.6 GiB
+  [it 5] SPILL 2464.3 GiB
+  [it 5] SPILL 2466.2 GiB
+  [it 5] SPILL 2514.9 GiB
+  [it 5] SPILL 2476.0 GiB
+  [it 5] SPILL 2531.2 GiB
+  [it 5] SPILL 2525.8 GiB
+  [it 5] SPILL 2544.3 GiB
+  [it 5] SPILL 2546.4 GiB
+  [it 5] SPILL 2556.0 GiB
+  [it 5] SPILL 2594.4 GiB
+  [it 5] SPILL 2571.5 GiB
+  [it 5] SPILL 2614.4 GiB
+  [it 5] SPILL 2590.3 GiB
+  [it 5] SPILL 2635.1 GiB
+  [it 5] SPILL 2611.3 GiB
+  [it 5] SPILL 2655.4 GiB
+  [it 5] SPILL 2633.6 GiB
+  [it 5] SPILL 2677.7 GiB
+  [it 5] SPILL 2655.9 GiB
+  [it 5] SPILL 2698.1 GiB
+  [it 5] SPILL 2678.3 GiB
+  [it 5] SPILL 2718.3 GiB
+  [it 5] SPILL 2703.7 GiB
+  [it 5] SPILL 2731.7 GiB
+  [it 5] SPILL 2732.8 GiB
+  [it 5] SPILL 2741.4 GiB
+  [it 5] SPILL 2762.7 GiB
+  [it 5] SPILL 2748.1 GiB
+  [it 5] SPILL 2790.6 GiB
+  [it 5] SPILL 2782.0 GiB
+  [it 5] SPILL 2795.8 GiB
+  [it 5] SPILL 2818.5 GiB
+  [it 5] SPILL 2805.6 GiB
+  [it 5] SPILL 2845.2 GiB
+  [it 5] SPILL 2840.6 GiB
+  [it 5] SPILL 2831.6 GiB
+  [it 5] SPILL 2872.2 GiB
+  [it 5] SPILL 2866.7 GiB
+  [it 5] SPILL 2880.3 GiB
+  [it 5] SPILL 2902.1 GiB
+  [it 5] SPILL 2898.8 GiB
+  [it 5] SPILL 2904.4 GiB
+  [it 5] SPILL 2933.2 GiB
+  [it 5] SPILL 2932.9 GiB
+  [it 5] SPILL 2929.9 GiB
+  [it 5] SPILL 2948.2 GiB
+  [it 5] SPILL 2969.7 GiB
+  [it 5] SPILL 2968.1 GiB
+  [it 5] SPILL 2968.9 GiB
+  [it 5] SPILL 2988.5 GiB
+  [it 5] SPILL 3008.9 GiB
+  [it 5] SPILL 3011.2 GiB
+  [it 5] SPILL 3013.5 GiB
+  [it 5] SPILL 3030.6 GiB
+  [it 5] SPILL 3050.4 GiB
+  [it 5] SPILL 3056.9 GiB
+  [it 5] SPILL 3061.5 GiB
+  [it 5] SPILL 3067.2 GiB
+  [it 5] SPILL 3072.3 GiB
+  [it 5] SPILL 3079.0 GiB
+  [it 5] SPILL 3098.3 GiB
+  [it 5] SPILL 3112.0 GiB
+  [it 5] SPILL 3128.2 GiB
+  [it 5] SPILL 3135.6 GiB
+  [it 5] SPILL 3142.5 GiB
+  [it 5] SPILL 3149.1 GiB
+  [it 5] SPILL 3156.6 GiB
+  [it 5] SPILL 3166.0 GiB
+  [it 5] SPILL 3173.9 GiB
+  [it 5] SPILL 3184.7 GiB
+  [it 5] SPILL 3194.6 GiB
+  [it 5] SPILL 3204.6 GiB
+  [it 5] SPILL 3214.8 GiB
+  [it 5] SPILL 3225.3 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 3229.8 GiB
+  [it 5] SPILL 269.2 GiB
+  PT2 iter 5: exit=0  MEASURED PEAK = 3229.8 GiB
+
+ASCI converged at iteration 5.
+
+==============================================================
+ iter   E_var                 E_PT2                 E_var + E_PT2
+    1   -293.0299015617       -293.1722972226       -586.2021987843
+    2   -293.1506784964       -293.1792821715       -586.3299606679
+    3   -293.1611107430       -293.1798245948       -586.3409353378
+    4   -293.1613842011       -293.1798544273       -586.3412386284
+    5   -293.1613879841       -293.1798570171       -586.3412450012
+==============================================================
+Resubmit this same script to continue; completed iterations are skipped.

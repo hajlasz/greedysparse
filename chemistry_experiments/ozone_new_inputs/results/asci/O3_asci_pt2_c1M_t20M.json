@@ -1,0 +1,110 @@
+{
+  "system": "O3",
+  "active_space": "CAS(18e,87o)",
+  "orbitals": "gsno_om",
+  "basis": "cc-pVTZ",
+  "n_orb_total": 90,
+  "n_elec_total": 24,
+  "n_orb_frozen": 3,
+  "E_NUC": 68.041669451557,
+  "E_HF_electronic": -292.3591666356,
+  "note": "All energies are ELECTRONIC (add E_NUC for totals), in Ha.",
+  "method": "ASCI + Epstein-Nesbet PT2",
+  "N_cdets": 1000000,
+  "N_tdets": 20000000,
+  "ratio_cdets_tdets": 0.05,
+  "eps2": 1e-07,
+  "eps_thresh_search": 1e-10,
+  "epsilon_shift": 0.001,
+  "econv": 0.0001,
+  "arpack_tol": 1e-07,
+  "batch_size": 500,
+  "pt2_batch_size": 5000,
+  "pt2_compact_every": 50,
+  "slurm_job_id": 15700695,
+  "converged": true,
+  "converged_at_iteration": 5,
+  "delta_E_final": 3.78e-06,
+  "iterations": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "S_size": [
+    91157,
+    20000000,
+    20000000,
+    20000000,
+    20000000
+  ],
+  "eigval_history": [
+    -293.0299015617,
+    -293.1506784964,
+    -293.161110743,
+    -293.1613842011,
+    -293.1613879841
+  ],
+  "E_var": [
+    -293.0299015617,
+    -293.1506784964,
+    -293.161110743,
+    -293.1613842011,
+    -293.1613879841
+  ],
+  "E_PT2": [
+    -0.1423956609,
+    -0.0286036751,
+    -0.0187138518,
+    -0.0184702262,
+    -0.018469033
+  ],
+  "E_var_plus_PT2": [
+    -293.1722972226,
+    -293.1792821715,
+    -293.1798245948,
+    -293.1798544273,
+    -293.1798570171
+  ],
+  "pt2_peak_disk_GiB": [
+    226.2,
+    2606.4,
+    3164.5,
+    3228.4,
+    3229.8
+  ],
+  "eps2_ladder_converged_space": {
+    "note": "Three eps2 values on the iteration-5 space; beta fitted from these three points (not imported).",
+    "eps2": [
+      2e-07,
+      1.5e-07,
+      1e-07
+    ],
+    "E_PT2": [
+      -0.0182371827,
+      -0.0183686123,
+      -0.018469033
+    ],
+    "beta_fitted": 1.7982,
+    "E_PT2_eps2_to_zero": -0.0185626017,
+    "residual_bias_at_1e-7_mHa": 0.0936
+  },
+  "final": {
+    "E_var": -293.1613879841,
+    "E_PT2_at_eps2_1e-7": -0.018469033,
+    "E_var_plus_PT2_at_eps2_1e-7": -293.1798570171,
+    "E_PT2_eps2_extrapolated": -0.0185626017,
+    "E_var_plus_PT2_eps2_extrapolated": -293.1799505858
+  },
+  "benchmark": {
+    "note": "Linear fit of E_var+E_PT2 vs |E_PT2| over five points below |S|=1e7, ratio 0.05, eps2=2e-7.",
+    "E_ref_electronic": -293.1812248407,
+    "sigma_E_ref_mHa": 0.1207,
+    "slope_b": 0.071127,
+    "R2": 0.99658,
+    "abs_error_mHa_at_eps2_1e-7": 1.3678,
+    "abs_error_mHa_eps2_extrapolated": 1.2743,
+    "chemical_accuracy_mHa": 1.5936
+  }
+}

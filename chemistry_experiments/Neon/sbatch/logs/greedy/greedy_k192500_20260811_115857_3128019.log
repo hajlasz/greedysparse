@@ -1,0 +1,62 @@
+=== run_greedy.sh  started Tue Aug 11 11:58:57 AM EDT 2026 ===
+log: /home/nh2429/greedysparse/chemistry_experiments/Neon/sbatch/logs/greedy/greedy_k192500_20260811_115857_3128019.log
+julia 1.11.5   deps OK
+-------------------------------------
+host       = crunchy2.cims.nyu.edu
+load       =  11:59:01 up 25 days, 16:52,  2 users,  load average: 18.34, 21.32, 22.16
+julia      = /usr/local/stow/julia-1.11/bin/julia
+project    = /home/nh2429/greedysparse
+threads    = 16
+epsilon    = 1.0    (A = -eps*H, no identity shift)
+K_KEEP     = 192500
+script     = /home/nh2429/greedysparse/chemistry_experiments/scripts/run_greedy.jl
+outfile    = /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k192500.json
+-------------------------------------
+ARGS[1]: 23
+ARGS[2]: 10
+ARGS[3]: 1
+ARGS[4]: 1.0
+ARGS[5]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/eris.txt
+ARGS[6]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/hcore.txt
+ARGS[7]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/symm.txt
+ARGS[8]: 192500
+ARGS[9]: /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k192500.json
+ARGS[10]: 2000
+ARGS[11]: 1e-11
+ARGS[12]: 128.709475548738
+ITERATION 1   |S| = 1
+  E = -128.70146930774766   relerr = 6.220397493041476e-5   (first iteration)
+  expand = 2.343 s   estimate = 6.749 s   |S| = 985
+
+ITERATION 2   |S| = 985
+  E = -128.70926696854357   relerr = 1.6205504181837019e-6   ΔE = 0.007797660795915817   streak = 0/3
+  expand = 0.044 s   estimate = 169.896 s   |S| = 158051
+
+ITERATION 3   |S| = 158051
+  E = -128.70945077985752   relerr = 1.9244022534850376e-7   ΔE = 0.00018381131394562544   streak = 0/3
+  expand = 5.108 s   estimate = 290.729 s   |S| = 192500
+
+ITERATION 4   |S| = 192500
+  E = -128.709452390193   relerr = 1.799288272466817e-7   ΔE = 1.610335488066994e-6   streak = 0/3
+  expand = 6.241 s   estimate = 277.12 s   |S| = 192500
+
+ITERATION 5   |S| = 192500
+  E = -128.70945242705534   relerr = 1.7964242772794798e-7   ΔE = 3.686233185362653e-8   streak = 0/3
+  expand = 6.229 s   estimate = 249.681 s   |S| = 192500
+
+ITERATION 6   |S| = 192500
+  E = -128.70945242705602   relerr = 1.796424224282525e-7   ΔE = 6.821210263296962e-13   streak = 1/3
+  expand = 5.856 s   estimate = 249.575 s   |S| = 192500
+
+ITERATION 7   |S| = 192500
+  E = -128.70945242705562   relerr = 1.7964242551974153e-7   ΔE = 3.979039320256561e-13   streak = 2/3
+  expand = 5.781 s   estimate = 269.932 s   |S| = 192500
+
+ITERATION 8   |S| = 192500
+  E = -128.70945242705588   relerr = 1.7964242353235572e-7   ΔE = 2.5579538487363607e-13   streak = 3/3
+  expand = 6.231 s   estimate = 271.929 s   |S| = 192500
+
+STOP: |ΔE| < 1.0e-11 for 3 consecutive iterations.
+
+=== EXIT 0 (success)  Tue Aug 11 12:29:43 PM EDT 2026 ===
+log: /home/nh2429/greedysparse/chemistry_experiments/Neon/sbatch/logs/greedy/greedy_k192500_20260811_115857_3128019.log

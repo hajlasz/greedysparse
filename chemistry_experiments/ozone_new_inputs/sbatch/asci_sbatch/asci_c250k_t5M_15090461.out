@@ -1,0 +1,309 @@
+==============================================================
+ run tag     : O3_asci_c250k_t5M
+ integrals   : /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om   (GSNO / CASSCF natural orbitals)
+ outfile     : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c250k_t5M.json
+ checkpoint  : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c250k_t5M.ckpt
+ spill dir   : /scratch/nh2429/spill/asci_15090461
+ resume      : false
+ config      : N_cdets=250000 N_tdets=5000000 batch=500 q_max=20
+               merge=include eps_thresh=1e-10 econv=1e-4 max_disk_gb=4193
+==============================================================
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_15:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 250000
+ARGS[9]: 5000000
+ARGS[10]: 500
+ARGS[11]: 20
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c250k_t5M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15090461
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: false
+ARGS[18]: 4193
+JULIA_NUM_THREADS = 16
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=250000, N_tdets=5000000, batch_size=500, q_max=20  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15090461
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c250k_t5M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c250k_t5M.ckpt
+Resume mode:     FALSE (fresh start)
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 250000, N_tdets = 5000000, q = 20, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15090461
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c250k_t5M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  Starting fresh. Initial energy estimate: -292.3591666356
+═══════════════════════════════════════════════════════════
+
+--- Iteration 1 ---
+  |S| = 1, |v| = 1,  E = -292.3591666356
+  asci_search_ooc:
+    |S| = 1, k = 5000000, batch_size = 500, n_batches = 1
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/spill/asci_15090461
+    batch 1/1: expand 1.31s, p1 0.09s, p2 0.38s
+    drain done in 2.3s.  Total spill on disk: 0.00 GB
+    merge+topk: 0.44s  → returning 91156 entries (total 2.78s)
+  search+merge (OOC): 3.26s,  generators = 1,  |S_new| = 91157
+  build state: 0.02s
+  build sparse A: 41.20s  (nnz=220710691, 2421 nnz/row, 3.29 GB)
+  ARPACK: 10.34s (niter=2, nmult=30, nconv=1)
+  Energy estimate: -293.0299015598
+  Iteration total: 55.12s
+  checkpoint: 0.02s (2.8 MB)
+
+--- Iteration 2 ---
+  |S| = 91157, |v| = 91157,  E = -293.0299015598
+  asci_search_ooc:
+    |S| = 91157, k = 5000000, batch_size = 500, n_batches = 183
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/spill/asci_15090461
+    batch 1/183: expand 4.74s, p1 0.55s, p2 1.32s
+    batch 10/183: expand 3.63s, p1 0.19s, p2 1.35s
+    batch 20/183: expand 3.66s, p1 0.22s, p2 1.33s
+    batch 30/183: expand 3.65s, p1 0.18s, p2 1.39s
+    batch 40/183: expand 3.65s, p1 0.18s, p2 1.57s
+    batch 50/183: expand 3.73s, p1 0.18s, p2 1.33s
+    batch 60/183: expand 3.62s, p1 0.18s, p2 1.37s
+    batch 70/183: expand 3.64s, p1 0.19s, p2 1.37s
+    batch 80/183: expand 3.65s, p1 0.17s, p2 1.52s
+    batch 90/183: expand 3.65s, p1 0.18s, p2 1.36s
+[disk 2026-07-31_15:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 100/183: expand 3.70s, p1 0.19s, p2 1.33s
+    batch 110/183: expand 3.61s, p1 0.18s, p2 1.32s
+    batch 120/183: expand 3.62s, p1 0.18s, p2 1.36s
+    batch 130/183: expand 3.62s, p1 0.17s, p2 1.30s
+    batch 140/183: expand 3.62s, p1 0.18s, p2 1.33s
+    batch 150/183: expand 3.66s, p1 0.17s, p2 1.28s
+    batch 160/183: expand 3.54s, p1 0.17s, p2 1.27s
+    batch 170/183: expand 3.58s, p1 0.17s, p2 1.22s
+    batch 180/183: expand 3.46s, p1 0.16s, p2 1.19s
+    batch 183/183: expand 0.93s, p1 0.09s, p2 0.34s
+    drain done in 944.7s.  Total spill on disk: 426.36 GB
+[disk 2026-07-31_15:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_16:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+    merge+topk: 762.37s  → returning 5000000 entries (total 1707.06s)
+  search+merge (OOC): 1731.95s,  generators = 91157,  |S_new| = 5000000
+  build state: 1.79s
+[disk 2026-07-31_16:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_16:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_16:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_16:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_16:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_17:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_17:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_17:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+  build sparse A: 5089.84s  (nnz=5683340122, 1137 nnz/row, 84.73 GB)
+[disk 2026-07-31_17:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_17:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+  ARPACK: 1291.34s (niter=3, nmult=40, nconv=1)
+  Energy estimate: -293.1415004368
+  Iteration total: 8114.94s
+  checkpoint: 0.34s (152.6 MB)
+
+--- Iteration 3 ---
+  |S| = 5000000, |v| = 5000000,  E = -293.1415004368
+  asci_search_ooc:
+    |S| = 250000, k = 5000000, batch_size = 500, n_batches = 500
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/spill/asci_15090461
+    batch 1/500: expand 4.66s, p1 0.38s, p2 1.29s
+    batch 25/500: expand 3.72s, p1 0.26s, p2 1.47s
+[disk 2026-07-31_17:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 50/500: expand 3.71s, p1 0.25s, p2 1.45s
+    batch 75/500: expand 3.76s, p1 0.25s, p2 1.54s
+    batch 100/500: expand 3.77s, p1 0.21s, p2 1.52s
+    batch 125/500: expand 3.79s, p1 0.26s, p2 1.59s
+[disk 2026-07-31_18:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 150/500: expand 3.80s, p1 0.27s, p2 1.60s
+    batch 175/500: expand 3.86s, p1 0.23s, p2 1.54s
+[disk 2026-07-31_18:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_18:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    [batch 200] lazy compaction: 1077.7s, disk after = 101.93 GB
+    batch 200/500: expand 3.76s, p1 0.26s, p2 1.60s
+    batch 225/500: expand 3.89s, p1 0.23s, p2 1.55s
+    batch 250/500: expand 3.84s, p1 0.23s, p2 1.58s
+[disk 2026-07-31_18:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 275/500: expand 3.78s, p1 0.22s, p2 1.57s
+    batch 300/500: expand 3.79s, p1 0.27s, p2 1.58s
+    batch 325/500: expand 3.75s, p1 0.21s, p2 1.56s
+    batch 350/500: expand 3.83s, p1 0.21s, p2 1.64s
+    batch 375/500: expand 3.79s, p1 0.21s, p2 1.59s
+[disk 2026-07-31_18:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_18:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_19:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+    [batch 400] lazy compaction: 1259.7s, disk after = 251.65 GB
+    batch 400/500: expand 3.82s, p1 0.24s, p2 1.61s
+    batch 425/500: expand 3.79s, p1 0.22s, p2 1.53s
+    batch 450/500: expand 3.82s, p1 0.27s, p2 1.53s
+[disk 2026-07-31_19:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+    batch 475/500: expand 3.81s, p1 0.23s, p2 1.59s
+    batch 500/500: expand 3.74s, p1 0.26s, p2 1.56s
+    drain done in 5128.5s.  Total spill on disk: 516.00 GB
+[disk 2026-07-31_19:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_19:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_19:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+    merge+topk: 1763.03s  → returning 5000000 entries (total 6891.56s)
+  search+merge (OOC): 6915.86s,  generators = 250000,  |S_new| = 5000000
+  build state: 1.56s
+[disk 2026-07-31_19:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_20:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-07-31_20:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   79T  98% /scratch/nh2429
+[disk 2026-07-31_20:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_20:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_20:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_20:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_21:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   79T  98% /scratch/nh2429
+  build sparse A: 5091.94s  (nnz=5139291938, 1028 nnz/row, 76.62 GB)
+[disk 2026-07-31_21:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+[disk 2026-07-31_21:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+  ARPACK: 1247.81s (niter=2, nmult=30, nconv=1)
+  Energy estimate: -293.1494870645
+  Iteration total: 13257.19s
+  checkpoint: 0.40s (152.6 MB)
+
+--- Iteration 4 ---
+  |S| = 5000000, |v| = 5000000,  E = -293.1494870645
+  asci_search_ooc:
+    |S| = 250000, k = 5000000, batch_size = 500, n_batches = 500
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/spill/asci_15090461
+    batch 1/500: expand 5.22s, p1 0.43s, p2 1.46s
+[disk 2026-07-31_21:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+    batch 25/500: expand 3.77s, p1 0.27s, p2 1.87s
+    batch 50/500: expand 3.74s, p1 0.27s, p2 1.93s
+    batch 75/500: expand 3.83s, p1 0.23s, p2 1.63s
+    batch 100/500: expand 3.84s, p1 0.22s, p2 1.69s
+[disk 2026-07-31_21:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   78T  98% /scratch/nh2429
+    batch 125/500: expand 3.74s, p1 0.23s, p2 1.72s
+    batch 150/500: expand 3.76s, p1 0.23s, p2 1.67s
+    batch 175/500: expand 3.78s, p1 0.24s, p2 1.70s
+[disk 2026-07-31_21:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_22:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    [batch 200] lazy compaction: 1006.1s, disk after = 103.49 GB
+    batch 200/500: expand 3.74s, p1 0.25s, p2 1.69s
+    batch 225/500: expand 3.75s, p1 0.21s, p2 1.46s
+    batch 250/500: expand 3.75s, p1 0.24s, p2 1.49s
+[disk 2026-07-31_22:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 275/500: expand 3.82s, p1 0.22s, p2 1.51s
+    batch 300/500: expand 3.78s, p1 0.20s, p2 1.55s
+    batch 325/500: expand 3.84s, p1 0.23s, p2 1.54s
+    batch 350/500: expand 3.73s, p1 0.24s, p2 1.57s
+[disk 2026-07-31_22:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 375/500: expand 3.77s, p1 0.24s, p2 1.54s
+[disk 2026-07-31_22:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_22:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    [batch 400] lazy compaction: 1177.9s, disk after = 254.03 GB
+    batch 400/500: expand 3.82s, p1 0.22s, p2 1.55s
+    batch 425/500: expand 3.83s, p1 0.22s, p2 1.50s
+    batch 450/500: expand 3.76s, p1 0.25s, p2 1.52s
+    batch 475/500: expand 3.80s, p1 0.25s, p2 1.59s
+[disk 2026-07-31_22:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    batch 500/500: expand 3.81s, p1 0.25s, p2 1.57s
+    drain done in 5013.3s.  Total spill on disk: 518.47 GB
+[disk 2026-07-31_23:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_23:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+    merge+topk: 1681.74s  → returning 5000000 entries (total 6695.07s)
+  search+merge (OOC): 6717.37s,  generators = 250000,  |S_new| = 5000000
+  build state: 1.54s
+[disk 2026-07-31_23:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_23:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_23:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   77T  98% /scratch/nh2429
+[disk 2026-07-31_23:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_00:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_00:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_00:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_00:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_00:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+  build sparse A: 5228.80s  (nnz=5085998570, 1017 nnz/row, 75.82 GB)
+[disk 2026-08-01_00:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_01:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+  ARPACK: 945.73s (niter=2, nmult=30, nconv=1)
+  Energy estimate: -293.1496923620
+  Iteration total: 12893.48s
+  checkpoint: 0.23s (152.6 MB)
+
+--- Iteration 5 ---
+  |S| = 5000000, |v| = 5000000,  E = -293.1496923620
+  asci_search_ooc:
+    |S| = 250000, k = 5000000, batch_size = 500, n_batches = 500
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/spill/asci_15090461
+    batch 1/500: expand 5.34s, p1 0.39s, p2 1.32s
+    batch 25/500: expand 3.78s, p1 0.22s, p2 1.44s
+    batch 50/500: expand 3.82s, p1 0.22s, p2 1.55s
+    batch 75/500: expand 3.76s, p1 0.22s, p2 1.48s
+[disk 2026-08-01_01:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+    batch 100/500: expand 3.73s, p1 0.21s, p2 1.51s
+    batch 125/500: expand 3.76s, p1 0.22s, p2 1.52s
+    batch 150/500: expand 3.69s, p1 0.19s, p2 1.52s
+    batch 175/500: expand 3.85s, p1 0.22s, p2 1.56s
+[disk 2026-08-01_01:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+[disk 2026-08-01_01:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+    [batch 200] lazy compaction: 1073.7s, disk after = 103.58 GB
+    batch 200/500: expand 3.73s, p1 0.21s, p2 1.55s
+[disk 2026-08-01_01:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+    batch 225/500: expand 3.81s, p1 0.22s, p2 1.51s
+    batch 250/500: expand 3.78s, p1 0.22s, p2 1.49s
+    batch 275/500: expand 3.82s, p1 0.23s, p2 1.56s
+    batch 300/500: expand 3.84s, p1 0.23s, p2 1.56s
+[disk 2026-08-01_01:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   74T  98% /scratch/nh2429
+    batch 325/500: expand 3.77s, p1 0.22s, p2 1.55s
+    batch 350/500: expand 3.78s, p1 0.22s, p2 1.57s
+    batch 375/500: expand 3.78s, p1 0.21s, p2 1.54s
+[disk 2026-08-01_02:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   74T  98% /scratch/nh2429
+[disk 2026-08-01_02:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   73T  98% /scratch/nh2429
+    [batch 400] lazy compaction: 1228.0s, disk after = 254.05 GB
+    batch 400/500: expand 3.81s, p1 0.23s, p2 1.59s
+[disk 2026-08-01_02:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   73T  98% /scratch/nh2429
+    batch 425/500: expand 3.86s, p1 0.23s, p2 1.48s
+    batch 450/500: expand 3.72s, p1 0.22s, p2 1.48s
+    batch 475/500: expand 3.79s, p1 0.22s, p2 1.58s
+    batch 500/500: expand 3.84s, p1 0.23s, p2 1.53s
+    drain done in 5081.2s.  Total spill on disk: 518.44 GB
+[disk 2026-08-01_02:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_02:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_02:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+    merge+topk: 1720.97s  → returning 5000000 entries (total 6802.19s)
+  search+merge (OOC): 6824.70s,  generators = 250000,  |S_new| = 5000000
+  build state: 1.50s
+[disk 2026-08-01_03:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_03:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_03:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_03:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_03:49] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_03:59] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   76T  98% /scratch/nh2429
+[disk 2026-08-01_04:09] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+[disk 2026-08-01_04:19] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+[disk 2026-08-01_04:29] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+  build sparse A: 5018.55s  (nnz=5081783524, 1016 nnz/row, 75.76 GB)
+[disk 2026-08-01_04:39] vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P   75T  98% /scratch/nh2429
+  ARPACK: 634.44s (niter=1, nmult=20, nconv=1)
+  Energy estimate: -293.1496978063
+  Iteration total: 12479.21s
+  checkpoint: 0.22s (152.6 MB)
+  ✓ Converged: |ΔE| = 5.44e-06 < 1.00e-04 Ha
+
+═══════════════════════════════════════════════════════════
+  Final energy: -293.1496978063
+  Final |S|:    5000000
+  Iterations:   5 (run from 1)
+═══════════════════════════════════════════════════════════
+ASCI exit: 0
+Cleaning up spill dir: /scratch/nh2429/spill/asci_15090461

@@ -1,0 +1,147 @@
+N_cdets / N_tdets = 0.0500   (series convention: 0.0500)
+==============================================================
+ run tag     : O3_asci_c1M_t20M
+ checkpoint  : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+ config      : N_cdets=1000000 N_tdets=20000000 threads=48
+ predicted   : E_var ~ -293.1596  (pass needs <= -293.1572262)
+==============================================================
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.7P   55T  99% /scratch/nh2429
+[mon 08:19] spill 4096 B   RSS 3072 kB
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedy_sparse_clean/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 20000000
+ARGS[10]: 500
+ARGS[11]: 20
+ARGS[12]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+ARGS[13]: /scratch/nh2429/spill/asci_15263821
+ARGS[14]: include
+ARGS[15]: 1e-10
+ARGS[16]: 1e-4
+ARGS[17]: false
+ARGS[18]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+ASCI params: N_cdets=1000000, N_tdets=20000000, batch_size=500, q_max=20  (OOC search, sparse-CSC eigensolve)
+Merge rule:      :include
+eps_thresh:      1.00e-10   econv: 1.00e-04
+Spill dir:       /scratch/nh2429/spill/asci_15263821
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/asci/O3_asci_c1M_t20M.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+Resume mode:     FALSE (fresh start)
+═══════════════════════════════════════════════════════════
+  ASCI (spin-coupled, OOC search)
+  N_cdets = 1000000, N_tdets = 20000000, q = 20, ε = 1.00e-03
+  merge rule = :include   eps_thresh = 1.00e-10
+  ARPACK tol = 1.0e-07  (energy accuracy ≤ 1.0e-04 Ha)
+  convergence: stop when |ΔE| < 1.0e-04 Ha
+  spill_dir = /scratch/nh2429/spill/asci_15263821
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c1M_t20M.ckpt
+  search: OOC (on-disk sharded, screened by eps_thresh)
+  Starting fresh. Initial energy estimate: -292.3591666356
+═══════════════════════════════════════════════════════════
+
+--- Iteration 1 ---
+  |S| = 1, |v| = 1,  E = -292.3591666356
+  asci_search_ooc:
+    |S| = 1, k = 20000000, batch_size = 500, n_batches = 1
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15263821
+    batch 1/1: expand 1.13s, p1 0.09s, p2 0.56s
+    drain done in 2.5s.  Total spill on disk: 0.00 GB
+    merge+topk: 0.55s  → returning 91156 entries (total 3.10s)
+  search+merge (OOC): 3.86s,  generators = 1,  |S_new| = 91157
+  build state: 0.03s
+  build sparse A: 13.74s  (nnz=220710691, 2421 nnz/row, 3.29 GB)
+  ARPACK: 12.64s (niter=2, nmult=30, nconv=1)
+  Energy estimate: -293.0299015598
+  Iteration total: 30.53s
+  checkpoint: 0.02s (2.8 MB)
+
+--- Iteration 2 ---
+  |S| = 91157, |v| = 91157,  E = -293.0299015598
+  asci_search_ooc:
+    |S| = 91157, k = 20000000, batch_size = 500, n_batches = 183
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15263821
+    batch 1/183: expand 2.86s, p1 0.31s, p2 0.83s
+    batch 10/183: expand 1.34s, p1 0.11s, p2 0.56s
+    batch 20/183: expand 1.36s, p1 0.15s, p2 0.65s
+    batch 30/183: expand 1.51s, p1 0.11s, p2 0.51s
+    batch 40/183: expand 1.52s, p1 0.10s, p2 0.53s
+    batch 50/183: expand 1.32s, p1 0.11s, p2 0.58s
+    batch 60/183: expand 1.32s, p1 0.11s, p2 0.60s
+    batch 70/183: expand 1.36s, p1 0.13s, p2 0.57s
+    batch 80/183: expand 1.51s, p1 0.10s, p2 0.58s
+    batch 90/183: expand 1.34s, p1 0.10s, p2 0.51s
+    batch 100/183: expand 1.37s, p1 0.13s, p2 0.51s
+    batch 110/183: expand 1.37s, p1 0.10s, p2 0.56s
+    batch 120/183: expand 1.33s, p1 0.10s, p2 0.63s
+    batch 130/183: expand 1.31s, p1 0.11s, p2 0.56s
+    batch 140/183: expand 1.40s, p1 0.10s, p2 0.82s
+    batch 150/183: expand 1.31s, p1 0.10s, p2 0.55s
+    batch 160/183: expand 1.29s, p1 0.10s, p2 0.46s
+    batch 170/183: expand 1.28s, p1 0.10s, p2 0.44s
+    batch 180/183: expand 1.31s, p1 0.10s, p2 0.50s
+    batch 183/183: expand 0.39s, p1 0.07s, p2 0.19s
+    drain done in 390.9s.  Total spill on disk: 426.36 GB
+[mon 08:29] spill 457798636448 B   RSS 97350740 kB
+    merge+topk: 639.91s  → returning 20000000 entries (total 1030.80s)
+  search+merge (OOC): 1063.02s,  generators = 91157,  |S_new| = 20000000
+  build state: 6.76s
+[mon 08:39] spill 4096 B   RSS 109321200 kB
+[mon 08:49] spill 4096 B   RSS 110209008 kB
+[mon 08:59] spill 4096 B   RSS 111102960 kB
+[mon 09:09] spill 4096 B   RSS 112002032 kB
+[mon 09:19] spill 4096 B   RSS 112904176 kB
+[mon 09:29] spill 4096 B   RSS 22217756 kB
+[mon 09:39] spill 4096 B   RSS 22791196 kB
+[mon 09:49] spill 4096 B   RSS 41283228 kB
+[mon 09:59] spill 4096 B   RSS 150013852 kB
+[mon 10:09] spill 4096 B   RSS 238482548 kB
+[mon 10:19] spill 4096 B   RSS 329018484 kB
+[mon 10:29] spill 4096 B   RSS 424199564 kB
+[mon 10:39] spill 4096 B   RSS 518625296 kB
+[mon 10:49] spill 4096 B   RSS 566424188 kB
+  build sparse A: 8267.45s  (nnz=33261006708, 1663 nnz/row, 495.78 GB)
+[mon 10:59] spill 4096 B   RSS 570561148 kB
+[mon 11:09] spill 4096 B   RSS 571029116 kB
+[mon 11:19] spill 4096 B   RSS 571654780 kB
+[mon 11:29] spill 4096 B   RSS 572123772 kB
+[mon 11:39] spill 4096 B   RSS 572591740 kB
+[mon 11:49] spill 4096 B   RSS 573217404 kB
+[mon 11:59] spill 4096 B   RSS 573373052 kB
+[mon 12:09] spill 4096 B   RSS 573373052 kB
+[mon 12:19] spill 4096 B   RSS 573373052 kB
+[mon 12:29] spill 4096 B   RSS 573373052 kB
+[mon 12:39] spill 4096 B   RSS 573373052 kB
+[mon 12:49] spill 4096 B   RSS 573373052 kB
+  ARPACK: 6903.34s (niter=3, nmult=40, nconv=1)
+  Energy estimate: -293.1506785415
+  Iteration total: 16240.66s
+  checkpoint: 0.91s (610.4 MB)
+
+--- Iteration 3 ---
+  |S| = 20000000, |v| = 20000000,  E = -293.1506785415
+  asci_search_ooc:
+    |S| = 1000000, k = 20000000, batch_size = 500, n_batches = 2000
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/spill/asci_15263821
+    batch 1/2000: expand 3.67s, p1 0.21s, p2 0.60s
+    batch 100/2000: expand 1.34s, p1 0.11s, p2 0.57s
+[mon 12:59] spill 549776159292 B   RSS 585666792 kB
+[mon 13:09] spill 133160413097 B   RSS 617752392 kB
+    [batch 200] lazy compaction: 646.0s, disk after = 103.25 GB
+    batch 200/2000: expand 1.50s, p1 0.13s, p2 0.60s
+    batch 300/2000: expand 1.33s, p1 0.13s, p2 0.61s
+[mon 13:19] spill 705593202315 B   RSS 595768936 kB
+ASCI exit: 137
+If this timed out, resubmit with --export=ALL,RESUME=true (checkpoint is written per iteration).
+Cleaning spill: /scratch/nh2429/spill/asci_15263821

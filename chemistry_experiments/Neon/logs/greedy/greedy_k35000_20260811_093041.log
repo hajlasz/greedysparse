@@ -1,0 +1,52 @@
+julia 1.11.5   deps OK
+-------------------------------------
+host       = crunchy2.cims.nyu.edu
+started    = Tue Aug 11 09:30:47 AM EDT 2026
+load       =  09:30:47 up 25 days, 14:24,  1 user,  load average: 14.39, 10.47, 5.07
+julia      = /usr/local/stow/julia-1.11/bin/julia
+project    = /home/nh2429/greedysparse
+threads    = 16
+epsilon    = 1.0    (A = -eps*H, no identity shift)
+K_KEEP     = 35000
+script     = /home/nh2429/greedysparse/chemistry_experiments/scripts/run_greedy.jl
+outfile    = /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k35000.json
+logfile    = /home/nh2429/greedysparse/chemistry_experiments/Neon/logs/greedy/greedy_k35000_20260811_093041.log
+-------------------------------------
+ARGS[1]: 23
+ARGS[2]: 10
+ARGS[3]: 1
+ARGS[4]: 1.0
+ARGS[5]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/eris.txt
+ARGS[6]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/hcore.txt
+ARGS[7]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/symm.txt
+ARGS[8]: 35000
+ARGS[9]: /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k35000.json
+ARGS[10]: 2000
+ARGS[11]: 1e-11
+ARGS[12]: 128.709475548738
+ITERATION 1   |S| = 1
+  E = -128.70146930774766   relerr = 6.220397493041476e-5   (first iteration)
+  expand = 2.467 s   estimate = 6.85 s   |S| = 985
+
+ITERATION 2   |S| = 985
+  E = -128.7089536136164   relerr = 4.055141390220416e-6   ΔE = 0.00748430586872928   streak = 0/3
+  expand = 0.039 s   estimate = 18.713 s   |S| = 35000
+
+ITERATION 3   |S| = 35000
+  E = -128.70896304112233   relerr = 3.981894988557204e-6   ΔE = 9.42750594390418e-6   streak = 0/3
+  expand = 1.495 s   estimate = 17.596 s   |S| = 35000
+
+ITERATION 4   |S| = 35000
+  E = -128.70896304112185   relerr = 3.9818949923111546e-6   ΔE = 4.831690603168681e-13   streak = 1/3
+  expand = 1.171 s   estimate = 18.164 s   |S| = 35000
+
+ITERATION 5   |S| = 35000
+  E = -128.70896304112213   relerr = 3.981894990102948e-6   ΔE = 2.8421709430404007e-13   streak = 2/3
+  expand = 1.033 s   estimate = 18.302 s   |S| = 35000
+
+ITERATION 6   |S| = 35000
+  E = -128.70896304112227   relerr = 3.981894988998845e-6   ΔE = 1.4210854715202004e-13   streak = 3/3
+  expand = 0.998 s   estimate = 20.744 s   |S| = 35000
+
+STOP: |ΔE| < 1.0e-11 for 3 consecutive iterations.
+DONE Tue Aug 11 09:32:51 AM EDT 2026

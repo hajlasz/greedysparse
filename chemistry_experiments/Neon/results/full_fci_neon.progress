@@ -1,0 +1,612 @@
+full FCI Neon: norb=23 nelec=10 nfrzn=1 sym_key=0
+data from /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data
+strings per spin 7315, determinants in block 6693283
+[space] starting, 6693283 items, 64 threads
+[space]  85.06%  5693077/6693283  elapsed 0m15s  eta 0m03s  3.79e+05 items/s  rss 0.5 GB
+[space] done in 0m18s, rss 0.5 GB
+space built in 0m33s, n = 6693283, rss 0.5 GB
+determinant index built in 0m02s, rss 0.8 GB
+[hdiag] starting, 6693283 items, 64 threads
+[hdiag] done in 0m01s, rss 1.3 GB
+[count] starting, 6693283 items, 64 threads
+[count]  36.96%  2473984/6693283  elapsed 0m35s  eta 0m59s  7.09e+04 items/s  rss 1.6 GB
+[count]  80.55%  5391654/6693283  elapsed 1m06s  eta 0m16s  8.23e+04 items/s  rss 1.6 GB
+[count]  97.56%  6529741/6693283  elapsed 1m37s  eta 0m02s  6.73e+04 items/s  rss 1.6 GB
+[count] done in 2m01s, rss 1.6 GB
+counting pass 121.2s, nnz = 6102295735, 911.7 per column, matrix will need 90.9 GB
+allocated, rss 1.6 GB
+[fill] starting, 6693283 items, 64 threads
+[fill]   5.51%  368640/6693283  elapsed 0m39s  eta 11m09s  9.45e+03 items/s  rss 14.2 GB
+[fill]  98.25%  6576144/6693283  elapsed 3m50s  eta 0m04s  2.86e+04 items/s  rss 96.9 GB
+[fill] done in 4m14s, rss 98.9 GB
+assembly check, relative error 9.962e-16
+assembly check, relative error 9.963e-16
+assembly check, relative error 9.966e-16
+[eigs SR] matvec    1  283.6s  elapsed 4m44s  rss 99.7 GB
+[eigs SR] matvec    2  47.9s  elapsed 5m33s  rss 99.9 GB
+[eigs SR] matvec    3  255.0s  elapsed 9m52s  rss 99.9 GB
+[eigs SR] matvec    4  181.6s  elapsed 12m54s  rss 100.0 GB
+[eigs SR] matvec    5  132.2s  elapsed 15m12s  rss 100.0 GB
+[eigs SR] matvec    6  264.2s  elapsed 19m37s  rss 100.1 GB
+[eigs SR] matvec    7  272.2s  elapsed 24m10s  rss 100.1 GB
+[eigs SR] matvec    8  92.9s  elapsed 25m44s  rss 100.2 GB
+[eigs SR] matvec    9  219.9s  elapsed 29m28s  rss 100.2 GB
+[eigs SR] matvec   10  255.4s  elapsed 33m44s  rss 100.3 GB
+[eigs SR] matvec   11  117.0s  elapsed 35m42s  rss 100.4 GB
+[eigs SR] matvec   12  174.2s  elapsed 38m39s  rss 100.4 GB
+[eigs SR] matvec   13  227.8s  elapsed 42m28s  rss 100.5 GB
+[eigs SR] matvec   14  79.4s  elapsed 43m48s  rss 100.6 GB
+[eigs SR] matvec   15  200.3s  elapsed 47m13s  rss 100.6 GB
+[eigs SR] matvec   16  227.1s  elapsed 51m01s  rss 100.7 GB
+[eigs SR] matvec   17  134.5s  elapsed 53m16s  rss 100.7 GB
+[eigs SR] matvec   18  134.3s  elapsed 55m36s  rss 100.8 GB
+[eigs SR] matvec   19  217.7s  elapsed 59m15s  rss 100.8 GB
+[eigs SR] matvec   20  158.1s  elapsed 1h01m  rss 100.9 GB
+[eigs SR] matvec   21  108.0s  elapsed 1h03m  rss 100.9 GB
+[eigs SR] matvec   22  215.3s  elapsed 1h07m  rss 100.9 GB
+[eigs SR] matvec   23  129.4s  elapsed 1h09m  rss 100.9 GB
+[eigs SR] matvec   24  124.9s  elapsed 1h11m  rss 100.9 GB
+[eigs SR] matvec   25  211.5s  elapsed 1h15m  rss 100.9 GB
+[eigs SR] matvec   26  79.0s  elapsed 1h16m  rss 100.9 GB
+[eigs SR] matvec   27  164.7s  elapsed 1h19m  rss 100.9 GB
+[eigs SR] matvec   28  181.9s  elapsed 1h22m  rss 100.9 GB
+[eigs SR] matvec   29  68.3s  elapsed 1h23m  rss 100.9 GB
+[eigs SR] matvec   30  182.2s  elapsed 1h26m  rss 100.9 GB
+[eigs SR] matvec   31  135.2s  elapsed 1h29m  rss 100.9 GB
+[eigs SR] matvec   32  102.0s  elapsed 1h30m  rss 100.9 GB
+[eigs SR] matvec   33  185.1s  elapsed 1h33m  rss 100.9 GB
+[eigs SR] matvec   34  75.6s  elapsed 1h35m  rss 100.9 GB
+[eigs SR] matvec   35  158.9s  elapsed 1h37m  rss 100.9 GB
+[eigs SR] matvec   36  161.0s  elapsed 1h40m  rss 100.9 GB
+[eigs SR] matvec   37  72.1s  elapsed 1h41m  rss 100.9 GB
+[eigs SR] matvec   38  183.2s  elapsed 1h44m  rss 100.9 GB
+[eigs SR] matvec   39  69.6s  elapsed 1h46m  rss 100.9 GB
+[eigs SR] matvec   40  168.4s  elapsed 1h49m  rss 100.9 GB
+[eigs SR] matvec   41  95.2s  elapsed 1h50m  rss 100.9 GB
+[eigs SR] matvec   42  137.7s  elapsed 1h52m  rss 100.9 GB
+[eigs SR] matvec   43  133.8s  elapsed 1h55m  rss 100.9 GB
+[eigs SR] matvec   44  99.9s  elapsed 1h56m  rss 100.9 GB
+[eigs SR] matvec   45  181.0s  elapsed 1h59m  rss 100.9 GB
+[eigs SR] matvec   46  68.9s  elapsed 2h01m  rss 100.9 GB
+[eigs SR] matvec   47  154.5s  elapsed 2h03m  rss 100.9 GB
+[eigs SR] matvec   48  114.4s  elapsed 2h05m  rss 100.9 GB
+[eigs SR] matvec   49  109.9s  elapsed 2h07m  rss 100.9 GB
+[eigs SR] matvec   50  168.3s  elapsed 2h10m  rss 100.9 GB
+[eigs SR] matvec   51  73.0s  elapsed 2h11m  rss 100.9 GB
+[eigs SR] matvec   52  155.7s  elapsed 2h14m  rss 101.1 GB
+[eigs SR] matvec   53  109.5s  elapsed 2h16m  rss 101.2 GB
+[eigs SR] matvec   54  113.9s  elapsed 2h18m  rss 101.2 GB
+[eigs SR] matvec   55  179.4s  elapsed 2h21m  rss 101.2 GB
+[eigs SR] matvec   56  66.4s  elapsed 2h22m  rss 101.2 GB
+[eigs SR] matvec   57  172.5s  elapsed 2h25m  rss 101.2 GB
+[eigs SR] matvec   58  66.4s  elapsed 2h26m  rss 101.2 GB
+[eigs SR] matvec   59  166.9s  elapsed 2h29m  rss 101.2 GB
+[eigs SR] matvec   60  91.5s  elapsed 2h30m  rss 101.2 GB
+[eigs SR] matvec   61  142.3s  elapsed 2h33m  rss 101.2 GB
+[eigs SR] matvec   62  108.1s  elapsed 2h34m  rss 101.2 GB
+[eigs SR] matvec   63  115.3s  elapsed 2h36m  rss 101.2 GB
+[eigs SR] matvec   64  174.1s  elapsed 2h39m  rss 101.2 GB
+[eigs SR] matvec   65  66.3s  elapsed 2h40m  rss 101.2 GB
+[eigs SR] matvec   66  178.8s  elapsed 2h43m  rss 101.2 GB
+[eigs SR] matvec   67  101.1s  elapsed 2h45m  rss 101.2 GB
+[eigs SR] matvec   68  129.6s  elapsed 2h47m  rss 101.2 GB
+[eigs SR] matvec   69  142.2s  elapsed 2h50m  rss 101.2 GB
+[eigs SR] matvec   70  94.7s  elapsed 2h51m  rss 101.2 GB
+[eigs SR] matvec   71  187.1s  elapsed 2h55m  rss 101.2 GB
+[eigs SR] matvec   72  74.6s  elapsed 2h56m  rss 101.2 GB
+[eigs SR] matvec   73  165.8s  elapsed 2h59m  rss 101.2 GB
+[eigs SR] matvec   74  127.8s  elapsed 3h01m  rss 101.2 GB
+[eigs SR] matvec   75  114.6s  elapsed 3h03m  rss 101.2 GB
+[eigs SR] matvec   76  169.6s  elapsed 3h06m  rss 101.2 GB
+[eigs SR] matvec   77  72.6s  elapsed 3h07m  rss 101.2 GB
+[eigs SR] matvec   78  185.9s  elapsed 3h10m  rss 101.2 GB
+[eigs SR] matvec   79  74.2s  elapsed 3h11m  rss 101.2 GB
+[eigs SR] matvec   80  160.5s  elapsed 3h14m  rss 101.2 GB
+[eigs SR] matvec   81  88.6s  elapsed 3h15m  rss 101.2 GB
+[eigs SR] matvec   82  150.8s  elapsed 3h18m  rss 101.2 GB
+[eigs SR] matvec   83  137.6s  elapsed 3h20m  rss 101.2 GB
+[eigs SR] matvec   84  106.3s  elapsed 3h22m  rss 101.2 GB
+[eigs SR] matvec   85  149.0s  elapsed 3h25m  rss 101.2 GB
+full FCI Neon: norb=23 nelec=10 nfrzn=1 sym_key=0
+data from /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data
+strings per spin 7315, determinants in block 6693283
+[space] starting, 6693283 items, 64 threads
+[space] done in 0m08s, rss 0.5 GB
+space built in 0m21s, n = 6693283, rss 0.5 GB
+determinant index built in 0m02s, rss 0.8 GB
+[hdiag] starting, 6693283 items, 64 threads
+[hdiag] done in 0m02s, rss 1.1 GB
+[count] starting, 6693283 items, 64 threads
+[count]  55.78%  3733638/6693283  elapsed 0m32s  eta 0m25s  1.17e+05 items/s  rss 1.5 GB
+[count] done in 0m50s, rss 1.5 GB
+counting pass 49.7s, nnz = 6102295735, 911.7 per column, matrix will need 90.9 GB
+allocated, rss 1.6 GB
+[fill] starting, 6693283 items, 64 threads
+[fill]   5.87%  393216/6693283  elapsed 0m35s  eta 9m14s  1.14e+04 items/s  rss 14.6 GB
+[fill]  86.09%  5762203/6693283  elapsed 3m05s  eta 0m30s  3.11e+04 items/s  rss 87.9 GB
+[fill]  95.88%  6417504/6693283  elapsed 3m41s  eta 0m10s  2.9e+04 items/s  rss 96.0 GB
+[fill] done in 4m01s, rss 99.4 GB
+assembly check, relative error 9.955e-16
+assembly check, relative error 9.957e-16
+assembly check, relative error 9.959e-16
+full FCI Neon: norb=23 nelec=10 nfrzn=1 sym_key=0
+data from /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data
+strings per spin 7315, determinants in block 6693283
+[space] starting, 6693283 items, 64 threads
+[space] done in 0m14s, rss 0.5 GB
+space built in 0m20s, n = 6693283, rss 0.5 GB
+determinant index built in 0m03s, rss 0.8 GB
+[hdiag] starting, 6693283 items, 64 threads
+[hdiag] done in 0m04s, rss 1.1 GB
+[count] starting, 6693283 items, 64 threads
+[count]  24.11%  1613824/6693283  elapsed 0m35s  eta 1m49s  4.66e+04 items/s  rss 1.6 GB
+[count]  88.99%  5956362/6693283  elapsed 1m07s  eta 0m08s  8.83e+04 items/s  rss 1.6 GB
+[count] done in 1m14s, rss 1.6 GB
+counting pass 73.9s, nnz = 6102295735, 911.7 per column, matrix will need 90.9 GB
+memory check for the sparse matrix: need 90.9 GB, 196.2 GB available, 1.6 GB already resident
+allocated, rss 1.6 GB
+[fill] starting, 6693283 items, 64 threads
+[fill]  29.86%  1998848/6693283  elapsed 0m33s  eta 1m18s  5.99e+04 items/s  rss 36.4 GB
+[fill]  91.47%  6122654/6693283  elapsed 1m55s  eta 0m11s  5.34e+04 items/s  rss 92.3 GB
+[fill]  99.47%  6658062/6693283  elapsed 2m30s  eta 0m01s  4.45e+04 items/s  rss 98.3 GB
+[fill] done in 2m59s, rss 98.8 GB
+assembly check, relative error 9.955e-16
+assembly check, relative error 9.957e-16
+assembly check, relative error 9.959e-16
+memory check for the Krylov basis at ncv = 150: need 15.0 GB, 97.5 GB available, 99.4 GB already resident
+[eigs SR] matvec    1  5.9s  elapsed 0m07s  rss 99.4 GB
+[eigs SR] matvec    2  4.4s  elapsed 0m13s  rss 99.4 GB
+[eigs SR] matvec    3  5.9s  elapsed 0m19s  rss 99.4 GB
+[eigs SR] matvec    4  12.4s  elapsed 0m34s  rss 99.4 GB
+[eigs SR] matvec    5  10.2s  elapsed 0m49s  rss 99.4 GB
+[eigs SR] matvec    6  13.4s  elapsed 1m07s  rss 99.5 GB
+[eigs SR] matvec    7  21.3s  elapsed 1m31s  rss 99.5 GB
+[eigs SR] matvec    8  9.4s  elapsed 1m47s  rss 99.6 GB
+[eigs SR] matvec    9  13.9s  elapsed 2m04s  rss 99.6 GB
+[eigs SR] matvec   10  12.9s  elapsed 2m18s  rss 99.7 GB
+[eigs SR] matvec   11  9.3s  elapsed 2m30s  rss 99.8 GB
+[eigs SR] matvec   12  11.4s  elapsed 2m44s  rss 99.8 GB
+[eigs SR] matvec   13  16.6s  elapsed 3m03s  rss 99.9 GB
+[eigs SR] matvec   14  9.0s  elapsed 3m13s  rss 100.0 GB
+[eigs SR] matvec   15  4.3s  elapsed 3m19s  rss 100.0 GB
+[eigs SR] matvec   16  3.7s  elapsed 3m23s  rss 100.1 GB
+[eigs SR] matvec   17  3.9s  elapsed 3m28s  rss 100.1 GB
+[eigs SR] matvec   18  3.7s  elapsed 3m33s  rss 100.2 GB
+[eigs SR] matvec   19  3.6s  elapsed 3m37s  rss 100.2 GB
+[eigs SR] matvec   20  3.8s  elapsed 3m42s  rss 100.3 GB
+[eigs SR] matvec   21  3.8s  elapsed 3m46s  rss 100.3 GB
+[eigs SR] matvec   22  3.8s  elapsed 3m51s  rss 100.4 GB
+[eigs SR] matvec   23  3.9s  elapsed 3m56s  rss 100.5 GB
+[eigs SR] matvec   24  3.7s  elapsed 4m00s  rss 100.5 GB
+[eigs SR] matvec   25  3.9s  elapsed 4m05s  rss 100.6 GB
+[eigs SR] matvec   26  3.6s  elapsed 4m09s  rss 100.7 GB
+[eigs SR] matvec   27  4.4s  elapsed 4m15s  rss 100.7 GB
+[eigs SR] matvec   28  4.1s  elapsed 4m21s  rss 100.8 GB
+[eigs SR] matvec   29  4.6s  elapsed 4m26s  rss 100.8 GB
+[eigs SR] matvec   30  4.2s  elapsed 4m31s  rss 100.9 GB
+[eigs SR] matvec   31  4.9s  elapsed 4m37s  rss 100.9 GB
+[eigs SR] matvec   32  3.6s  elapsed 4m42s  rss 101.0 GB
+[eigs SR] matvec   33  5.1s  elapsed 4m48s  rss 101.0 GB
+[eigs SR] matvec   34  17.4s  elapsed 5m09s  rss 101.1 GB
+[eigs SR] matvec   35  14.5s  elapsed 5m27s  rss 101.2 GB
+[eigs SR] matvec   36  12.8s  elapsed 5m43s  rss 101.2 GB
+[eigs SR] matvec   37  13.3s  elapsed 5m59s  rss 101.3 GB
+[eigs SR] matvec   38  8.0s  elapsed 6m12s  rss 101.4 GB
+[eigs SR] matvec   39  12.1s  elapsed 6m29s  rss 101.4 GB
+[eigs SR] matvec   40  12.5s  elapsed 6m44s  rss 101.4 GB
+[eigs SR] matvec   41  7.2s  elapsed 6m54s  rss 101.5 GB
+[eigs SR] matvec   42  14.7s  elapsed 7m11s  rss 101.6 GB
+[eigs SR] matvec   43  14.1s  elapsed 7m28s  rss 101.6 GB
+[eigs SR] matvec   44  7.5s  elapsed 7m40s  rss 101.7 GB
+[eigs SR] matvec   45  4.1s  elapsed 7m45s  rss 101.7 GB
+[eigs SR] matvec   46  3.9s  elapsed 7m50s  rss 101.8 GB
+[eigs SR] matvec   47  4.0s  elapsed 7m55s  rss 101.9 GB
+[eigs SR] matvec   48  3.7s  elapsed 8m00s  rss 101.9 GB
+[eigs SR] matvec   49  3.6s  elapsed 8m05s  rss 102.0 GB
+[eigs SR] matvec   50  3.7s  elapsed 8m10s  rss 102.0 GB
+[eigs SR] matvec   51  3.7s  elapsed 8m15s  rss 102.1 GB
+[eigs SR] matvec   52  3.8s  elapsed 8m20s  rss 102.1 GB
+[eigs SR] matvec   53  3.8s  elapsed 8m25s  rss 102.2 GB
+[eigs SR] matvec   54  3.7s  elapsed 8m30s  rss 102.3 GB
+[eigs SR] matvec   55  3.7s  elapsed 8m35s  rss 102.3 GB
+[eigs SR] matvec   56  6.2s  elapsed 8m42s  rss 102.4 GB
+[eigs SR] matvec   57  4.0s  elapsed 8m48s  rss 102.4 GB
+[eigs SR] matvec   58  4.3s  elapsed 8m54s  rss 102.5 GB
+[eigs SR] matvec   59  4.3s  elapsed 9m00s  rss 102.6 GB
+[eigs SR] matvec   60  3.6s  elapsed 9m05s  rss 102.6 GB
+[eigs SR] matvec   61  4.8s  elapsed 9m11s  rss 102.7 GB
+[eigs SR] matvec   62  15.7s  elapsed 9m31s  rss 102.7 GB
+[eigs SR] matvec   63  11.5s  elapsed 9m46s  rss 102.8 GB
+[eigs SR] matvec   64  10.3s  elapsed 10m03s  rss 102.8 GB
+[eigs SR] matvec   65  14.1s  elapsed 10m23s  rss 102.9 GB
+[eigs SR] matvec   66  8.9s  elapsed 10m39s  rss 103.0 GB
+[eigs SR] matvec   67  10.2s  elapsed 10m55s  rss 103.0 GB
+[eigs SR] matvec   68  8.7s  elapsed 11m10s  rss 103.1 GB
+[eigs SR] matvec   69  12.2s  elapsed 11m27s  rss 103.1 GB
+[eigs SR] matvec   70  14.9s  elapsed 11m46s  rss 103.2 GB
+[eigs SR] matvec   71  9.8s  elapsed 11m59s  rss 103.2 GB
+[eigs SR] matvec   72  4.2s  elapsed 12m05s  rss 103.3 GB
+[eigs SR] matvec   73  3.9s  elapsed 12m11s  rss 103.3 GB
+[eigs SR] matvec   74  3.7s  elapsed 12m16s  rss 103.4 GB
+[eigs SR] matvec   75  3.7s  elapsed 12m21s  rss 103.5 GB
+[eigs SR] matvec   76  3.6s  elapsed 12m27s  rss 103.5 GB
+[eigs SR] matvec   77  3.7s  elapsed 12m32s  rss 103.6 GB
+[eigs SR] matvec   78  3.7s  elapsed 12m37s  rss 103.7 GB
+[eigs SR] matvec   79  3.4s  elapsed 12m42s  rss 103.7 GB
+[eigs SR] matvec   80  3.9s  elapsed 12m48s  rss 103.8 GB
+[eigs SR] matvec   81  3.8s  elapsed 12m53s  rss 103.8 GB
+[eigs SR] matvec   82  3.9s  elapsed 12m59s  rss 103.9 GB
+[eigs SR] matvec   83  4.1s  elapsed 13m06s  rss 103.9 GB
+[eigs SR] matvec   84  4.6s  elapsed 13m13s  rss 104.0 GB
+[eigs SR] matvec   85  3.8s  elapsed 13m19s  rss 104.0 GB
+[eigs SR] matvec   86  4.0s  elapsed 13m25s  rss 104.1 GB
+[eigs SR] matvec   87  5.3s  elapsed 13m32s  rss 104.2 GB
+[eigs SR] matvec   88  11.2s  elapsed 13m48s  rss 104.2 GB
+[eigs SR] matvec   89  7.2s  elapsed 14m00s  rss 104.3 GB
+[eigs SR] matvec   90  11.9s  elapsed 14m16s  rss 104.3 GB
+[eigs SR] matvec   91  11.2s  elapsed 14m33s  rss 104.4 GB
+[eigs SR] matvec   92  12.2s  elapsed 14m50s  rss 104.4 GB
+[eigs SR] matvec   93  8.5s  elapsed 15m05s  rss 104.5 GB
+[eigs SR] matvec   94  12.2s  elapsed 15m24s  rss 104.6 GB
+[eigs SR] matvec   95  9.6s  elapsed 15m38s  rss 104.6 GB
+[eigs SR] matvec   96  8.3s  elapsed 15m52s  rss 104.7 GB
+[eigs SR] matvec   97  8.4s  elapsed 16m06s  rss 104.7 GB
+[eigs SR] matvec   98  11.3s  elapsed 16m23s  rss 104.8 GB
+[eigs SR] matvec   99  7.3s  elapsed 16m36s  rss 104.9 GB
+[eigs SR] matvec  100  4.1s  elapsed 16m42s  rss 104.9 GB
+[eigs SR] matvec  101  4.1s  elapsed 16m49s  rss 105.0 GB
+[eigs SR] matvec  102  3.7s  elapsed 16m54s  rss 105.0 GB
+[eigs SR] matvec  103  3.8s  elapsed 17m00s  rss 105.1 GB
+[eigs SR] matvec  104  3.7s  elapsed 17m06s  rss 105.1 GB
+[eigs SR] matvec  105  4.0s  elapsed 17m12s  rss 105.2 GB
+[eigs SR] matvec  106  3.7s  elapsed 17m18s  rss 105.3 GB
+[eigs SR] matvec  107  3.6s  elapsed 17m24s  rss 105.3 GB
+[eigs SR] matvec  108  3.9s  elapsed 17m30s  rss 105.4 GB
+[eigs SR] matvec  109  3.8s  elapsed 17m35s  rss 105.4 GB
+[eigs SR] matvec  110  3.9s  elapsed 17m41s  rss 105.5 GB
+[eigs SR] matvec  111  5.8s  elapsed 17m48s  rss 105.5 GB
+[eigs SR] matvec  112  4.1s  elapsed 17m54s  rss 105.6 GB
+[eigs SR] matvec  113  4.1s  elapsed 18m00s  rss 105.6 GB
+[eigs SR] matvec  114  5.0s  elapsed 18m07s  rss 105.7 GB
+[eigs SR] matvec  115  3.7s  elapsed 18m13s  rss 105.8 GB
+[eigs SR] matvec  116  7.1s  elapsed 18m21s  rss 105.8 GB
+[eigs SR] matvec  117  12.2s  elapsed 18m42s  rss 105.9 GB
+[eigs SR] matvec  118  7.1s  elapsed 18m56s  rss 106.0 GB
+[eigs SR] matvec  119  11.2s  elapsed 19m14s  rss 106.0 GB
+[eigs SR] matvec  120  13.4s  elapsed 19m33s  rss 106.1 GB
+[eigs SR] matvec  121  7.8s  elapsed 19m49s  rss 106.1 GB
+[eigs SR] matvec  122  14.1s  elapsed 20m10s  rss 106.2 GB
+[eigs SR] matvec  123  8.9s  elapsed 20m24s  rss 106.2 GB
+[eigs SR] matvec  124  11.8s  elapsed 20m40s  rss 106.3 GB
+[eigs SR] matvec  125  12.7s  elapsed 20m56s  rss 106.3 GB
+[eigs SR] matvec  126  9.7s  elapsed 21m10s  rss 106.4 GB
+[eigs SR] matvec  127  4.2s  elapsed 21m16s  rss 106.5 GB
+[eigs SR] matvec  128  3.6s  elapsed 21m22s  rss 106.5 GB
+[eigs SR] matvec  129  3.9s  elapsed 21m27s  rss 106.6 GB
+[eigs SR] matvec  130  3.6s  elapsed 21m33s  rss 106.6 GB
+[eigs SR] matvec  131  3.7s  elapsed 21m38s  rss 106.7 GB
+[eigs SR] matvec  132  4.0s  elapsed 21m44s  rss 106.7 GB
+[eigs SR] matvec  133  3.7s  elapsed 21m50s  rss 106.8 GB
+[eigs SR] matvec  134  3.7s  elapsed 21m55s  rss 106.8 GB
+[eigs SR] matvec  135  3.8s  elapsed 22m01s  rss 106.9 GB
+[eigs SR] matvec  136  3.8s  elapsed 22m06s  rss 106.9 GB
+[eigs SR] matvec  137  3.7s  elapsed 22m12s  rss 107.0 GB
+[eigs SR] matvec  138  3.8s  elapsed 22m17s  rss 107.0 GB
+[eigs SR] matvec  139  4.2s  elapsed 22m23s  rss 107.1 GB
+[eigs SR] matvec  140  3.8s  elapsed 22m30s  rss 107.1 GB
+[eigs SR] matvec  141  4.3s  elapsed 22m37s  rss 107.2 GB
+[eigs SR] matvec  142  4.3s  elapsed 22m44s  rss 107.2 GB
+[eigs SR] matvec  143  3.8s  elapsed 22m50s  rss 107.3 GB
+[eigs SR] matvec  144  4.2s  elapsed 22m57s  rss 107.3 GB
+[eigs SR] matvec  145  11.0s  elapsed 23m13s  rss 107.4 GB
+[eigs SR] matvec  146  9.7s  elapsed 23m31s  rss 107.4 GB
+[eigs SR] matvec  147  14.4s  elapsed 23m52s  rss 107.5 GB
+[eigs SR] matvec  148  10.5s  elapsed 24m10s  rss 107.5 GB
+[eigs SR] matvec  149  9.7s  elapsed 24m25s  rss 107.6 GB
+[eigs SR] matvec  150  13.5s  elapsed 24m43s  rss 107.6 GB
+[eigs SR] matvec  151  9.9s  elapsed 25m05s  rss 107.6 GB
+[eigs SR] matvec  152  9.9s  elapsed 25m18s  rss 107.6 GB
+[eigs SR] matvec  153  9.0s  elapsed 25m29s  rss 107.6 GB
+[eigs SR] matvec  154  11.7s  elapsed 25m46s  rss 107.6 GB
+[eigs SR] matvec  155  8.1s  elapsed 25m56s  rss 107.6 GB
+[eigs SR] matvec  156  4.2s  elapsed 26m01s  rss 107.6 GB
+[eigs SR] matvec  157  3.9s  elapsed 26m06s  rss 107.6 GB
+[eigs SR] matvec  158  3.8s  elapsed 26m10s  rss 107.6 GB
+[eigs SR] matvec  159  3.8s  elapsed 26m15s  rss 107.6 GB
+[eigs SR] matvec  160  3.8s  elapsed 26m19s  rss 107.6 GB
+[eigs SR] matvec  161  3.8s  elapsed 26m24s  rss 107.6 GB
+[eigs SR] matvec  162  3.9s  elapsed 26m29s  rss 107.6 GB
+[eigs SR] matvec  163  3.7s  elapsed 26m33s  rss 107.6 GB
+[eigs SR] matvec  164  3.7s  elapsed 26m38s  rss 107.6 GB
+[eigs SR] matvec  165  3.8s  elapsed 26m42s  rss 107.6 GB
+[eigs SR] matvec  166  3.7s  elapsed 26m47s  rss 107.6 GB
+[eigs SR] matvec  167  3.8s  elapsed 26m52s  rss 107.6 GB
+[eigs SR] matvec  168  3.8s  elapsed 26m56s  rss 107.6 GB
+[eigs SR] matvec  169  5.5s  elapsed 27m03s  rss 107.6 GB
+[eigs SR] matvec  170  4.2s  elapsed 27m08s  rss 107.6 GB
+[eigs SR] matvec  171  4.3s  elapsed 27m13s  rss 107.6 GB
+[eigs SR] matvec  172  5.0s  elapsed 27m20s  rss 107.6 GB
+[eigs SR] matvec  173  4.0s  elapsed 27m25s  rss 107.6 GB
+[eigs SR] matvec  174  8.7s  elapsed 27m34s  rss 107.6 GB
+[eigs SR] matvec  175  7.2s  elapsed 27m46s  rss 107.6 GB
+[eigs SR] matvec  176  6.3s  elapsed 27m56s  rss 107.6 GB
+[eigs SR] matvec  177  11.5s  elapsed 28m10s  rss 107.6 GB
+[eigs SR] matvec  178  8.7s  elapsed 28m24s  rss 107.6 GB
+[eigs SR] matvec  179  8.7s  elapsed 28m38s  rss 107.6 GB
+[eigs SR] matvec  180  8.2s  elapsed 28m50s  rss 107.6 GB
+[eigs SR] matvec  181  8.6s  elapsed 29m02s  rss 107.6 GB
+[eigs SR] matvec  182  12.5s  elapsed 29m20s  rss 107.6 GB
+[eigs SR] matvec  183  9.4s  elapsed 29m32s  rss 107.6 GB
+[eigs SR] matvec  184  8.3s  elapsed 29m43s  rss 107.6 GB
+[eigs SR] matvec  185  12.2s  elapsed 29m59s  rss 107.6 GB
+[eigs SR] matvec  186  14.4s  elapsed 30m16s  rss 107.6 GB
+[eigs SR] matvec  187  9.0s  elapsed 30m28s  rss 107.6 GB
+[eigs SR] matvec  188  3.9s  elapsed 30m34s  rss 107.6 GB
+[eigs SR] matvec  189  3.9s  elapsed 30m39s  rss 107.6 GB
+[eigs SR] matvec  190  3.9s  elapsed 30m44s  rss 107.6 GB
+[eigs SR] matvec  191  3.7s  elapsed 30m49s  rss 107.6 GB
+[eigs SR] matvec  192  3.7s  elapsed 30m54s  rss 107.6 GB
+[eigs SR] matvec  193  3.5s  elapsed 30m58s  rss 107.6 GB
+[eigs SR] matvec  194  3.8s  elapsed 31m03s  rss 107.6 GB
+[eigs SR] matvec  195  4.0s  elapsed 31m08s  rss 107.6 GB
+[eigs SR] matvec  196  3.7s  elapsed 31m13s  rss 107.6 GB
+[eigs SR] matvec  197  3.8s  elapsed 31m18s  rss 107.6 GB
+[eigs SR] matvec  198  3.6s  elapsed 31m23s  rss 107.6 GB
+[eigs SR] matvec  199  4.0s  elapsed 31m28s  rss 107.6 GB
+[eigs SR] matvec  200  3.5s  elapsed 31m33s  rss 107.6 GB
+[eigs SR] matvec  201  3.8s  elapsed 31m37s  rss 107.6 GB
+[eigs SR] matvec  202  3.9s  elapsed 31m44s  rss 107.6 GB
+[eigs SR] matvec  203  4.5s  elapsed 31m50s  rss 107.6 GB
+[eigs SR] matvec  204  4.6s  elapsed 31m56s  rss 107.6 GB
+[eigs SR] matvec  205  3.8s  elapsed 32m01s  rss 107.6 GB
+[eigs SR] matvec  206  3.5s  elapsed 32m06s  rss 107.6 GB
+[eigs SR] matvec  207  7.8s  elapsed 32m15s  rss 107.6 GB
+[eigs SR] matvec  208  10.2s  elapsed 32m29s  rss 107.6 GB
+[eigs SR] matvec  209  7.7s  elapsed 32m41s  rss 107.6 GB
+[eigs SR] matvec  210  11.2s  elapsed 32m56s  rss 107.6 GB
+[eigs SR] matvec  211  13.6s  elapsed 33m13s  rss 107.6 GB
+[eigs SR] matvec  212  12.5s  elapsed 33m29s  rss 107.6 GB
+[eigs SR] matvec  213  10.4s  elapsed 33m42s  rss 107.6 GB
+[eigs SR] matvec  214  14.0s  elapsed 34m02s  rss 107.6 GB
+[eigs SR] matvec  215  9.7s  elapsed 34m14s  rss 107.6 GB
+[eigs SR] matvec  216  9.4s  elapsed 34m27s  rss 107.6 GB
+[eigs SR] matvec  217  10.8s  elapsed 34m42s  rss 107.6 GB
+[eigs SR] matvec  218  9.3s  elapsed 34m57s  rss 107.6 GB
+[eigs SR] matvec  219  9.2s  elapsed 35m09s  rss 107.6 GB
+[eigs SR] matvec  220  4.2s  elapsed 35m15s  rss 107.6 GB
+[eigs SR] matvec  221  4.0s  elapsed 35m21s  rss 107.6 GB
+[eigs SR] matvec  222  3.7s  elapsed 35m26s  rss 107.6 GB
+[eigs SR] matvec  223  3.8s  elapsed 35m31s  rss 107.6 GB
+[eigs SR] matvec  224  3.6s  elapsed 35m36s  rss 107.6 GB
+[eigs SR] matvec  225  3.9s  elapsed 35m41s  rss 107.6 GB
+[eigs SR] matvec  226  3.7s  elapsed 35m46s  rss 107.6 GB
+[eigs SR] matvec  227  4.0s  elapsed 35m52s  rss 107.6 GB
+[eigs SR] matvec  228  3.9s  elapsed 35m57s  rss 107.6 GB
+[eigs SR] matvec  229  3.5s  elapsed 36m02s  rss 107.6 GB
+[eigs SR] matvec  230  3.5s  elapsed 36m07s  rss 107.6 GB
+[eigs SR] matvec  231  3.7s  elapsed 36m12s  rss 107.6 GB
+[eigs SR] matvec  232  5.7s  elapsed 36m19s  rss 107.6 GB
+[eigs SR] matvec  233  4.3s  elapsed 36m25s  rss 107.6 GB
+[eigs SR] matvec  234  4.4s  elapsed 36m32s  rss 107.6 GB
+[eigs SR] matvec  235  4.2s  elapsed 36m38s  rss 107.6 GB
+[eigs SR] matvec  236  4.0s  elapsed 36m43s  rss 107.6 GB
+[eigs SR] matvec  237  12.3s  elapsed 36m57s  rss 107.6 GB
+[eigs SR] matvec  238  10.5s  elapsed 37m13s  rss 107.6 GB
+[eigs SR] matvec  239  15.4s  elapsed 37m32s  rss 107.6 GB
+[eigs SR] matvec  240  11.1s  elapsed 37m49s  rss 107.6 GB
+[eigs SR] matvec  241  8.2s  elapsed 38m03s  rss 107.6 GB
+[eigs SR] matvec  242  7.2s  elapsed 38m17s  rss 107.6 GB
+[eigs SR] matvec  243  13.2s  elapsed 38m35s  rss 107.6 GB
+[eigs SR] matvec  244  11.1s  elapsed 38m50s  rss 107.6 GB
+[eigs SR] matvec  245  9.2s  elapsed 39m05s  rss 107.6 GB
+[eigs SR] matvec  246  7.3s  elapsed 39m18s  rss 107.6 GB
+[eigs SR] matvec  247  8.3s  elapsed 39m33s  rss 107.6 GB
+[eigs SR] matvec  248  5.1s  elapsed 39m44s  rss 107.6 GB
+[eigs SR] matvec  249  3.8s  elapsed 39m50s  rss 107.6 GB
+[eigs SR] matvec  250  3.9s  elapsed 39m56s  rss 107.6 GB
+[eigs SR] matvec  251  3.5s  elapsed 40m01s  rss 107.6 GB
+[eigs SR] matvec  252  3.9s  elapsed 40m07s  rss 107.6 GB
+[eigs SR] matvec  253  3.6s  elapsed 40m12s  rss 107.6 GB
+[eigs SR] matvec  254  3.5s  elapsed 40m17s  rss 107.6 GB
+[eigs SR] matvec  255  3.4s  elapsed 40m22s  rss 107.6 GB
+[eigs SR] matvec  256  3.3s  elapsed 40m27s  rss 107.6 GB
+[eigs SR] matvec  257  3.8s  elapsed 40m33s  rss 107.6 GB
+[eigs SR] matvec  258  3.5s  elapsed 40m38s  rss 107.6 GB
+[eigs SR] matvec  259  3.6s  elapsed 40m43s  rss 107.6 GB
+[eigs SR] matvec  260  3.6s  elapsed 40m49s  rss 107.6 GB
+[eigs SR] matvec  261  3.9s  elapsed 40m55s  rss 107.6 GB
+[eigs SR] matvec  262  4.2s  elapsed 41m01s  rss 107.6 GB
+[eigs SR] matvec  263  4.5s  elapsed 41m07s  rss 107.6 GB
+[eigs SR] matvec  264  3.9s  elapsed 41m13s  rss 107.6 GB
+[eigs SR] matvec  265  3.5s  elapsed 41m19s  rss 107.6 GB
+[eigs SR] matvec  266  10.1s  elapsed 41m33s  rss 107.6 GB
+[eigs SR] matvec  267  9.2s  elapsed 41m47s  rss 107.6 GB
+[eigs SR] matvec  268  8.1s  elapsed 42m00s  rss 107.6 GB
+[eigs SR] matvec  269  7.1s  elapsed 42m15s  rss 107.6 GB
+[eigs SR] matvec  270  6.3s  elapsed 42m29s  rss 107.6 GB
+[eigs SR] matvec  271  6.9s  elapsed 42m43s  rss 107.6 GB
+[eigs SR] matvec  272  6.0s  elapsed 42m55s  rss 107.6 GB
+[eigs SR] matvec  273  11.4s  elapsed 43m13s  rss 107.6 GB
+[eigs SR] matvec  274  10.9s  elapsed 43m28s  rss 107.6 GB
+[eigs SR] matvec  275  8.2s  elapsed 43m41s  rss 107.6 GB
+[eigs SR] matvec  276  7.7s  elapsed 43m55s  rss 107.6 GB
+[eigs SR] matvec  277  6.8s  elapsed 44m11s  rss 107.6 GB
+[eigs SR] matvec  278  5.1s  elapsed 44m23s  rss 107.6 GB
+[eigs SR] matvec  279  3.7s  elapsed 44m29s  rss 107.6 GB
+[eigs SR] matvec  280  3.5s  elapsed 44m34s  rss 107.6 GB
+[eigs SR] matvec  281  3.7s  elapsed 44m40s  rss 107.6 GB
+[eigs SR] matvec  282  3.5s  elapsed 44m45s  rss 107.6 GB
+[eigs SR] matvec  283  3.3s  elapsed 44m51s  rss 107.6 GB
+[eigs SR] matvec  284  3.2s  elapsed 44m56s  rss 107.6 GB
+[eigs SR] matvec  285  4.2s  elapsed 45m02s  rss 107.6 GB
+[eigs SR] matvec  286  3.5s  elapsed 45m08s  rss 107.6 GB
+[eigs SR] matvec  287  3.7s  elapsed 45m13s  rss 107.6 GB
+[eigs SR] matvec  288  3.6s  elapsed 45m19s  rss 107.6 GB
+[eigs SR] matvec  289  3.6s  elapsed 45m25s  rss 107.6 GB
+[eigs SR] matvec  290  3.6s  elapsed 45m31s  rss 107.6 GB
+[eigs SR] matvec  291  4.1s  elapsed 45m37s  rss 107.6 GB
+[eigs SR] matvec  292  4.0s  elapsed 45m44s  rss 107.6 GB
+[eigs SR] matvec  293  3.6s  elapsed 45m50s  rss 107.6 GB
+[eigs SR] matvec  294  4.1s  elapsed 45m56s  rss 107.6 GB
+[eigs SR] matvec  295  3.6s  elapsed 46m02s  rss 107.6 GB
+[eigs SR] matvec  296  3.7s  elapsed 46m08s  rss 107.6 GB
+low end done in 46m29s, nconv 3, 296 products, lambda = [-128.7094755487312, -127.97604535434196, -127.95162120882489]
+[eigs LR] matvec    1  9.8s  elapsed 0m22s  rss 108.1 GB
+[eigs LR] matvec    2  9.2s  elapsed 0m33s  rss 108.1 GB
+[eigs LR] matvec    3  10.2s  elapsed 0m45s  rss 108.1 GB
+[eigs LR] matvec    4  13.0s  elapsed 1m00s  rss 108.1 GB
+[eigs LR] matvec    5  10.2s  elapsed 1m12s  rss 108.1 GB
+[eigs LR] matvec    6  9.1s  elapsed 1m22s  rss 108.1 GB
+[eigs LR] matvec    7  9.5s  elapsed 1m33s  rss 108.1 GB
+[eigs LR] matvec    8  12.2s  elapsed 1m49s  rss 108.1 GB
+[eigs LR] matvec    9  12.4s  elapsed 2m03s  rss 108.1 GB
+[eigs LR] matvec   10  6.3s  elapsed 2m12s  rss 108.1 GB
+[eigs LR] matvec   11  5.4s  elapsed 2m18s  rss 108.1 GB
+[eigs LR] matvec   12  5.9s  elapsed 2m25s  rss 108.1 GB
+[eigs LR] matvec   13  5.8s  elapsed 2m31s  rss 108.1 GB
+[eigs LR] matvec   14  5.4s  elapsed 2m37s  rss 108.1 GB
+[eigs LR] matvec   15  5.5s  elapsed 2m43s  rss 108.1 GB
+[eigs LR] matvec   16  5.7s  elapsed 2m50s  rss 108.1 GB
+[eigs LR] matvec   17  5.4s  elapsed 2m56s  rss 108.1 GB
+[eigs LR] matvec   18  5.4s  elapsed 3m02s  rss 108.1 GB
+[eigs LR] matvec   19  5.5s  elapsed 3m08s  rss 108.1 GB
+[eigs LR] matvec   20  5.6s  elapsed 3m15s  rss 108.1 GB
+[eigs LR] matvec   21  5.5s  elapsed 3m21s  rss 108.1 GB
+[eigs LR] matvec   22  5.7s  elapsed 3m28s  rss 108.1 GB
+[eigs LR] matvec   23  6.1s  elapsed 3m34s  rss 108.1 GB
+[eigs LR] matvec   24  5.7s  elapsed 3m41s  rss 108.1 GB
+[eigs LR] matvec   25  5.8s  elapsed 3m48s  rss 108.1 GB
+[eigs LR] matvec   26  5.8s  elapsed 3m55s  rss 108.1 GB
+[eigs LR] matvec   27  5.6s  elapsed 4m02s  rss 108.1 GB
+[eigs LR] matvec   28  5.3s  elapsed 4m08s  rss 108.1 GB
+[eigs LR] matvec   29  9.5s  elapsed 4m21s  rss 108.1 GB
+[eigs LR] matvec   30  11.0s  elapsed 4m35s  rss 108.1 GB
+[eigs LR] matvec   31  10.7s  elapsed 4m49s  rss 108.1 GB
+[eigs LR] matvec   32  10.1s  elapsed 5m03s  rss 108.1 GB
+[eigs LR] matvec   33  10.2s  elapsed 5m18s  rss 108.1 GB
+[eigs LR] matvec   34  9.7s  elapsed 5m31s  rss 108.1 GB
+[eigs LR] matvec   35  8.5s  elapsed 5m43s  rss 108.1 GB
+[eigs LR] matvec   36  11.5s  elapsed 5m59s  rss 108.1 GB
+[eigs LR] matvec   37  7.5s  elapsed 6m09s  rss 108.1 GB
+[eigs LR] matvec   38  9.2s  elapsed 6m20s  rss 108.1 GB
+[eigs LR] matvec   39  10.9s  elapsed 6m34s  rss 108.1 GB
+[eigs LR] matvec   40  9.0s  elapsed 6m47s  rss 108.1 GB
+[eigs LR] matvec   41  9.2s  elapsed 6m59s  rss 108.1 GB
+[eigs LR] matvec   42  5.5s  elapsed 7m05s  rss 108.1 GB
+[eigs LR] matvec   43  5.2s  elapsed 7m12s  rss 108.1 GB
+[eigs LR] matvec   44  5.5s  elapsed 7m18s  rss 108.1 GB
+[eigs LR] matvec   45  5.9s  elapsed 7m25s  rss 108.1 GB
+[eigs LR] matvec   46  5.8s  elapsed 7m32s  rss 108.1 GB
+[eigs LR] matvec   47  5.6s  elapsed 7m39s  rss 108.1 GB
+[eigs LR] matvec   48  5.8s  elapsed 7m46s  rss 108.1 GB
+[eigs LR] matvec   49  6.0s  elapsed 7m53s  rss 108.1 GB
+[eigs LR] matvec   50  5.9s  elapsed 8m01s  rss 108.1 GB
+[eigs LR] matvec   51  5.9s  elapsed 8m08s  rss 108.1 GB
+[eigs LR] matvec   52  5.9s  elapsed 8m17s  rss 108.1 GB
+[eigs LR] matvec   53  6.0s  elapsed 8m24s  rss 108.1 GB
+[eigs LR] matvec   54  5.6s  elapsed 8m31s  rss 108.1 GB
+[eigs LR] matvec   55  5.6s  elapsed 8m38s  rss 108.1 GB
+[eigs LR] matvec   56  10.7s  elapsed 8m50s  rss 108.1 GB
+[eigs LR] matvec   57  8.7s  elapsed 9m03s  rss 108.1 GB
+[eigs LR] matvec   58  8.6s  elapsed 9m15s  rss 108.1 GB
+[eigs LR] matvec   59  10.1s  elapsed 9m30s  rss 108.1 GB
+[eigs LR] matvec   60  9.6s  elapsed 9m46s  rss 108.1 GB
+[eigs LR] matvec   61  10.7s  elapsed 10m02s  rss 108.1 GB
+[eigs LR] matvec   62  9.6s  elapsed 10m15s  rss 108.1 GB
+[eigs LR] matvec   63  10.0s  elapsed 10m30s  rss 108.1 GB
+[eigs LR] matvec   64  6.7s  elapsed 10m43s  rss 108.1 GB
+[eigs LR] matvec   65  10.0s  elapsed 10m56s  rss 108.1 GB
+[eigs LR] matvec   66  9.9s  elapsed 11m10s  rss 108.1 GB
+[eigs LR] matvec   67  9.5s  elapsed 11m28s  rss 108.1 GB
+[eigs LR] matvec   68  5.7s  elapsed 11m37s  rss 108.1 GB
+[eigs LR] matvec   69  5.4s  elapsed 11m43s  rss 108.1 GB
+[eigs LR] matvec   70  5.8s  elapsed 11m51s  rss 108.1 GB
+[eigs LR] matvec   71  6.1s  elapsed 11m58s  rss 108.1 GB
+[eigs LR] matvec   72  5.7s  elapsed 12m06s  rss 108.1 GB
+[eigs LR] matvec   73  5.4s  elapsed 12m13s  rss 108.1 GB
+[eigs LR] matvec   74  5.6s  elapsed 12m20s  rss 108.1 GB
+[eigs LR] matvec   75  5.5s  elapsed 12m27s  rss 108.1 GB
+[eigs LR] matvec   76  5.5s  elapsed 12m34s  rss 108.1 GB
+[eigs LR] matvec   77  5.6s  elapsed 12m42s  rss 108.1 GB
+[eigs LR] matvec   78  7.5s  elapsed 12m51s  rss 108.1 GB
+[eigs LR] matvec   79  6.5s  elapsed 12m59s  rss 108.1 GB
+[eigs LR] matvec   80  6.4s  elapsed 13m07s  rss 108.1 GB
+[eigs LR] matvec   81  5.7s  elapsed 13m15s  rss 108.1 GB
+[eigs LR] matvec   82  8.4s  elapsed 13m25s  rss 108.1 GB
+[eigs LR] matvec   83  8.2s  elapsed 13m37s  rss 108.1 GB
+[eigs LR] matvec   84  9.2s  elapsed 13m51s  rss 108.1 GB
+[eigs LR] matvec   85  10.3s  elapsed 14m07s  rss 108.1 GB
+[eigs LR] matvec   86  9.4s  elapsed 14m20s  rss 108.1 GB
+[eigs LR] matvec   87  10.0s  elapsed 14m34s  rss 108.1 GB
+[eigs LR] matvec   88  9.1s  elapsed 14m47s  rss 108.1 GB
+[eigs LR] matvec   89  9.6s  elapsed 14m59s  rss 108.1 GB
+[eigs LR] matvec   90  7.9s  elapsed 15m12s  rss 108.1 GB
+[eigs LR] matvec   91  8.5s  elapsed 15m26s  rss 108.1 GB
+[eigs LR] matvec   92  10.0s  elapsed 15m40s  rss 108.1 GB
+[eigs LR] matvec   93  9.1s  elapsed 15m54s  rss 108.1 GB
+[eigs LR] matvec   94  9.4s  elapsed 16m08s  rss 108.1 GB
+[eigs LR] matvec   95  5.4s  elapsed 16m17s  rss 108.1 GB
+[eigs LR] matvec   96  4.9s  elapsed 16m24s  rss 108.1 GB
+[eigs LR] matvec   97  4.8s  elapsed 16m30s  rss 108.1 GB
+[eigs LR] matvec   98  4.6s  elapsed 16m36s  rss 108.1 GB
+[eigs LR] matvec   99  4.6s  elapsed 16m42s  rss 108.1 GB
+[eigs LR] matvec  100  4.6s  elapsed 16m49s  rss 108.1 GB
+[eigs LR] matvec  101  4.7s  elapsed 16m55s  rss 108.1 GB
+[eigs LR] matvec  102  4.5s  elapsed 17m01s  rss 108.1 GB
+[eigs LR] matvec  103  4.5s  elapsed 17m07s  rss 108.1 GB
+[eigs LR] matvec  104  6.2s  elapsed 17m15s  rss 108.1 GB
+[eigs LR] matvec  105  4.9s  elapsed 17m21s  rss 108.1 GB
+[eigs LR] matvec  106  5.0s  elapsed 17m28s  rss 108.1 GB
+[eigs LR] matvec  107  4.6s  elapsed 17m35s  rss 108.1 GB
+[eigs LR] matvec  108  7.3s  elapsed 17m44s  rss 108.1 GB
+[eigs LR] matvec  109  9.5s  elapsed 17m57s  rss 108.1 GB
+[eigs LR] matvec  110  8.5s  elapsed 18m10s  rss 108.1 GB
+[eigs LR] matvec  111  10.0s  elapsed 18m25s  rss 108.1 GB
+[eigs LR] matvec  112  9.5s  elapsed 18m38s  rss 108.1 GB
+[eigs LR] matvec  113  10.8s  elapsed 18m54s  rss 108.1 GB
+[eigs LR] matvec  114  9.4s  elapsed 19m07s  rss 108.1 GB
+[eigs LR] matvec  115  10.5s  elapsed 19m23s  rss 108.1 GB
+[eigs LR] matvec  116  7.8s  elapsed 19m35s  rss 108.1 GB
+[eigs LR] matvec  117  6.2s  elapsed 19m45s  rss 108.1 GB
+[eigs LR] matvec  118  9.5s  elapsed 19m58s  rss 108.1 GB
+[eigs LR] matvec  119  6.9s  elapsed 20m09s  rss 108.1 GB
+[eigs LR] matvec  120  6.6s  elapsed 20m24s  rss 108.1 GB
+[eigs LR] matvec  121  6.4s  elapsed 20m36s  rss 108.1 GB
+[eigs LR] matvec  122  5.1s  elapsed 20m43s  rss 108.1 GB
+[eigs LR] matvec  123  4.9s  elapsed 20m50s  rss 108.1 GB
+[eigs LR] matvec  124  4.7s  elapsed 20m57s  rss 108.1 GB
+[eigs LR] matvec  125  4.7s  elapsed 21m04s  rss 108.1 GB
+[eigs LR] matvec  126  4.7s  elapsed 21m10s  rss 108.1 GB
+[eigs LR] matvec  127  4.6s  elapsed 21m17s  rss 108.1 GB
+[eigs LR] matvec  128  4.6s  elapsed 21m23s  rss 108.1 GB
+[eigs LR] matvec  129  4.6s  elapsed 21m30s  rss 108.1 GB
+[eigs LR] matvec  130  5.1s  elapsed 21m37s  rss 108.1 GB
+[eigs LR] matvec  131  4.8s  elapsed 21m44s  rss 108.1 GB
+[eigs LR] matvec  132  5.4s  elapsed 21m52s  rss 108.1 GB
+[eigs LR] matvec  133  4.7s  elapsed 22m00s  rss 108.1 GB
+[eigs LR] matvec  134  6.4s  elapsed 22m08s  rss 108.1 GB
+[eigs LR] matvec  135  8.4s  elapsed 22m24s  rss 108.1 GB
+[eigs LR] matvec  136  8.5s  elapsed 22m40s  rss 108.1 GB
+[eigs LR] matvec  137  7.6s  elapsed 22m55s  rss 108.1 GB
+[eigs LR] matvec  138  7.6s  elapsed 23m11s  rss 108.1 GB
+[eigs LR] matvec  139  7.5s  elapsed 23m26s  rss 108.1 GB
+[eigs LR] matvec  140  6.5s  elapsed 23m40s  rss 108.1 GB
+[eigs LR] matvec  141  9.3s  elapsed 23m58s  rss 108.1 GB
+[eigs LR] matvec  142  8.9s  elapsed 24m12s  rss 108.1 GB
+[eigs LR] matvec  143  8.5s  elapsed 24m26s  rss 108.1 GB
+[eigs LR] matvec  144  9.0s  elapsed 24m42s  rss 108.1 GB
+[eigs LR] matvec  145  7.0s  elapsed 24m57s  rss 108.1 GB
+[eigs LR] matvec  146  4.9s  elapsed 25m10s  rss 108.1 GB
+[eigs LR] matvec  147  4.5s  elapsed 25m17s  rss 108.1 GB
+[eigs LR] matvec  148  4.6s  elapsed 25m23s  rss 108.1 GB
+[eigs LR] matvec  149  4.5s  elapsed 25m30s  rss 108.1 GB
+[eigs LR] matvec  150  4.6s  elapsed 25m37s  rss 108.1 GB
+high end done in 25m40s, nconv 1, 150 products, lambda_n = -75.1206449279
+residual for lambda_1 = 6.218e-14
+residual for lambda_2 = 4.965e-13
+residual for lambda_3 = 1.007e-09
+lambda_1 = -128.709475548731
+lambda_2 = -127.976045354342
+lambda_n = -75.120644927935
+gap = 0.733430194389, HF weight = 0.964499
+wrote /home/nh2429/greedysparse/chemistry_experiments/Neon/results/full_fci_neon.json and /home/nh2429/greedysparse/chemistry_experiments/Neon/results/full_fci_neon_v1.bin

@@ -1,0 +1,33 @@
+checkpoint: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c25k_t500k.ckpt   (EXACT PT2, no screening)
+spill dir : /scratch/nh2429/pt2x_500k_15166440
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.7P   63T  98% /scratch/nh2429
+SPILL 4096 B = 0.00 GiB
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c25k_t500k.ckpt
+ARGS[9]: 0
+ARGS[10]: 5000
+ARGS[11]: /scratch/nh2429/pt2x_500k_15166440
+ARGS[12]: 25
+ARGS[13]: 3000
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+PT2 params (:ooc, DISK-bounded, exact): P_out=0, batch_size=5000, compact_every=25, max_disk_gb=3000
+Checkpoint:      /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c25k_t500k.ckpt
+  iteration 5   |S| = 500000   E_var = -293.1221680202 Ha
+  asci_pt2_ooc:
+    |S| = 500000, batch_size = 5000, n_batches = 100
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/pt2x_500k_15166440
+SPILL 4096 B = 0.00 GiB
+    batch 1/100: expand 34.19s, p1 1.80s, p2 8.10s
+SPILL 36868198048 B = 34.34 GiB
+RESULT exact-500k  exit=137  wall=132s (0.04 h)  MEASURED PEAK = 34.3 GiB
+COMPARE this E_PT2 against the eps2=2e-7 run on the same checkpoint.

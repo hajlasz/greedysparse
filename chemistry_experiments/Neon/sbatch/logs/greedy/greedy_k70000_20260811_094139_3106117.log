@@ -1,0 +1,60 @@
+=== run_greedy.sh  started Tue Aug 11 09:41:39 AM EDT 2026 ===
+julia 1.11.5   deps OK
+-------------------------------------
+host       = crunchy2.cims.nyu.edu
+load       =  09:41:45 up 25 days, 14:35,  1 user,  load average: 10.70, 11.40, 8.76
+julia      = /usr/local/stow/julia-1.11/bin/julia
+project    = /home/nh2429/greedysparse
+threads    = 8   numa = <unpinned>
+epsilon    = 1.0    (A = -eps*H, no identity shift)
+K_KEEP     = 70000
+script     = /home/nh2429/greedysparse/chemistry_experiments/scripts/run_greedy.jl
+outfile    = /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k70000.json
+logfile    = /home/nh2429/greedysparse/chemistry_experiments/Neon/sbatch/logs/greedy/greedy_k70000_20260811_094139_3106117.log
+-------------------------------------
+ARGS[1]: 23
+ARGS[2]: 10
+ARGS[3]: 1
+ARGS[4]: 1.0
+ARGS[5]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/eris.txt
+ARGS[6]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/hcore.txt
+ARGS[7]: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/symm.txt
+ARGS[8]: 70000
+ARGS[9]: /home/nh2429/greedysparse/chemistry_experiments/Neon/results/greedy/greedy_k70000.json
+ARGS[10]: 2000
+ARGS[11]: 1e-11
+ARGS[12]: 128.709475548738
+ITERATION 1   |S| = 1
+  E = -128.7014693077479   relerr = 6.220397492842738e-5   (first iteration)
+  expand = 2.31 s   estimate = 7.037 s   |S| = 985
+
+ITERATION 2   |S| = 985
+  E = -128.7092177911382   relerr = 2.0026311093149495e-6   ΔE = 0.00774848339028722   streak = 0/3
+  expand = 0.136 s   estimate = 91.085 s   |S| = 70000
+
+ITERATION 3   |S| = 70000
+  E = -128.7092725276064   relerr = 1.5773596367424604e-6   ΔE = 5.4736468200644595e-5   streak = 0/3
+  expand = 4.07 s   estimate = 90.846 s   |S| = 70000
+
+ITERATION 4   |S| = 70000
+  E = -128.70927397100894   relerr = 1.5661452134634307e-6   ΔE = 1.4434025388254668e-6   streak = 0/3
+  expand = 4.02 s   estimate = 102.251 s   |S| = 70000
+
+ITERATION 5   |S| = 70000
+  E = -128.70927397100934   relerr = 1.5661452103719417e-6   ΔE = 3.979039320256561e-13   streak = 1/3
+  expand = 3.828 s   estimate = 86.927 s   |S| = 70000
+
+ITERATION 6   |S| = 70000
+  E = -128.7092739710098   relerr = 1.5661452068388114e-6   ΔE = 4.547473508864641e-13   streak = 2/3
+  expand = 3.941 s   estimate = 86.786 s   |S| = 70000
+
+ITERATION 7   |S| = 70000
+  E = -128.70927397100917   relerr = 1.5661452116968656e-6   ΔE = 6.252776074688882e-13   streak = 3/3
+  expand = 3.954 s   estimate = 83.497 s   |S| = 70000
+
+STOP: |ΔE| < 1.0e-11 for 3 consecutive iterations.
+./run_greedy.sh: line 166: /home/nh2429/greedysparse/chemistry_experiments/Neon/input_data/eris.txt: Permission denied
+!!! error on line 166: "$ERI_FILE" "$HCORE_FILE" "$SYMM_FILE" "$K_KEEP" "$OUTFILE" "$MAX_ITERS" "$REL_TOL" "$EVAL_TRUE"
+
+=== EXIT 126 (FAILED at line 1)  Tue Aug 11 09:51:33 AM EDT 2026 ===
+log: /home/nh2429/greedysparse/chemistry_experiments/Neon/sbatch/logs/greedy/greedy_k70000_20260811_094139_3106117.log

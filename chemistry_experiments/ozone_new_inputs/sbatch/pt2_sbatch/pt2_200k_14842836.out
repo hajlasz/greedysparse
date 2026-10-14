@@ -1,0 +1,112 @@
+checkpoint: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c10k_t200k.ckpt
+spill dir : /scratch/nh2429/pt2_ooc_spill_200k_14842836
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.6P  102T  97% /scratch/nh2429
+SPILL 4096
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c10k_t200k.ckpt
+ARGS[9]: 0
+ARGS[10]: 500
+ARGS[11]: /scratch/nh2429/pt2_ooc_spill_200k_14842836
+ARGS[12]: 200
+ARGS[13]: 2000
+JULIA_NUM_THREADS = 16
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+PT2 params (:ooc, DISK-bounded, exact): P_out=0, batch_size=500, compact_every=200, max_disk_gb=2000
+Checkpoint:      /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c10k_t200k.ckpt
+  iteration 5   |S| = 200000   E_var = -293.1076991245 Ha
+  asci_pt2_ooc:
+    |S| = 200000, batch_size = 500, n_batches = 400
+    nthreads = 16, P_in = 160, P_out = 64
+    spill_dir = /scratch/nh2429/pt2_ooc_spill_200k_14842836
+    batch 1/400: expand 7.57s, p1 0.86s, p2 1.90s
+SPILL 27819386616
+    batch 20/400: expand 5.26s, p1 0.23s, p2 1.52s
+SPILL 74324641280
+    batch 40/400: expand 5.29s, p1 0.24s, p2 1.44s
+SPILL 121227707069
+    batch 60/400: expand 5.26s, p1 0.26s, p2 1.58s
+SPILL 166968553938
+    batch 80/400: expand 5.56s, p1 0.24s, p2 1.46s
+SPILL 214703878715
+SPILL 261011728928
+    batch 100/400: expand 5.44s, p1 0.24s, p2 1.46s
+SPILL 308442030816
+    batch 120/400: expand 5.53s, p1 0.23s, p2 1.61s
+SPILL 356048805824
+    batch 140/400: expand 5.65s, p1 0.23s, p2 1.47s
+SPILL 403751530080
+    batch 160/400: expand 5.31s, p1 0.34s, p2 1.45s
+SPILL 450282696654
+    batch 180/400: expand 5.33s, p1 0.27s, p2 1.60s
+SPILL 498632826374
+SPILL 546692109646
+SPILL 563278095917
+SPILL 534111319655
+SPILL 451218347853
+SPILL 432130664883
+SPILL 339018837951
+SPILL 344435044469
+SPILL 246378214443
+SPILL 232432418639
+SPILL 130083862092
+    [batch 200] lazy compaction: 1096.7s, disk after = 105.25 GB
+    batch 200/400: expand 5.31s, p1 0.23s, p2 1.74s
+SPILL 153171924879
+    batch 220/400: expand 5.26s, p1 0.30s, p2 1.49s
+SPILL 202328850756
+    batch 240/400: expand 5.20s, p1 0.26s, p2 1.59s
+SPILL 251704937285
+    batch 260/400: expand 5.35s, p1 0.28s, p2 1.58s
+SPILL 300064660463
+    batch 280/400: expand 5.28s, p1 0.23s, p2 1.51s
+SPILL 346987764592
+    batch 300/400: expand 5.77s, p1 0.28s, p2 1.61s
+SPILL 394360961396
+SPILL 442268907599
+    batch 320/400: expand 5.22s, p1 0.26s, p2 1.74s
+SPILL 489525483429
+    batch 340/400: expand 6.29s, p1 0.24s, p2 1.56s
+SPILL 536363592184
+    batch 360/400: expand 5.21s, p1 0.25s, p2 1.60s
+SPILL 584766559183
+    batch 380/400: expand 5.68s, p1 0.31s, p2 1.46s
+SPILL 630910112109
+SPILL 678946771055
+    batch 400/400: expand 6.13s, p1 0.23s, p2 1.57s
+    drain done in 4033.7s.  Total spill on disk: 634.99 GB
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+SPILL 681812618319
+    PT2 reduce: 1529.64s  externals=14645452330  gap-skip=0  peak-shard=228879389  (total 5563.37s)
+    E_PT2 = -0.0686982731 Ha
+
+═══════════════════════════════════════════════════════════
+  |S|              = 200000
+  externals summed = 14645452330
+  gap-skipped      = 0
+  peak shard       = 228879389
+  wall time        = 5582.8 s
+  ─────────────────────────────────────────
+  E_var            = -293.1076991245 Ha
+  E_PT2            = -0.0686982731 Ha
+  E_var + E_PT2    = -293.1763973977 Ha
+═══════════════════════════════════════════════════════════
+PT2 OOC exit: 0
+cleanup: rm -rf /scratch/nh2429/pt2_ooc_spill_200k_14842836

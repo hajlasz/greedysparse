@@ -1,0 +1,5 @@
+chemistry_experiments/ozone/input_data/eris.txt
+
+# transient artifacts
+.ipynb_checkpoints/
+*.json.tmp

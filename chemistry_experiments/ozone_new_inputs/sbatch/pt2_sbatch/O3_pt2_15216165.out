@@ -1,0 +1,143 @@
+==============================================================
+ tag        : O3_asci_c50k_t1M
+ checkpoint : /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c50k_t1M.ckpt
+ spill dir  : /scratch/nh2429/pt2s_O3_asci_c50k_t1M_15216165
+ eps2       : 2e-7   (same value on every point in the series)
+==============================================================
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.7P   62T  98% /scratch/nh2429
+SPILL 0.00 GiB   RSS 0.0 GB
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1e-3
+ARGS[5]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c50k_t1M.ckpt
+ARGS[9]: 0
+ARGS[10]: 5000
+ARGS[11]: /scratch/nh2429/pt2s_O3_asci_c50k_t1M_15216165
+ARGS[12]: 50
+ARGS[13]: 3500
+ARGS[14]: 2e-7
+JULIA_NUM_THREADS = 48
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e-03
+PT2 params (:ooc_eps2, DISK-bounded): P_out=0, batch_size=5000, compact_every=50, max_disk_gb=3500 GiB, eps2=2.000e-07
+Checkpoint:      /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/asci__O3_asci_c50k_t1M.ckpt
+  iteration 5   |S| = 1000000   E_var = -293.1314681034 Ha
+  asci_pt2_ooc_eps2:
+    eps2 = 2.000e-07  (screened)
+    |S| = 1000000, batch_size = 5000, n_batches = 200
+    nthreads = 48, P_in = 480, P_out = 96
+    spill_dir = /scratch/nh2429/pt2s_O3_asci_c50k_t1M_15216165
+SPILL 0.00 GiB   RSS 0.0 GB
+    batch 1/200: expand 22.50s, p1 1.86s, p2 7.56s
+SPILL 52.48 GiB   RSS 0.0 GB
+SPILL 121.65 GiB   RSS 0.0 GB
+    batch 10/200: expand 9.55s, p1 0.73s, p2 7.03s
+SPILL 190.39 GiB   RSS 0.0 GB
+SPILL 251.22 GiB   RSS 0.0 GB
+SPILL 316.55 GiB   RSS 0.0 GB
+    batch 20/200: expand 9.26s, p1 0.58s, p2 4.88s
+SPILL 374.09 GiB   RSS 0.0 GB
+SPILL 442.26 GiB   RSS 0.0 GB
+    batch 30/200: expand 7.17s, p1 0.69s, p2 3.99s
+SPILL 515.86 GiB   RSS 0.0 GB
+    batch 40/200: expand 6.62s, p1 0.53s, p2 3.34s
+SPILL 582.98 GiB   RSS 0.0 GB
+SPILL 657.97 GiB   RSS 0.0 GB
+SPILL 694.36 GiB   RSS 0.0 GB
+SPILL 708.25 GiB   RSS 0.0 GB
+SPILL 721.91 GiB   RSS 0.0 GB
+SPILL 734.71 GiB   RSS 0.0 GB
+SPILL 747.55 GiB   RSS 0.0 GB
+SPILL 760.82 GiB   RSS 0.0 GB
+SPILL 425.32 GiB   RSS 0.0 GB
+SPILL 439.08 GiB   RSS 0.0 GB
+SPILL 452.86 GiB   RSS 0.0 GB
+SPILL 465.38 GiB   RSS 0.0 GB
+SPILL 477.98 GiB   RSS 0.0 GB
+SPILL 491.21 GiB   RSS 0.0 GB
+    [batch 50] lazy compaction: 772.1s, disk after = 153.04 GB
+    batch 50/200: expand 5.92s, p1 0.52s, p2 2.86s
+SPILL 168.98 GiB   RSS 0.0 GB
+    batch 60/200: expand 4.61s, p1 0.50s, p2 2.46s
+SPILL 246.67 GiB   RSS 0.0 GB
+SPILL 320.98 GiB   RSS 0.0 GB
+    batch 70/200: expand 4.74s, p1 0.51s, p2 3.34s
+SPILL 391.18 GiB   RSS 0.0 GB
+    batch 80/200: expand 4.38s, p1 0.44s, p2 2.02s
+SPILL 464.86 GiB   RSS 0.0 GB
+    batch 90/200: expand 3.92s, p1 0.42s, p2 1.89s
+SPILL 535.79 GiB   RSS 0.0 GB
+SPILL 556.55 GiB   RSS 0.0 GB
+SPILL 573.17 GiB   RSS 0.0 GB
+SPILL 590.90 GiB   RSS 0.0 GB
+SPILL 412.11 GiB   RSS 0.0 GB
+SPILL 429.15 GiB   RSS 0.0 GB
+SPILL 444.97 GiB   RSS 0.0 GB
+SPILL 462.27 GiB   RSS 0.0 GB
+    [batch 100] lazy compaction: 475.2s, disk after = 276.11 GB
+    batch 100/200: expand 4.00s, p1 0.47s, p2 1.76s
+SPILL 300.38 GiB   RSS 0.0 GB
+    batch 110/200: expand 2.71s, p1 0.39s, p2 2.48s
+SPILL 371.91 GiB   RSS 0.0 GB
+    batch 120/200: expand 3.29s, p1 0.39s, p2 1.39s
+    batch 130/200: expand 2.35s, p1 0.44s, p2 1.40s
+SPILL 443.40 GiB   RSS 0.0 GB
+    batch 140/200: expand 3.70s, p1 0.37s, p2 1.30s
+SPILL 516.76 GiB   RSS 0.0 GB
+SPILL 551.91 GiB   RSS 0.0 GB
+SPILL 569.00 GiB   RSS 0.0 GB
+SPILL 463.05 GiB   RSS 0.0 GB
+SPILL 470.76 GiB   RSS 0.0 GB
+SPILL 488.97 GiB   RSS 0.0 GB
+    [batch 150] lazy compaction: 328.8s, disk after = 366.58 GB
+    batch 150/200: expand 2.91s, p1 0.36s, p2 1.22s
+SPILL 393.09 GiB   RSS 0.0 GB
+    batch 160/200: expand 1.85s, p1 0.36s, p2 1.16s
+    batch 170/200: expand 2.73s, p1 0.34s, p2 1.02s
+SPILL 468.17 GiB   RSS 0.0 GB
+    batch 180/200: expand 1.86s, p1 0.35s, p2 1.05s
+    batch 190/200: expand 1.81s, p1 0.32s, p2 1.06s
+SPILL 537.52 GiB   RSS 0.0 GB
+    batch 200/200: expand 1.83s, p1 0.36s, p2 0.92s
+    drain done in 3098.6s.  Total spill on disk: 566.26 GiB
+    PEAK DISK = 566.26 GiB   ->  U = 1.9001e+10 unique externals
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+SPILL 566.26 GiB   RSS 0.0 GB
+    PT2 reduce: 1103.06s  externals=22008220451  gap-skip=0  peak-shard=229298000  (total 4201.71s)
+    E_PT2 = -0.0464221968 Ha
+SPILL 348.01 GiB   RSS 0.0 GB
+
+═══════════════════════════════════════════════════════════
+  |S|              = 1000000
+  externals summed = 22008220451
+  gap-skipped      = 0
+  peak shard       = 229298000
+  wall time        = 4223.6 s
+  ─────────────────────────────────────────
+  E_var            = -293.1314681034 Ha
+  E_PT2            = -0.0464221968 Ha
+  E_var + E_PT2    = -293.1778903002 Ha
+═══════════════════════════════════════════════════════════
+RESULT O3_asci_c50k_t1M  exit=0  wall=4263s (1.18 h)  MEASURED PEAK = 760.8 GiB
+RECORD for the regression:  |S| = 1000000,  E_var,  E_PT2,  y = E_var + E_PT2

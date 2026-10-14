@@ -1,0 +1,622 @@
+Spill dir: /scratch/nh2429/spill/tpm_15605262
+Filesystem                                                Size  Used Avail Use% Mounted on
+vast-ib.torch.hpc.nyu.edu:/vast/hpc/torch/scratch/nh2429  2.7P  2.7P   60T  98% /scratch/nh2429
+RESUME = false
+ARGS[1]: 90
+ARGS[2]: 24
+ARGS[3]: 3
+ARGS[4]: 1
+ARGS[5]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/eris.txt
+ARGS[6]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/hcore.txt
+ARGS[7]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/input_data/asci_gsno_om/symm.txt
+ARGS[8]: 1000000
+ARGS[9]: 500
+ARGS[10]: 200
+ARGS[11]: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/tpm/O3_tpm_m1M_ooc.json
+ARGS[12]: /scratch/nh2429/spill/tpm_15605262
+ARGS[13]: 1e-7
+ARGS[14]: 3
+ARGS[15]: false
+JULIA_NUM_THREADS = 32
+
+System: n=90, ne=24, frozen=3, W=3, ε=1.00e+00
+TPM params: m=1000000, batch_size=500, q_max=200, tol=1.0e-07, patience=3  (OOC)
+Spill dir:       /scratch/nh2429/spill/tpm_15605262
+Output JSON:     /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/tpm/O3_tpm_m1M_ooc.json
+Checkpoint file: /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/tpm__O3_tpm_m1M_ooc.ckpt
+Resume mode:     FALSE (fresh start)
+═══════════════════════════════════════════════════════════
+  Truncated Power Method (spin-coupled, OOC drain)
+  m = 1000000, q_max = 200, batch_size = 500, ε = 1.00e+00
+  spill_dir = /scratch/nh2429/spill/tpm_15605262
+  checkpoint_file = /scratch/nh2429/greedysparse/chemistry_experiments/ozone_new_inputs/results/checkpoints/tpm__O3_tpm_m1M_ooc.ckpt
+  drain: OOC-EXACT (no pruning, on-disk sharded)
+  convergence: tol = 1.0e-07 on |ΔE|, patience = 3
+  Starting fresh. HF diag: -292.3591666356
+═══════════════════════════════════════════════════════════
+
+--- Iteration 1 ---
+  |S| = 1, |v| = 1
+  batched_expand_merge_select_ooc:
+    |S| = 1, k = 1000000, batch_size = 500, n_batches = 1
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/1: expand 0.74s, p1 0.07s, p2 0.33s
+    drain done in 1.6s.  Total spill on disk: 0.00 GB
+    merge+topk: 0.36s  → returning 91157 entries (total 2.03s)
+  expand+select (OOC): 2.40s, |S_new| = 91157
+  build state: 0.04s
+  Rayleigh quotient: 9.03s,  λ(A) = 292.3878192626
+  Energy estimate:   -292.3878192626 Ha
+  Iteration total:   11.56s
+  |ΔE| = n/a (first iteration)
+  checkpoint: 0.02s (2.8 MB)
+
+--- Iteration 2 ---
+  |S| = 91157, |v| = 91157
+  batched_expand_merge_select_ooc:
+    |S| = 91157, k = 1000000, batch_size = 500, n_batches = 183
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/183: expand 2.48s, p1 0.47s, p2 0.89s
+    batch 10/183: expand 1.61s, p1 0.12s, p2 0.80s
+    batch 20/183: expand 1.86s, p1 0.14s, p2 1.00s
+    batch 30/183: expand 1.62s, p1 0.12s, p2 0.66s
+    batch 40/183: expand 1.68s, p1 0.13s, p2 0.83s
+    batch 50/183: expand 1.86s, p1 0.12s, p2 0.73s
+    batch 60/183: expand 1.75s, p1 0.17s, p2 0.91s
+    batch 70/183: expand 1.69s, p1 0.12s, p2 0.76s
+    batch 80/183: expand 1.68s, p1 0.12s, p2 0.77s
+    batch 90/183: expand 1.72s, p1 0.12s, p2 0.80s
+    batch 100/183: expand 1.64s, p1 0.12s, p2 0.81s
+    batch 110/183: expand 1.72s, p1 0.12s, p2 1.02s
+    batch 120/183: expand 1.66s, p1 0.12s, p2 0.83s
+    batch 130/183: expand 1.68s, p1 0.13s, p2 0.83s
+    batch 140/183: expand 1.60s, p1 0.12s, p2 0.82s
+    batch 150/183: expand 1.66s, p1 0.12s, p2 0.76s
+    batch 160/183: expand 1.71s, p1 0.13s, p2 0.81s
+    batch 170/183: expand 1.65s, p1 0.15s, p2 0.92s
+    batch 180/183: expand 2.06s, p1 0.14s, p2 0.86s
+    batch 183/183: expand 0.34s, p1 0.07s, p2 0.21s
+    drain done in 508.4s.  Total spill on disk: 436.36 GB
+    merge+topk: 462.50s  → returning 1000000 entries (total 970.92s)
+  expand+select (OOC): 984.58s, |S_new| = 1000000
+  build state: 0.30s
+  Rayleigh quotient: 178.24s,  λ(A) = 292.4149491141
+  Energy estimate:   -292.4149491141 Ha
+  Iteration total:   1163.12s
+  |ΔE| = 2.713e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 3 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.16s, p1 2.17s, p2 0.89s
+    batch 100/2000: expand 1.62s, p1 0.15s, p2 0.88s
+    [batch 200] lazy compaction: 575.4s, disk after = 48.70 GB
+    batch 200/2000: expand 1.67s, p1 0.13s, p2 0.83s
+    batch 300/2000: expand 1.71s, p1 0.13s, p2 0.85s
+    [batch 400] lazy compaction: 754.0s, disk after = 198.69 GB
+    batch 400/2000: expand 1.73s, p1 0.13s, p2 0.87s
+    batch 500/2000: expand 1.64s, p1 0.13s, p2 0.81s
+    [batch 600] lazy compaction: 775.0s, disk after = 374.27 GB
+    batch 600/2000: expand 1.65s, p1 0.13s, p2 0.99s
+    batch 700/2000: expand 2.25s, p1 0.14s, p2 0.90s
+    [batch 800] lazy compaction: 805.2s, disk after = 559.98 GB
+    batch 800/2000: expand 1.66s, p1 0.12s, p2 0.85s
+    batch 900/2000: expand 1.66s, p1 0.13s, p2 0.85s
+    [batch 1000] lazy compaction: 811.9s, disk after = 751.86 GB
+    batch 1000/2000: expand 1.68s, p1 0.18s, p2 0.82s
+    batch 1100/2000: expand 1.66s, p1 0.13s, p2 0.87s
+    [batch 1200] lazy compaction: 816.1s, disk after = 948.01 GB
+    batch 1200/2000: expand 1.71s, p1 0.13s, p2 0.97s
+    batch 1300/2000: expand 1.69s, p1 0.15s, p2 0.86s
+    [batch 1400] lazy compaction: 813.1s, disk after = 1147.61 GB
+    batch 1400/2000: expand 1.66s, p1 0.13s, p2 0.96s
+    batch 1500/2000: expand 1.66s, p1 0.12s, p2 0.82s
+    [batch 1600] lazy compaction: 828.3s, disk after = 1350.04 GB
+    batch 1600/2000: expand 1.67s, p1 0.13s, p2 0.93s
+    batch 1700/2000: expand 1.66s, p1 0.12s, p2 0.87s
+    [batch 1800] lazy compaction: 822.1s, disk after = 1554.66 GB
+    batch 1800/2000: expand 1.70s, p1 0.13s, p2 0.91s
+    batch 1900/2000: expand 1.68s, p1 0.13s, p2 0.85s
+    batch 2000/2000: expand 1.68s, p1 0.13s, p2 0.83s
+    drain done in 12618.4s.  Total spill on disk: 2088.24 GB
+    merge+topk: 4215.99s  → returning 1000000 entries (total 16834.38s)
+  expand+select (OOC): 16855.68s, |S_new| = 1000000
+  build state: 0.24s
+  Rayleigh quotient: 168.62s,  λ(A) = 292.4406548665
+  Energy estimate:   -292.4406548665 Ha
+  Iteration total:   17024.55s
+  |ΔE| = 2.571e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 4 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.28s, p1 0.83s, p2 0.84s
+    batch 100/2000: expand 1.60s, p1 0.12s, p2 0.76s
+    [batch 200] lazy compaction: 560.9s, disk after = 49.48 GB
+    batch 200/2000: expand 1.85s, p1 0.13s, p2 1.02s
+    batch 300/2000: expand 1.66s, p1 0.13s, p2 0.97s
+    [batch 400] lazy compaction: 754.9s, disk after = 200.06 GB
+    batch 400/2000: expand 1.68s, p1 0.13s, p2 0.84s
+    batch 500/2000: expand 1.79s, p1 0.16s, p2 0.84s
+    [batch 600] lazy compaction: 804.5s, disk after = 376.05 GB
+    batch 600/2000: expand 1.71s, p1 0.18s, p2 0.98s
+    batch 700/2000: expand 1.96s, p1 0.14s, p2 0.87s
+    [batch 800] lazy compaction: 805.5s, disk after = 562.14 GB
+    batch 800/2000: expand 1.67s, p1 0.14s, p2 0.93s
+    batch 900/2000: expand 1.70s, p1 0.13s, p2 0.91s
+    [batch 1000] lazy compaction: 808.8s, disk after = 754.45 GB
+    batch 1000/2000: expand 1.99s, p1 0.13s, p2 0.85s
+    batch 1100/2000: expand 2.84s, p1 0.14s, p2 0.85s
+    [batch 1200] lazy compaction: 812.5s, disk after = 951.03 GB
+    batch 1200/2000: expand 1.74s, p1 0.14s, p2 0.94s
+    batch 1300/2000: expand 2.81s, p1 0.19s, p2 0.89s
+    [batch 1400] lazy compaction: 830.8s, disk after = 1151.01 GB
+    batch 1400/2000: expand 1.67s, p1 0.13s, p2 0.87s
+    batch 1500/2000: expand 2.08s, p1 0.16s, p2 0.84s
+    [batch 1600] lazy compaction: 826.5s, disk after = 1353.79 GB
+    batch 1600/2000: expand 2.63s, p1 0.13s, p2 0.95s
+    batch 1700/2000: expand 1.78s, p1 0.14s, p2 1.10s
+    [batch 1800] lazy compaction: 840.7s, disk after = 1558.89 GB
+    batch 1800/2000: expand 2.63s, p1 0.14s, p2 0.98s
+    batch 1900/2000: expand 2.74s, p1 0.14s, p2 0.85s
+    batch 2000/2000: expand 2.88s, p1 0.13s, p2 1.59s
+    drain done in 13101.2s.  Total spill on disk: 2091.60 GB
+    merge+topk: 4213.61s  → returning 1000000 entries (total 17314.80s)
+  expand+select (OOC): 17337.20s, |S_new| = 1000000
+  build state: 0.21s
+  Rayleigh quotient: 173.65s,  λ(A) = 292.4650282216
+  Energy estimate:   -292.4650282216 Ha
+  Iteration total:   17511.07s
+  |ΔE| = 2.437e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.08s (30.5 MB)
+
+--- Iteration 5 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.86s, p1 0.55s, p2 0.92s
+    batch 100/2000: expand 1.64s, p1 0.12s, p2 0.78s
+    [batch 200] lazy compaction: 575.6s, disk after = 50.30 GB
+    batch 200/2000: expand 1.66s, p1 0.13s, p2 0.86s
+    batch 300/2000: expand 1.68s, p1 0.13s, p2 0.84s
+    [batch 400] lazy compaction: 748.2s, disk after = 201.19 GB
+    batch 400/2000: expand 1.76s, p1 0.13s, p2 0.90s
+    batch 500/2000: expand 1.83s, p1 0.13s, p2 0.83s
+    [batch 600] lazy compaction: 798.9s, disk after = 377.22 GB
+    batch 600/2000: expand 1.66s, p1 0.12s, p2 0.87s
+    batch 700/2000: expand 1.99s, p1 0.15s, p2 0.91s
+    [batch 800] lazy compaction: 808.7s, disk after = 563.37 GB
+    batch 800/2000: expand 1.73s, p1 0.14s, p2 0.90s
+    batch 900/2000: expand 1.72s, p1 0.13s, p2 0.89s
+    [batch 1000] lazy compaction: 810.0s, disk after = 755.83 GB
+    batch 1000/2000: expand 1.66s, p1 0.13s, p2 1.14s
+    batch 1100/2000: expand 1.64s, p1 0.13s, p2 0.96s
+    [batch 1200] lazy compaction: 828.4s, disk after = 952.49 GB
+    batch 1200/2000: expand 1.69s, p1 0.15s, p2 0.93s
+    batch 1300/2000: expand 2.22s, p1 0.13s, p2 0.87s
+    [batch 1400] lazy compaction: 814.1s, disk after = 1152.66 GB
+    batch 1400/2000: expand 1.68s, p1 0.14s, p2 0.86s
+    batch 1500/2000: expand 1.73s, p1 0.13s, p2 1.07s
+    [batch 1600] lazy compaction: 839.4s, disk after = 1355.63 GB
+    batch 1600/2000: expand 1.64s, p1 0.15s, p2 1.16s
+    batch 1700/2000: expand 1.68s, p1 0.16s, p2 0.84s
+    [batch 1800] lazy compaction: 822.4s, disk after = 1560.99 GB
+    batch 1800/2000: expand 1.68s, p1 0.13s, p2 0.89s
+    batch 1900/2000: expand 2.00s, p1 0.15s, p2 0.91s
+    batch 2000/2000: expand 1.69s, p1 0.12s, p2 0.88s
+    drain done in 12625.2s.  Total spill on disk: 2092.82 GB
+    merge+topk: 4223.13s  → returning 1000000 entries (total 16848.33s)
+  expand+select (OOC): 16871.00s, |S_new| = 1000000
+  build state: 0.22s
+  Rayleigh quotient: 165.67s,  λ(A) = 292.4881543956
+  Energy estimate:   -292.4881543956 Ha
+  Iteration total:   17036.88s
+  |ΔE| = 2.313e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 6 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.34s, p1 0.63s, p2 0.98s
+    batch 100/2000: expand 1.63s, p1 0.12s, p2 0.85s
+    [batch 200] lazy compaction: 570.3s, disk after = 51.05 GB
+    batch 200/2000: expand 1.64s, p1 0.13s, p2 0.84s
+    batch 300/2000: expand 1.95s, p1 0.13s, p2 0.85s
+    [batch 400] lazy compaction: 749.5s, disk after = 202.13 GB
+    batch 400/2000: expand 2.29s, p1 0.17s, p2 0.87s
+    batch 500/2000: expand 2.08s, p1 0.13s, p2 0.84s
+    [batch 600] lazy compaction: 781.2s, disk after = 378.15 GB
+    batch 600/2000: expand 1.67s, p1 0.14s, p2 0.89s
+    batch 700/2000: expand 1.67s, p1 0.13s, p2 0.89s
+    [batch 800] lazy compaction: 802.5s, disk after = 564.25 GB
+    batch 800/2000: expand 1.66s, p1 0.20s, p2 0.86s
+    batch 900/2000: expand 2.07s, p1 0.17s, p2 0.95s
+    [batch 1000] lazy compaction: 799.1s, disk after = 756.62 GB
+    batch 1000/2000: expand 1.64s, p1 0.14s, p2 0.86s
+    batch 1100/2000: expand 1.64s, p1 0.13s, p2 0.88s
+    [batch 1200] lazy compaction: 820.3s, disk after = 953.24 GB
+    batch 1200/2000: expand 1.67s, p1 0.13s, p2 0.86s
+    batch 1300/2000: expand 1.69s, p1 0.13s, p2 0.89s
+    [batch 1400] lazy compaction: 833.9s, disk after = 1153.44 GB
+    batch 1400/2000: expand 1.67s, p1 0.13s, p2 0.84s
+    batch 1500/2000: expand 1.68s, p1 0.13s, p2 0.87s
+    [batch 1600] lazy compaction: 827.8s, disk after = 1356.39 GB
+    batch 1600/2000: expand 1.75s, p1 0.15s, p2 1.01s
+    batch 1700/2000: expand 1.74s, p1 0.13s, p2 0.90s
+    [batch 1800] lazy compaction: 824.5s, disk after = 1561.74 GB
+    batch 1800/2000: expand 1.72s, p1 0.15s, p2 0.86s
+    batch 1900/2000: expand 1.75s, p1 0.13s, p2 1.02s
+    batch 2000/2000: expand 1.74s, p1 0.13s, p2 0.84s
+    drain done in 12567.0s.  Total spill on disk: 2092.80 GB
+    merge+topk: 4174.49s  → returning 1000000 entries (total 16741.47s)
+  expand+select (OOC): 16760.29s, |S_new| = 1000000
+  build state: 0.34s
+  Rayleigh quotient: 171.44s,  λ(A) = 292.5101125803
+  Energy estimate:   -292.5101125803 Ha
+  Iteration total:   16932.08s
+  |ΔE| = 2.196e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 7 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.38s, p1 0.49s, p2 0.85s
+    batch 100/2000: expand 1.61s, p1 0.13s, p2 0.75s
+    [batch 200] lazy compaction: 576.1s, disk after = 51.75 GB
+    batch 200/2000: expand 1.92s, p1 0.13s, p2 0.85s
+    batch 300/2000: expand 2.44s, p1 0.18s, p2 1.21s
+    [batch 400] lazy compaction: 963.9s, disk after = 202.96 GB
+    batch 400/2000: expand 2.42s, p1 0.20s, p2 1.33s
+    batch 500/2000: expand 2.48s, p1 0.20s, p2 1.34s
+    [batch 600] lazy compaction: 839.8s, disk after = 378.91 GB
+    batch 600/2000: expand 2.49s, p1 0.18s, p2 1.36s
+    batch 700/2000: expand 2.04s, p1 0.17s, p2 1.35s
+    [batch 800] lazy compaction: 1035.2s, disk after = 564.90 GB
+    batch 800/2000: expand 2.43s, p1 0.18s, p2 1.30s
+    batch 900/2000: expand 2.50s, p1 0.19s, p2 1.31s
+    [batch 1000] lazy compaction: 1027.6s, disk after = 757.19 GB
+    batch 1000/2000: expand 2.21s, p1 0.17s, p2 1.34s
+    batch 1100/2000: expand 2.41s, p1 0.15s, p2 1.27s
+    [batch 1200] lazy compaction: 1047.0s, disk after = 953.73 GB
+    batch 1200/2000: expand 2.39s, p1 0.18s, p2 1.37s
+    batch 1300/2000: expand 2.43s, p1 0.18s, p2 1.33s
+    [batch 1400] lazy compaction: 1012.6s, disk after = 1153.84 GB
+    batch 1400/2000: expand 1.63s, p1 0.14s, p2 0.90s
+    batch 1500/2000: expand 2.41s, p1 0.17s, p2 1.32s
+    [batch 1600] lazy compaction: 1058.3s, disk after = 1356.78 GB
+    batch 1600/2000: expand 2.47s, p1 0.17s, p2 1.32s
+    batch 1700/2000: expand 3.08s, p1 0.17s, p2 1.33s
+    [batch 1800] lazy compaction: 1050.8s, disk after = 1562.02 GB
+    batch 1800/2000: expand 2.45s, p1 0.18s, p2 1.33s
+    batch 1900/2000: expand 2.39s, p1 0.18s, p2 1.30s
+    batch 2000/2000: expand 2.30s, p1 0.23s, p2 1.34s
+    drain done in 16154.4s.  Total spill on disk: 2092.34 GB
+    merge+topk: 5370.40s  → returning 1000000 entries (total 21524.81s)
+  expand+select (OOC): 21550.91s, |S_new| = 1000000
+  build state: 0.37s
+  Rayleigh quotient: 226.57s,  λ(A) = 292.5309763748
+  Energy estimate:   -292.5309763748 Ha
+  Iteration total:   21777.85s
+  |ΔE| = 2.086e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 8 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 3.38s, p1 0.74s, p2 1.37s
+    batch 100/2000: expand 1.87s, p1 0.16s, p2 1.19s
+    [batch 200] lazy compaction: 741.0s, disk after = 52.48 GB
+    batch 200/2000: expand 2.29s, p1 0.18s, p2 1.29s
+    batch 300/2000: expand 2.35s, p1 0.15s, p2 1.27s
+    [batch 400] lazy compaction: 757.8s, disk after = 203.85 GB
+    batch 400/2000: expand 1.68s, p1 0.13s, p2 0.92s
+    batch 500/2000: expand 1.65s, p1 0.15s, p2 0.88s
+    [batch 600] lazy compaction: 806.8s, disk after = 379.66 GB
+    batch 600/2000: expand 1.66s, p1 0.17s, p2 0.99s
+    batch 700/2000: expand 2.11s, p1 0.15s, p2 1.12s
+    [batch 800] lazy compaction: 880.6s, disk after = 565.56 GB
+    batch 800/2000: expand 1.88s, p1 0.13s, p2 0.95s
+    batch 900/2000: expand 1.90s, p1 0.15s, p2 1.30s
+    [batch 1000] lazy compaction: 895.1s, disk after = 757.75 GB
+    batch 1000/2000: expand 1.75s, p1 0.14s, p2 1.09s
+    batch 1100/2000: expand 1.85s, p1 0.16s, p2 1.29s
+    [batch 1200] lazy compaction: 902.8s, disk after = 954.18 GB
+    batch 1200/2000: expand 1.99s, p1 0.14s, p2 0.99s
+    batch 1300/2000: expand 1.80s, p1 0.13s, p2 1.22s
+    [batch 1400] lazy compaction: 902.7s, disk after = 1154.18 GB
+    batch 1400/2000: expand 1.80s, p1 0.13s, p2 0.93s
+    batch 1500/2000: expand 1.75s, p1 0.13s, p2 0.90s
+    [batch 1600] lazy compaction: 844.7s, disk after = 1356.95 GB
+    batch 1600/2000: expand 1.76s, p1 0.13s, p2 0.92s
+    batch 1700/2000: expand 1.79s, p1 0.14s, p2 0.91s
+    [batch 1800] lazy compaction: 844.9s, disk after = 1562.17 GB
+    batch 1800/2000: expand 1.74s, p1 0.13s, p2 0.94s
+    batch 1900/2000: expand 1.74s, p1 0.13s, p2 0.91s
+    batch 2000/2000: expand 1.69s, p1 0.13s, p2 0.99s
+    drain done in 13873.6s.  Total spill on disk: 2091.74 GB
+    merge+topk: 4252.55s  → returning 1000000 entries (total 18126.19s)
+  expand+select (OOC): 18146.60s, |S_new| = 1000000
+  build state: 0.25s
+  Rayleigh quotient: 194.73s,  λ(A) = 292.5508141872
+  Energy estimate:   -292.5508141872 Ha
+  Iteration total:   18341.58s
+  |ΔE| = 1.984e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.23s (30.5 MB)
+
+--- Iteration 9 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 3.02s, p1 0.62s, p2 1.08s
+    batch 100/2000: expand 1.66s, p1 0.13s, p2 0.81s
+    [batch 200] lazy compaction: 575.2s, disk after = 53.20 GB
+    batch 200/2000: expand 1.69s, p1 0.13s, p2 0.95s
+    batch 300/2000: expand 1.68s, p1 0.15s, p2 0.89s
+    [batch 400] lazy compaction: 765.7s, disk after = 204.68 GB
+    batch 400/2000: expand 1.73s, p1 0.13s, p2 0.92s
+    batch 500/2000: expand 1.70s, p1 0.13s, p2 0.90s
+    [batch 600] lazy compaction: 802.4s, disk after = 380.37 GB
+    batch 600/2000: expand 1.70s, p1 0.14s, p2 1.06s
+    batch 700/2000: expand 1.71s, p1 0.13s, p2 0.88s
+    [batch 800] lazy compaction: 820.4s, disk after = 566.13 GB
+    batch 800/2000: expand 1.73s, p1 0.14s, p2 0.95s
+    batch 900/2000: expand 1.74s, p1 0.13s, p2 0.91s
+    [batch 1000] lazy compaction: 841.7s, disk after = 758.20 GB
+    batch 1000/2000: expand 1.73s, p1 0.13s, p2 0.91s
+    batch 1100/2000: expand 1.74s, p1 0.15s, p2 0.96s
+    [batch 1200] lazy compaction: 848.8s, disk after = 954.54 GB
+    batch 1200/2000: expand 1.76s, p1 0.13s, p2 0.93s
+    batch 1300/2000: expand 1.74s, p1 0.13s, p2 0.91s
+    [batch 1400] lazy compaction: 856.0s, disk after = 1154.37 GB
+    batch 1400/2000: expand 1.72s, p1 0.15s, p2 0.92s
+    batch 1500/2000: expand 1.85s, p1 0.13s, p2 0.98s
+    [batch 1600] lazy compaction: 850.2s, disk after = 1357.05 GB
+    batch 1600/2000: expand 1.71s, p1 0.14s, p2 0.98s
+    batch 1700/2000: expand 1.71s, p1 0.14s, p2 0.90s
+    [batch 1800] lazy compaction: 855.3s, disk after = 1562.34 GB
+    batch 1800/2000: expand 1.71s, p1 0.13s, p2 0.95s
+    batch 1900/2000: expand 1.75s, p1 0.16s, p2 0.88s
+    batch 2000/2000: expand 1.68s, p1 0.13s, p2 0.89s
+    drain done in 12860.5s.  Total spill on disk: 2091.14 GB
+    merge+topk: 4259.96s  → returning 1000000 entries (total 17120.50s)
+  expand+select (OOC): 17141.96s, |S_new| = 1000000
+  build state: 0.33s
+  Rayleigh quotient: 190.16s,  λ(A) = 292.5696896134
+  Energy estimate:   -292.5696896134 Ha
+  Iteration total:   17332.46s
+  |ΔE| = 1.888e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.08s (30.5 MB)
+
+--- Iteration 10 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.41s, p1 0.76s, p2 0.95s
+    batch 100/2000: expand 1.70s, p1 0.13s, p2 0.88s
+    [batch 200] lazy compaction: 590.8s, disk after = 53.94 GB
+    batch 200/2000: expand 1.73s, p1 0.15s, p2 0.93s
+    batch 300/2000: expand 1.76s, p1 0.14s, p2 0.96s
+    [batch 400] lazy compaction: 781.2s, disk after = 205.58 GB
+    batch 400/2000: expand 1.80s, p1 0.14s, p2 0.94s
+    batch 500/2000: expand 1.72s, p1 0.14s, p2 0.93s
+    [batch 600] lazy compaction: 821.7s, disk after = 381.17 GB
+    batch 600/2000: expand 1.74s, p1 0.13s, p2 0.93s
+    batch 700/2000: expand 1.82s, p1 0.13s, p2 0.98s
+    [batch 800] lazy compaction: 851.3s, disk after = 566.85 GB
+    batch 800/2000: expand 1.73s, p1 0.13s, p2 0.95s
+    batch 900/2000: expand 1.71s, p1 0.13s, p2 0.93s
+    [batch 1000] lazy compaction: 840.3s, disk after = 758.76 GB
+    batch 1000/2000: expand 1.76s, p1 0.13s, p2 0.93s
+    batch 1100/2000: expand 2.77s, p1 0.13s, p2 0.95s
+    [batch 1200] lazy compaction: 861.6s, disk after = 954.94 GB
+    batch 1200/2000: expand 2.85s, p1 0.18s, p2 0.96s
+    batch 1300/2000: expand 1.72s, p1 0.16s, p2 0.98s
+    [batch 1400] lazy compaction: 856.8s, disk after = 1154.61 GB
+    batch 1400/2000: expand 1.73s, p1 0.15s, p2 0.94s
+    batch 1500/2000: expand 1.75s, p1 0.15s, p2 0.95s
+    [batch 1600] lazy compaction: 862.4s, disk after = 1357.24 GB
+    batch 1600/2000: expand 1.74s, p1 0.14s, p2 0.99s
+    batch 1700/2000: expand 1.86s, p1 0.13s, p2 0.90s
+    [batch 1800] lazy compaction: 860.5s, disk after = 1562.59 GB
+    batch 1800/2000: expand 1.84s, p1 0.13s, p2 0.92s
+    batch 1900/2000: expand 1.83s, p1 0.15s, p2 0.92s
+    batch 2000/2000: expand 1.66s, p1 0.12s, p2 0.86s
+    drain done in 13139.0s.  Total spill on disk: 2090.64 GB
+    merge+topk: 4395.33s  → returning 1000000 entries (total 17534.36s)
+  expand+select (OOC): 17555.33s, |S_new| = 1000000
+  build state: 0.23s
+  Rayleigh quotient: 188.46s,  λ(A) = 292.5876617875
+  Energy estimate:   -292.5876617875 Ha
+  Iteration total:   17744.02s
+  |ΔE| = 1.797e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.07s (30.5 MB)
+
+--- Iteration 11 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.76s, p1 0.59s, p2 1.01s
+    batch 100/2000: expand 1.69s, p1 0.12s, p2 0.85s
+    [batch 200] lazy compaction: 612.3s, disk after = 54.58 GB
+    batch 200/2000: expand 2.11s, p1 0.15s, p2 0.82s
+    batch 300/2000: expand 1.78s, p1 0.15s, p2 0.92s
+    [batch 400] lazy compaction: 802.0s, disk after = 206.36 GB
+    batch 400/2000: expand 2.23s, p1 0.15s, p2 1.24s
+    batch 500/2000: expand 1.78s, p1 0.19s, p2 0.94s
+    [batch 600] lazy compaction: 843.2s, disk after = 381.88 GB
+    batch 600/2000: expand 1.85s, p1 0.13s, p2 1.00s
+    batch 700/2000: expand 1.79s, p1 0.14s, p2 0.91s
+    [batch 800] lazy compaction: 857.5s, disk after = 567.46 GB
+    batch 800/2000: expand 1.81s, p1 0.13s, p2 0.96s
+    batch 900/2000: expand 1.72s, p1 0.15s, p2 0.87s
+    [batch 1000] lazy compaction: 825.7s, disk after = 759.25 GB
+    batch 1000/2000: expand 1.74s, p1 0.14s, p2 0.94s
+    batch 1100/2000: expand 1.72s, p1 0.14s, p2 1.00s
+    [batch 1200] lazy compaction: 918.9s, disk after = 955.24 GB
+    batch 1200/2000: expand 1.93s, p1 0.15s, p2 0.91s
+    batch 1300/2000: expand 1.89s, p1 0.17s, p2 1.15s
+    [batch 1400] lazy compaction: 940.5s, disk after = 1154.83 GB
+    batch 1400/2000: expand 2.02s, p1 0.13s, p2 1.14s
+    batch 1500/2000: expand 2.75s, p1 0.19s, p2 1.30s
+    [batch 1600] lazy compaction: 987.4s, disk after = 1357.31 GB
+    batch 1600/2000: expand 2.43s, p1 0.19s, p2 1.29s
+    batch 1700/2000: expand 2.33s, p1 0.16s, p2 1.21s
+    [batch 1800] lazy compaction: 1018.7s, disk after = 1562.72 GB
+    batch 1800/2000: expand 2.32s, p1 0.20s, p2 1.23s
+    batch 1900/2000: expand 2.46s, p1 0.16s, p2 1.21s
+    batch 2000/2000: expand 2.16s, p1 0.15s, p2 1.12s
+    drain done in 14246.8s.  Total spill on disk: 2090.12 GB
+    merge+topk: 4654.00s  → returning 1000000 entries (total 18900.81s)
+  expand+select (OOC): 18922.21s, |S_new| = 1000000
+  build state: 0.25s
+  Rayleigh quotient: 181.24s,  λ(A) = 292.6047857057
+  Energy estimate:   -292.6047857057 Ha
+  Iteration total:   19103.69s
+  |ΔE| = 1.712e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.07s (30.5 MB)
+
+--- Iteration 12 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.39s, p1 0.71s, p2 0.95s
+    batch 100/2000: expand 1.62s, p1 0.12s, p2 0.78s
+    [batch 200] lazy compaction: 595.3s, disk after = 55.33 GB
+    batch 200/2000: expand 1.70s, p1 0.14s, p2 0.86s
+    batch 300/2000: expand 1.69s, p1 0.15s, p2 0.89s
+    [batch 400] lazy compaction: 769.4s, disk after = 207.25 GB
+    batch 400/2000: expand 1.71s, p1 0.15s, p2 0.92s
+    batch 500/2000: expand 1.70s, p1 0.15s, p2 0.87s
+    [batch 600] lazy compaction: 806.6s, disk after = 382.68 GB
+    batch 600/2000: expand 1.77s, p1 0.14s, p2 0.89s
+    batch 700/2000: expand 1.80s, p1 0.16s, p2 0.88s
+    [batch 800] lazy compaction: 883.8s, disk after = 568.16 GB
+    batch 800/2000: expand 1.88s, p1 0.13s, p2 0.91s
+    batch 900/2000: expand 1.82s, p1 0.13s, p2 0.98s
+    [batch 1000] lazy compaction: 894.2s, disk after = 759.87 GB
+    batch 1000/2000: expand 1.80s, p1 0.15s, p2 0.97s
+    batch 1100/2000: expand 1.80s, p1 0.13s, p2 0.96s
+    [batch 1200] lazy compaction: 899.5s, disk after = 955.75 GB
+    batch 1200/2000: expand 1.81s, p1 0.15s, p2 0.95s
+    batch 1300/2000: expand 1.84s, p1 0.13s, p2 0.94s
+    [batch 1400] lazy compaction: 907.2s, disk after = 1155.22 GB
+    batch 1400/2000: expand 2.56s, p1 0.13s, p2 0.95s
+    batch 1500/2000: expand 1.81s, p1 0.13s, p2 1.06s
+    [batch 1600] lazy compaction: 909.3s, disk after = 1357.60 GB
+    batch 1600/2000: expand 1.79s, p1 0.13s, p2 0.95s
+    batch 1700/2000: expand 1.76s, p1 0.13s, p2 0.97s
+    [batch 1800] lazy compaction: 915.1s, disk after = 1563.04 GB
+    batch 1800/2000: expand 2.26s, p1 0.18s, p2 0.96s
+    batch 1900/2000: expand 1.76s, p1 0.15s, p2 0.97s
+    batch 2000/2000: expand 1.72s, p1 0.12s, p2 0.95s
+    drain done in 13472.1s.  Total spill on disk: 2089.94 GB
+    merge+topk: 4667.90s  → returning 1000000 entries (total 18139.99s)
+  expand+select (OOC): 18162.01s, |S_new| = 1000000
+  build state: 0.39s
+  Rayleigh quotient: 202.56s,  λ(A) = 292.6211125332
+  Energy estimate:   -292.6211125332 Ha
+  Iteration total:   18364.97s
+  |ΔE| = 1.633e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.08s (30.5 MB)
+
+--- Iteration 13 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.67s, p1 0.59s, p2 1.05s
+    batch 100/2000: expand 2.15s, p1 0.14s, p2 0.97s
+    [batch 200] lazy compaction: 624.4s, disk after = 56.00 GB
+    batch 200/2000: expand 2.18s, p1 0.13s, p2 0.86s
+    batch 300/2000: expand 1.76s, p1 0.13s, p2 0.97s
+    [batch 400] lazy compaction: 763.7s, disk after = 208.06 GB
+    batch 400/2000: expand 1.81s, p1 0.17s, p2 0.91s
+    batch 500/2000: expand 1.75s, p1 0.13s, p2 0.84s
+    [batch 600] lazy compaction: 800.0s, disk after = 383.44 GB
+    batch 600/2000: expand 1.66s, p1 0.14s, p2 0.83s
+    batch 700/2000: expand 1.64s, p1 0.13s, p2 0.85s
+    [batch 800] lazy compaction: 825.1s, disk after = 568.80 GB
+    batch 800/2000: expand 1.81s, p1 0.13s, p2 0.81s
+    batch 900/2000: expand 1.76s, p1 0.15s, p2 1.02s
+    [batch 1000] lazy compaction: 827.2s, disk after = 760.41 GB
+    batch 1000/2000: expand 1.64s, p1 0.14s, p2 0.85s
+    batch 1100/2000: expand 1.65s, p1 0.13s, p2 0.83s
+    [batch 1200] lazy compaction: 832.5s, disk after = 956.23 GB
+    batch 1200/2000: expand 1.65s, p1 0.13s, p2 0.83s
+    batch 1300/2000: expand 1.64s, p1 0.14s, p2 0.82s
+    [batch 1400] lazy compaction: 920.7s, disk after = 1155.56 GB
+    batch 1400/2000: expand 1.94s, p1 0.14s, p2 1.07s
+    batch 1500/2000: expand 1.84s, p1 0.13s, p2 1.00s
+    [batch 1600] lazy compaction: 924.9s, disk after = 1357.90 GB
+    batch 1600/2000: expand 1.99s, p1 0.13s, p2 1.00s
+    batch 1700/2000: expand 1.86s, p1 0.13s, p2 1.03s
+    [batch 1800] lazy compaction: 935.1s, disk after = 1563.26 GB
+    batch 1800/2000: expand 2.04s, p1 0.15s, p2 1.10s
+    batch 1900/2000: expand 1.85s, p1 0.13s, p2 1.00s
+    batch 2000/2000: expand 1.84s, p1 0.14s, p2 1.03s
+    drain done in 13292.9s.  Total spill on disk: 2089.64 GB
+    merge+topk: 4667.75s  → returning 1000000 entries (total 17960.68s)
+  expand+select (OOC): 17983.30s, |S_new| = 1000000
+  build state: 0.23s
+  Rayleigh quotient: 201.99s,  λ(A) = 292.6366898851
+  Energy estimate:   -292.6366898851 Ha
+  Iteration total:   18185.53s
+  |ΔE| = 1.558e-02  (tol 1.0e-07)  streak = 0/3
+  checkpoint: 0.06s (30.5 MB)
+
+--- Iteration 14 ---
+  |S| = 1000000, |v| = 1000000
+  batched_expand_merge_select_ooc:
+    |S| = 1000000, k = 1000000, batch_size = 500, n_batches = 2000
+    nthreads = 32, P_in = 320, P_out = 64
+    spill_dir = /scratch/nh2429/spill/tpm_15605262
+    batch 1/2000: expand 2.62s, p1 0.67s, p2 1.11s
+    batch 100/2000: expand 2.16s, p1 0.16s, p2 1.03s
+    [batch 200] lazy compaction: 652.8s, disk after = 56.65 GB
+    batch 200/2000: expand 1.91s, p1 0.13s, p2 0.93s
+    batch 300/2000: expand 1.85s, p1 0.15s, p2 1.01s
+    [batch 400] lazy compaction: 840.0s, disk after = 208.81 GB
+    batch 400/2000: expand 1.94s, p1 0.20s, p2 1.18s
+    batch 500/2000: expand 2.07s, p1 0.15s, p2 1.03s
+    [batch 600] lazy compaction: 897.1s, disk after = 384.15 GB
+    batch 600/2000: expand 1.84s, p1 0.13s, p2 1.02s
+    batch 700/2000: expand 1.83s, p1 0.14s, p2 1.03s
+    [batch 800] lazy compaction: 913.5s, disk after = 569.39 GB
+    batch 800/2000: expand 1.83s, p1 0.14s, p2 1.03s
+    batch 900/2000: expand 1.83s, p1 0.14s, p2 1.01s
+    [batch 1000] lazy compaction: 917.6s, disk after = 760.87 GB
+    batch 1000/2000: expand 1.88s, p1 0.14s, p2 1.13s
+    batch 1100/2000: expand 1.92s, p1 0.14s, p2 1.03s
+    [batch 1200] lazy compaction: 928.0s, disk after = 956.59 GB
+    batch 1200/2000: expand 1.91s, p1 0.14s, p2 1.04s
+Cleaning up spill dir: /scratch/nh2429/spill/tpm_15605262

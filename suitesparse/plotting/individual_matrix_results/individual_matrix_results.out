@@ -1,0 +1,809 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2025 The MathWorks, Inc.
+                  R2025b (25.2.0.2998904) 64-bit (glnxa64)
+                              August 21, 2025
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Found 512 candidates where greedy < lanczos at 1e-5.
+Re-running greedy on each to count iterations...
+
+  [1/512] matrix 334 ... converged in 2 iterations
+  [2/512] matrix 165 ... converged in 2 iterations
+  [3/512] matrix 142 ... converged in 2 iterations
+  [4/512] matrix 96 ... converged in 2 iterations
+  [5/512] matrix 973 ... converged in 15 iterations
+  [6/512] matrix 1071 ... converged in 3 iterations
+  [7/512] matrix 1074 ... converged in 3 iterations
+  [8/512] matrix 1075 ... converged in 3 iterations
+  [9/512] matrix 1072 ... converged in 3 iterations
+  [10/512] matrix 1073 ... converged in 3 iterations
+  [11/512] matrix 76 ... converged in 2 iterations
+  [12/512] matrix 75 ... converged in 2 iterations
+  [13/512] matrix 1014 ... converged in 11 iterations
+  [14/512] matrix 934 ... converged in 4 iterations
+  [15/512] matrix 1076 ... converged in 3 iterations
+  [16/512] matrix 975 ... converged in 5 iterations
+  [17/512] matrix 937 ... converged in 4 iterations
+  [18/512] matrix 610 ... converged in 2 iterations
+  [19/512] matrix 1031 ... converged in 4 iterations
+  [20/512] matrix 772 ... converged in 3 iterations
+  [21/512] matrix 882 ... converged in 4 iterations
+  [22/512] matrix 1026 ... converged in 19 iterations
+  [23/512] matrix 417 ... converged in 5 iterations
+  [24/512] matrix 940 ... converged in 3 iterations
+  [25/512] matrix 932 ... converged in 5 iterations
+  [26/512] matrix 1077 ... converged in 3 iterations
+  [27/512] matrix 872 ... converged in 4 iterations
+  [28/512] matrix 841 ... converged in 11 iterations
+  [29/512] matrix 587 ... converged in 3 iterations
+  [30/512] matrix 663 ... converged in 3 iterations
+  [31/512] matrix 665 ... converged in 3 iterations
+  [32/512] matrix 950 ... converged in 5 iterations
+  [33/512] matrix 124 ... converged in 2 iterations
+  [34/512] matrix 634 ... converged in 6 iterations
+  [35/512] matrix 63 ... converged in 3 iterations
+  [36/512] matrix 170 ... converged in 3 iterations
+  [37/512] matrix 402 ... converged in 6 iterations
+  [38/512] matrix 980 ... converged in 39 iterations
+  [39/512] matrix 792 ... converged in 131 iterations
+  [40/512] matrix 939 ... converged in 33 iterations
+  [41/512] matrix 1034 ... converged in 5 iterations
+  [42/512] matrix 598 ... converged in 3 iterations
+  [43/512] matrix 1044 ... converged in 4 iterations
+  [44/512] matrix 947 ... converged in 23 iterations
+  [45/512] matrix 152 ... converged in 4 iterations
+  [46/512] matrix 924 ... converged in 5 iterations
+  [47/512] matrix 1008 ... converged in 47 iterations
+  [48/512] matrix 1027 ... converged in 14 iterations
+  [49/512] matrix 419 ... converged in 10 iterations
+  [50/512] matrix 996 ... converged in 33 iterations
+  [51/512] matrix 884 ... converged in 3 iterations
+  [52/512] matrix 763 ... converged in 7 iterations
+  [53/512] matrix 971 ... converged in 12 iterations
+  [54/512] matrix 1016 ... converged in 2 iterations
+  [55/512] matrix 992 ... converged in 14 iterations
+  [56/512] matrix 664 ... converged in 4 iterations
+  [57/512] matrix 383 ... converged in 35 iterations
+  [58/512] matrix 1042 ... converged in 42 iterations
+  [59/512] matrix 1036 ... converged in 36 iterations
+  [60/512] matrix 110 ... converged in 8 iterations
+  [61/512] matrix 456 ... converged in 13 iterations
+  [62/512] matrix 979 ... converged in 15 iterations
+  [63/512] matrix 354 ... converged in 4 iterations
+  [64/512] matrix 361 ... converged in 4 iterations
+  [65/512] matrix 255 ... converged in 5 iterations
+  [66/512] matrix 866 ... converged in 22 iterations
+  [67/512] matrix 945 ... converged in 5 iterations
+  [68/512] matrix 906 ... converged in 23 iterations
+  [69/512] matrix 1033 ... converged in 35 iterations
+  [70/512] matrix 1029 ... converged in 218 iterations
+  [71/512] matrix 962 ... converged in 38 iterations
+  [72/512] matrix 738 ... converged in 5 iterations
+  [73/512] matrix 1018 ... converged in 65 iterations
+  [74/512] matrix 620 ... converged in 7 iterations
+  [75/512] matrix 601 ... converged in 13 iterations
+  [76/512] matrix 912 ... converged in 58 iterations
+  [77/512] matrix 64 ... converged in 2 iterations
+  [78/512] matrix 592 ... converged in 21 iterations
+  [79/512] matrix 1052 ... converged in 22 iterations
+  [80/512] matrix 1004 ... converged in 57 iterations
+  [81/512] matrix 363 ... converged in 10 iterations
+  [82/512] matrix 1020 ... converged in 62 iterations
+  [83/512] matrix 868 ... converged in 26 iterations
+  [84/512] matrix 716 ... converged in 5 iterations
+  [85/512] matrix 718 ... converged in 5 iterations
+  [86/512] matrix 238 ... converged in 2 iterations
+  [87/512] matrix 241 ... converged in 6 iterations
+  [88/512] matrix 459 ... converged in 14 iterations
+  [89/512] matrix 611 ... converged in 107 iterations
+  [90/512] matrix 717 ... converged in 7 iterations
+  [91/512] matrix 1022 ... converged in 63 iterations
+  [92/512] matrix 251 ... converged in 2 iterations
+  [93/512] matrix 908 ... converged in 5 iterations
+  [94/512] matrix 936 ... converged in 5 iterations
+  [95/512] matrix 154 ... converged in 4 iterations
+  [96/512] matrix 789 ... converged in 103 iterations
+  [97/512] matrix 736 ... converged in 5 iterations
+  [98/512] matrix 941 ... converged in 11 iterations
+  [99/512] matrix 308 ... converged in 6 iterations
+  [100/512] matrix 180 ... converged in 26 iterations
+  [101/512] matrix 972 ... converged in 38 iterations
+  [102/512] matrix 267 ... converged in 53 iterations
+  [103/512] matrix 948 ... converged in 27 iterations
+  [104/512] matrix 999 ... converged in 27 iterations
+  [105/512] matrix 150 ... converged in 7 iterations
+  [106/512] matrix 18 ... converged in 3 iterations
+  [107/512] matrix 227 ... converged in 44 iterations
+  [108/512] matrix 302 ... converged in 7 iterations
+  [109/512] matrix 946 ... converged in 76 iterations
+  [110/512] matrix 819 ... converged in 24 iterations
+  [111/512] matrix 842 ... converged in 28 iterations
+  [112/512] matrix 437 ... converged in 3 iterations
+  [113/512] matrix 452 ... converged in 4 iterations
+  [114/512] matrix 862 ... converged in 19 iterations
+  [115/512] matrix 409 ... converged in 3 iterations
+  [116/512] matrix 1043 ... converged in 11 iterations
+  [117/512] matrix 516 ... converged in 46 iterations
+  [118/512] matrix 869 ... converged in 37 iterations
+  [119/512] matrix 922 ... converged in 21 iterations
+  [120/512] matrix 768 ... converged in 23 iterations
+  [121/512] matrix 715 ... converged in 8 iterations
+  [122/512] matrix 582 ... converged in 9 iterations
+  [123/512] matrix 911 ... converged in 26 iterations
+  [124/512] matrix 108 ... converged in 6 iterations
+  [125/512] matrix 432 ... converged in 3 iterations
+  [126/512] matrix 785 ... converged in 19 iterations
+  [127/512] matrix 995 ... converged in 105 iterations
+  [128/512] matrix 117 ... converged in 2 iterations
+  [129/512] matrix 394 ... converged in 2 iterations
+  [130/512] matrix 440 ... converged in 2 iterations
+  [131/512] matrix 1007 ... converged in 77 iterations
+  [132/512] matrix 635 ... converged in 7 iterations
+  [133/512] matrix 596 ... converged in 7 iterations
+  [134/512] matrix 385 ... converged in 15 iterations
+  [135/512] matrix 293 ... converged in 7 iterations
+  [136/512] matrix 1078 ... converged in 203 iterations
+  [137/512] matrix 649 ... converged in 34 iterations
+  [138/512] matrix 961 ... converged in 67 iterations
+  [139/512] matrix 519 ... converged in 49 iterations
+  [140/512] matrix 1048 ... converged in 130 iterations
+  [141/512] matrix 883 ... converged in 42 iterations
+  [142/512] matrix 626 ... converged in 8 iterations
+  [143/512] matrix 377 ... converged in 4 iterations
+  [144/512] matrix 606 ... converged in 21 iterations
+  [145/512] matrix 1046 ... converged in 35 iterations
+  [146/512] matrix 1025 ... converged in 56 iterations
+  [147/512] matrix 643 ... converged in 41 iterations
+  [148/512] matrix 301 ... converged in 7 iterations
+  [149/512] matrix 914 ... converged in 41 iterations
+  [150/512] matrix 21 ... converged in 4 iterations
+  [151/512] matrix 309 ... converged in 12 iterations
+  [152/512] matrix 268 ... converged in 6 iterations
+  [153/512] matrix 135 ... converged in 2 iterations
+  [154/512] matrix 263 ... converged in 6 iterations
+  [155/512] matrix 903 ... converged in 10 iterations
+  [156/512] matrix 22 ... converged in 4 iterations
+  [157/512] matrix 264 ... converged in 4 iterations
+  [158/512] matrix 605 ... converged in 8 iterations
+  [159/512] matrix 607 ... converged in 8 iterations
+  [160/512] matrix 850 ... converged in 9 iterations
+  [161/512] matrix 1047 ... converged in 6 iterations
+  [162/512] matrix 444 ... converged in 5 iterations
+  [163/512] matrix 564 ... converged in 5 iterations
+  [164/512] matrix 291 ... converged in 10 iterations
+  [165/512] matrix 524 ... converged in 28 iterations
+  [166/512] matrix 875 ... converged in 53 iterations
+  [167/512] matrix 733 ... converged in 18 iterations
+  [168/512] matrix 671 ... converged in 5 iterations
+  [169/512] matrix 1003 ... converged in 7 iterations
+  [170/512] matrix 938 ... converged in 7 iterations
+  [171/512] matrix 595 ... converged in 2 iterations
+  [172/512] matrix 530 ... converged in 54 iterations
+  [173/512] matrix 1021 ... converged in 4 iterations
+  [174/512] matrix 44 ... converged in 3 iterations
+  [175/512] matrix 901 ... converged in 183 iterations
+  [176/512] matrix 303 ... converged in 5 iterations
+  [177/512] matrix 304 ... converged in 5 iterations
+  [178/512] matrix 803 ... converged in 23 iterations
+  [179/512] matrix 604 ... converged in 50 iterations
+  [180/512] matrix 813 ... converged in 31 iterations
+  [181/512] matrix 1050 ... converged in 353 iterations
+  [182/512] matrix 1051 ... converged in 353 iterations
+  [183/512] matrix 485 ... converged in 25 iterations
+  [184/512] matrix 572 ... converged in 4 iterations
+  [185/512] matrix 172 ... converged in 3 iterations
+  [186/512] matrix 208 ... converged in 3 iterations
+  [187/512] matrix 496 ... converged in 32 iterations
+  [188/512] matrix 442 ... converged in 12 iterations
+  [189/512] matrix 820 ... converged in 59 iterations
+  [190/512] matrix 340 ... converged in 6 iterations
+  [191/512] matrix 765 ... converged in 38 iterations
+  [192/512] matrix 1059 ... converged in 4 iterations
+  [193/512] matrix 638 ... converged in 23 iterations
+  [194/512] matrix 396 ... converged in 12 iterations
+  [195/512] matrix 627 ... converged in 10 iterations
+  [196/512] matrix 199 ... converged in 10 iterations
+  [197/512] matrix 276 ... converged in 15 iterations
+  [198/512] matrix 145 ... converged in 10 iterations
+  [199/512] matrix 292 ... converged in 24 iterations
+  [200/512] matrix 443 ... converged in 8 iterations
+  [201/512] matrix 424 ... converged in 8 iterations
+  [202/512] matrix 426 ... converged in 8 iterations
+  [203/512] matrix 427 ... converged in 8 iterations
+  [204/512] matrix 1006 ... converged in 27 iterations
+  [205/512] matrix 122 ... converged in 8 iterations
+  [206/512] matrix 346 ... converged in 16 iterations
+  [207/512] matrix 58 ... converged in 9 iterations
+  [208/512] matrix 168 ... converged in 7 iterations
+  [209/512] matrix 232 ... converged in 6 iterations
+  [210/512] matrix 590 ... converged in 12 iterations
+  [211/512] matrix 1009 ... converged in 16 iterations
+  [212/512] matrix 968 ... converged in 21 iterations
+  [213/512] matrix 441 ... converged in 85 iterations
+  [214/512] matrix 49 ... converged in 2 iterations
+  [215/512] matrix 878 ... converged in 66 iterations
+  [216/512] matrix 166 ... converged in 7 iterations
+  [217/512] matrix 617 ... converged in 7 iterations
+  [218/512] matrix 933 ... converged in 10 iterations
+  [219/512] matrix 1054 ... converged in 73 iterations
+  [220/512] matrix 1023 ... converged in 116 iterations
+  [221/512] matrix 405 ... converged in 11 iterations
+  [222/512] matrix 294 ... converged in 15 iterations
+  [223/512] matrix 123 ... converged in 4 iterations
+  [224/512] matrix 1030 ... converged in 180 iterations
+  [225/512] matrix 600 ... converged in 4 iterations
+  [226/512] matrix 963 ... converged in 8 iterations
+  [227/512] matrix 612 ... converged in 5 iterations
+  [228/512] matrix 149 ... converged in 5 iterations
+  [229/512] matrix 966 ... converged in 101 iterations
+  [230/512] matrix 371 ... converged in 35 iterations
+  [231/512] matrix 85 ... converged in 11 iterations
+  [232/512] matrix 777 ... converged in 14 iterations
+  [233/512] matrix 300 ... converged in 9 iterations
+  [234/512] matrix 994 ... converged in 6 iterations
+  [235/512] matrix 1037 ... converged in 8 iterations
+  [236/512] matrix 1060 ... converged in 106 iterations
+  [237/512] matrix 209 ... converged in 34 iterations
+  [238/512] matrix 104 ... converged in 7 iterations
+  [239/512] matrix 791 ... converged in 5 iterations
+  [240/512] matrix 335 ... converged in 9 iterations
+  [241/512] matrix 909 ... converged in 73 iterations
+  [242/512] matrix 974 ... converged in 13 iterations
+  [243/512] matrix 1038 ... converged in 2 iterations
+  [244/512] matrix 778 ... converged in 69 iterations
+  [245/512] matrix 776 ... converged in 8 iterations
+  [246/512] matrix 734 ... converged in 33 iterations
+  [247/512] matrix 1049 ... converged in 228 iterations
+  [248/512] matrix 767 ... converged in 69 iterations
+  [249/512] matrix 312 ... converged in 63 iterations
+  [250/512] matrix 1001 ... converged in 93 iterations
+  [251/512] matrix 257 ... converged in 53 iterations
+  [252/512] matrix 40 ... converged in 7 iterations
+  [253/512] matrix 1041 ... converged in 9 iterations
+  [254/512] matrix 171 ... converged in 26 iterations
+  [255/512] matrix 323 ... converged in 48 iterations
+  [256/512] matrix 509 ... converged in 9 iterations
+  [257/512] matrix 420 ... converged in 23 iterations
+  [258/512] matrix 1002 ... converged in 49 iterations
+  [259/512] matrix 658 ... converged in 40 iterations
+  [260/512] matrix 780 ... converged in 103 iterations
+  [261/512] matrix 781 ... converged in 103 iterations
+  [262/512] matrix 782 ... converged in 103 iterations
+  [263/512] matrix 708 ... converged in 47 iterations
+  [264/512] matrix 915 ... converged in 222 iterations
+  [265/512] matrix 228 ... converged in 15 iterations
+  [266/512] matrix 920 ... converged in 56 iterations
+  [267/512] matrix 997 ... converged in 4 iterations
+  [268/512] matrix 843 ... converged in 14 iterations
+  [269/512] matrix 78 ... converged in 11 iterations
+  [270/512] matrix 1040 ... converged in 7 iterations
+  [271/512] matrix 181 ... converged in 27 iterations
+  [272/512] matrix 967 ... converged in 25 iterations
+  [273/512] matrix 161 ... converged in 24 iterations
+  [274/512] matrix 299 ... converged in 26 iterations
+  [275/512] matrix 143 ... converged in 10 iterations
+  [276/512] matrix 297 ... converged in 32 iterations
+  [277/512] matrix 269 ... converged in 62 iterations
+  [278/512] matrix 205 ... converged in 33 iterations
+  [279/512] matrix 69 ... converged in 4 iterations
+  [280/512] matrix 80 ... converged in 19 iterations
+  [281/512] matrix 764 ... converged in 7 iterations
+  [282/512] matrix 155 ... converged in 28 iterations
+  [283/512] matrix 816 ... converged in 23 iterations
+  [284/512] matrix 1057 ... converged in 42 iterations
+  [285/512] matrix 844 ... converged in 6 iterations
+  [286/512] matrix 497 ... converged in 27 iterations
+  [287/512] matrix 449 ... converged in 60 iterations
+  [288/512] matrix 94 ... converged in 19 iterations
+  [289/512] matrix 274 ... converged in 61 iterations
+  [290/512] matrix 573 ... converged in 12 iterations
+  [291/512] matrix 653 ... converged in 5 iterations
+  [292/512] matrix 720 ... converged in 6 iterations
+  [293/512] matrix 119 ... converged in 8 iterations
+  [294/512] matrix 120 ... converged in 8 iterations
+  [295/512] matrix 1056 ... converged in 8 iterations
+  [296/512] matrix 235 ... converged in 4 iterations
+  [297/512] matrix 164 ... converged in 9 iterations
+  [298/512] matrix 289 ... converged in 11 iterations
+  [299/512] matrix 931 ... converged in 22 iterations
+  [300/512] matrix 281 ... converged in 5 iterations
+  [301/512] matrix 970 ... converged in 116 iterations
+  [302/512] matrix 865 ... converged in 116 iterations
+  [303/512] matrix 790 ... converged in 7 iterations
+  [304/512] matrix 270 ... converged in 6 iterations
+  [305/512] matrix 916 ... converged in 105 iterations
+  [306/512] matrix 917 ... converged in 107 iterations
+  [307/512] matrix 1032 ... converged in 8 iterations
+  [308/512] matrix 714 ... converged in 4 iterations
+  [309/512] matrix 594 ... converged in 19 iterations
+  [310/512] matrix 367 ... converged in 82 iterations
+  [311/512] matrix 462 ... converged in 40 iterations
+  [312/512] matrix 216 ... converged in 17 iterations
+  [313/512] matrix 672 ... converged in 50 iterations
+  [314/512] matrix 571 ... converged in 8 iterations
+  [315/512] matrix 774 ... converged in 47 iterations
+  [316/512] matrix 881 ... converged in 35 iterations
+  [317/512] matrix 579 ... converged in 92 iterations
+  [318/512] matrix 68 ... converged in 18 iterations
+  [319/512] matrix 575 ... converged in 11 iterations
+  [320/512] matrix 935 ... converged in 181 iterations
+  [321/512] matrix 1058 ... converged in 275 iterations
+  [322/512] matrix 622 ... converged in 4 iterations
+  [323/512] matrix 529 ... converged in 21 iterations
+  [324/512] matrix 358 ... converged in 4 iterations
+  [325/512] matrix 27 ... converged in 4 iterations
+  [326/512] matrix 65 ... converged in 6 iterations
+  [327/512] matrix 809 ... converged in 65 iterations
+  [328/512] matrix 942 ... converged in 29 iterations
+  [329/512] matrix 632 ... converged in 4 iterations
+  [330/512] matrix 633 ... converged in 4 iterations
+  [331/512] matrix 615 ... converged in 7 iterations
+  [332/512] matrix 1017 ... converged in 223 iterations
+  [333/512] matrix 260 ... converged in 18 iterations
+  [334/512] matrix 423 ... converged in 39 iterations
+  [335/512] matrix 411 ... converged in 43 iterations
+  [336/512] matrix 1015 ... converged in 9 iterations
+  [337/512] matrix 930 ... converged in 12 iterations
+  [338/512] matrix 465 ... converged in 6 iterations
+  [339/512] matrix 976 ... converged in 46 iterations
+  [340/512] matrix 91 ... converged in 12 iterations
+  [341/512] matrix 1024 ... converged in 157 iterations
+  [342/512] matrix 926 ... converged in 42 iterations
+  [343/512] matrix 248 ... converged in 7 iterations
+  [344/512] matrix 918 ... converged in 144 iterations
+  [345/512] matrix 250 ... converged in 7 iterations
+  [346/512] matrix 254 ... converged in 7 iterations
+  [347/512] matrix 252 ... converged in 50 iterations
+  [348/512] matrix 258 ... converged in 7 iterations
+  [349/512] matrix 256 ... converged in 10 iterations
+  [350/512] matrix 654 ... converged in 8 iterations
+  [351/512] matrix 599 ... converged in 12 iterations
+  [352/512] matrix 779 ... converged in 170 iterations
+  [353/512] matrix 107 ... converged in 27 iterations
+  [354/512] matrix 1055 ... converged in 231 iterations
+  [355/512] matrix 242 ... converged in 5 iterations
+  [356/512] matrix 616 ... converged in 62 iterations
+  [357/512] matrix 880 ... converged in 77 iterations
+  [358/512] matrix 118 ... converged in 12 iterations
+  [359/512] matrix 608 ... converged in 4 iterations
+  [360/512] matrix 477 ... converged in 6 iterations
+  [361/512] matrix 1011 ... converged in 118 iterations
+  [362/512] matrix 1035 ... converged in 184 iterations
+  [363/512] matrix 593 ... converged in 3 iterations
+  [364/512] matrix 848 ... converged in 5 iterations
+  [365/512] matrix 488 ... converged in 6 iterations
+  [366/512] matrix 568 ... converged in 146 iterations
+  [367/512] matrix 703 ... converged in 39 iterations
+  [368/512] matrix 799 ... converged in 168 iterations
+  [369/512] matrix 609 ... converged in 4 iterations
+  [370/512] matrix 890 ... converged in 39 iterations
+  [371/512] matrix 350 ... converged in 5 iterations
+  [372/512] matrix 101 ... converged in 30 iterations
+  [373/512] matrix 504 ... converged in 5 iterations
+  [374/512] matrix 132 ... converged in 7 iterations
+  [375/512] matrix 798 ... converged in 3 iterations
+  [376/512] matrix 623 ... converged in 5 iterations
+  [377/512] matrix 674 ... converged in 5 iterations
+  [378/512] matrix 678 ... converged in 5 iterations
+  [379/512] matrix 673 ... converged in 5 iterations
+  [380/512] matrix 666 ... converged in 5 iterations
+  [381/512] matrix 679 ... converged in 5 iterations
+  [382/512] matrix 676 ... converged in 5 iterations
+  [383/512] matrix 647 ... converged in 5 iterations
+  [384/512] matrix 660 ... converged in 5 iterations
+  [385/512] matrix 576 ... converged in 7 iterations
+  [386/512] matrix 127 ... converged in 3 iterations
+  [387/512] matrix 287 ... converged in 6 iterations
+  [388/512] matrix 514 ... converged in 102 iterations
+  [389/512] matrix 16 ... converged in 4 iterations
+  [390/512] matrix 861 ... converged in 41 iterations
+  [391/512] matrix 978 ... converged in 51 iterations
+  [392/512] matrix 783 ... converged in 6 iterations
+  [393/512] matrix 471 ... converged in 26 iterations
+  [394/512] matrix 469 ... converged in 26 iterations
+  [395/512] matrix 470 ... converged in 26 iterations
+  [396/512] matrix 261 ... converged in 30 iterations
+  [397/512] matrix 463 ... converged in 49 iterations
+  [398/512] matrix 167 ... converged in 4 iterations
+  [399/512] matrix 1080 ... converged in 476 iterations
+  [400/512] matrix 811 ... converged in 4 iterations
+  [401/512] matrix 247 ... converged in 58 iterations
+  [402/512] matrix 581 ... converged in 46 iterations
+  [403/512] matrix 1005 ... converged in 69 iterations
+  [404/512] matrix 41 ... converged in 9 iterations
+  [405/512] matrix 311 ... converged in 5 iterations
+  [406/512] matrix 392 ... converged in 106 iterations
+  [407/512] matrix 969 ... converged in 202 iterations
+  [408/512] matrix 793 ... converged in 295 iterations
+  [409/512] matrix 794 ... converged in 295 iterations
+  [410/512] matrix 325 ... converged in 42 iterations
+  [411/512] matrix 885 ... converged in 70 iterations
+  [412/512] matrix 913 ... converged in 10 iterations
+  [413/512] matrix 35 ... converged in 21 iterations
+  [414/512] matrix 77 ... converged in 2 iterations
+  [415/512] matrix 133 ... converged in 6 iterations
+  [416/512] matrix 849 ... converged in 9 iterations
+  [417/512] matrix 84 ... converged in 78 iterations
+  [418/512] matrix 353 ... converged in 7 iterations
+  [419/512] matrix 645 ... converged in 54 iterations
+  [420/512] matrix 339 ... converged in 11 iterations
+  [421/512] matrix 889 ... converged in 6 iterations
+  [422/512] matrix 652 ... converged in 9 iterations
+  [423/512] matrix 92 ... converged in 29 iterations
+  [424/512] matrix 137 ... converged in 6 iterations
+  [425/512] matrix 641 ... converged in 31 iterations
+  [426/512] matrix 386 ... converged in 69 iterations
+  [427/512] matrix 140 ... converged in 6 iterations
+  [428/512] matrix 412 ... converged in 46 iterations
+  [429/512] matrix 771 ... converged in 54 iterations
+  [430/512] matrix 907 ... converged in 60 iterations
+  [431/512] matrix 797 ... converged in 7 iterations
+  [432/512] matrix 404 ... converged in 74 iterations
+  [433/512] matrix 512 ... converged in 6 iterations
+  [434/512] matrix 1045 ... converged in 244 iterations
+  [435/512] matrix 474 ... converged in 13 iterations
+  [436/512] matrix 139 ... converged in 15 iterations
+  [437/512] matrix 125 ... converged in 16 iterations
+  [438/512] matrix 704 ... converged in 30 iterations
+  [439/512] matrix 662 ... converged in 37 iterations
+  [440/512] matrix 62 ... converged in 9 iterations
+  [441/512] matrix 37 ... converged in 4 iterations
+  [442/512] matrix 1000 ... converged in 80 iterations
+  [443/512] matrix 306 ... converged in 45 iterations
+  [444/512] matrix 337 ... converged in 353 iterations
+  [445/512] matrix 253 ... converged in 48 iterations
+  [446/512] matrix 307 ... converged in 55 iterations
+  [447/512] matrix 28 ... converged in 6 iterations
+  [448/512] matrix 586 ... converged in 6 iterations
+  [449/512] matrix 102 ... converged in 5 iterations
+  [450/512] matrix 562 ... converged in 5 iterations
+  [451/512] matrix 648 ... converged in 5 iterations
+  [452/512] matrix 719 ... converged in 5 iterations
+  [453/512] matrix 784 ... converged in 5 iterations
+  [454/512] matrix 804 ... converged in 5 iterations
+  [455/512] matrix 707 ... converged in 23 iterations
+  [456/512] matrix 349 ... converged in 60 iterations
+  [457/512] matrix 398 ... converged in 109 iterations
+  [458/512] matrix 366 ... converged in 65 iterations
+  [459/512] matrix 795 ... converged in 6 iterations
+  [460/512] matrix 483 ... converged in 72 iterations
+  [461/512] matrix 508 ... converged in 25 iterations
+  [462/512] matrix 713 ... converged in 19 iterations
+  [463/512] matrix 786 ... converged in 33 iterations
+  [464/512] matrix 438 ... converged in 48 iterations
+  [465/512] matrix 356 ... converged in 5 iterations
+  [466/512] matrix 902 ... converged in 488 iterations
+  [467/512] matrix 105 ... converged in 14 iterations
+  [468/512] matrix 523 ... converged in 8 iterations
+  [469/512] matrix 436 ... converged in 30 iterations
+  [470/512] matrix 812 ... converged in 5 iterations
+  [471/512] matrix 342 ... converged in 23 iterations
+  [472/512] matrix 501 ... converged in 83 iterations
+  [473/512] matrix 157 ... converged in 43 iterations
+  [474/512] matrix 249 ... converged in 5 iterations
+  [475/512] matrix 112 ... converged in 9 iterations
+  [476/512] matrix 630 ... converged in 6 iterations
+  [477/512] matrix 204 ... converged in 9 iterations
+  [478/512] matrix 333 ... converged in 4 iterations
+  [479/512] matrix 450 ... converged in 4 iterations
+  [480/512] matrix 451 ... converged in 4 iterations
+  [481/512] matrix 399 ... converged in 17 iterations
+  [482/512] matrix 629 ... converged in 29 iterations
+  [483/512] matrix 873 ... converged in 19 iterations
+  [484/512] matrix 210 ... converged in 48 iterations
+  [485/512] matrix 500 ... converged in 8 iterations
+  [486/512] matrix 330 ... converged in 4 iterations
+  [487/512] matrix 290 ... converged in 9 iterations
+  [488/512] matrix 225 ... converged in 4 iterations
+  [489/512] matrix 176 ... converged in 13 iterations
+  [490/512] matrix 74 ... converged in 5 iterations
+  [491/512] matrix 338 ... converged in 10 iterations
+  [492/512] matrix 705 ... converged in 107 iterations
+  [493/512] matrix 328 ... converged in 4 iterations
+  [494/512] matrix 332 ... converged in 4 iterations
+  [495/512] matrix 103 ... converged in 5 iterations
+  [496/512] matrix 445 ... converged in 40 iterations
+  [497/512] matrix 446 ... converged in 27 iterations
+  [498/512] matrix 447 ... converged in 8 iterations
+  [499/512] matrix 448 ... converged in 8 iterations
+  [500/512] matrix 762 ... converged in 12 iterations
+  [501/512] matrix 478 ... converged in 7 iterations
+  [502/512] matrix 502 ... converged in 4 iterations
+  [503/512] matrix 503 ... converged in 4 iterations
+  [504/512] matrix 712 ... converged in 49 iterations
+  [505/512] matrix 1019 ... converged in 18 iterations
+  [506/512] matrix 650 ... converged in 128 iterations
+  [507/512] matrix 921 ... converged in 21 iterations
+  [508/512] matrix 923 ... converged in 15 iterations
+  [509/512] matrix 824 ... converged in 28 iterations
+  [510/512] matrix 823 ... converged in 34 iterations
+  [511/512] matrix 766 ... converged in 29 iterations
+  [512/512] matrix 761 ... converged in 7 iterations
+
+================================================================================
+greedy << lanczos at 1e-5  AND  greedy needed >= 10 iterations
+================================================================================
+
+Filename   Greedy viewed    Lanczos viewed   Ratio      Iters   
+--------------------------------------------------------------------------------
+973        7.073323e-03     7.255633e-01     102.58     15      
+1014       8.207289e-03     3.964267e-01     48.30      11      
+1026       1.156090e-01     1.000000e+00     8.65       19      
+841        1.337282e-01     8.250534e-01     6.17       11      
+980        1.211534e-01     5.510410e-01     4.55       39      
+792        2.209187e-01     9.999749e-01     4.53       131     
+939        2.433112e-02     1.035530e-01     4.26       33      
+947        2.700147e-01     9.966966e-01     3.69       23      
+1008       2.639655e-01     9.382772e-01     3.55       47      
+1027       1.971526e-02     6.845025e-02     3.47       14      
+419        2.057109e-01     7.123057e-01     3.46       10      
+996        9.279822e-02     3.213170e-01     3.46       33      
+971        1.173427e-01     3.933691e-01     3.35       12      
+992        1.001648e-02     3.274541e-02     3.27       14      
+383        3.300000e-02     1.056667e-01     3.20       35      
+1042       2.176314e-01     6.965648e-01     3.20       42      
+1036       9.630508e-02     3.068638e-01     3.19       36      
+456        7.812988e-02     2.467813e-01     3.16       13      
+979        1.977054e-02     6.128688e-02     3.10       15      
+866        7.828564e-02     2.315808e-01     2.96       22      
+906        2.447877e-01     6.936340e-01     2.83       23      
+1033       4.646242e-02     1.309032e-01     2.82       35      
+1029       3.493912e-01     9.807198e-01     2.81       218     
+962        2.108966e-01     5.794950e-01     2.75       38      
+1018       2.793245e-01     7.579864e-01     2.71       65      
+601        3.814528e-01     1.000000e+00     2.62       13      
+912        3.964561e-01     1.000000e+00     2.52       58      
+592        9.159820e-02     2.295249e-01     2.51       21      
+1052       3.481483e-03     8.642437e-03     2.48       22      
+1004       2.647247e-01     6.559185e-01     2.48       57      
+363        2.699000e-01     6.648331e-01     2.46       10      
+1020       3.258975e-01     8.014320e-01     2.46       62      
+868        2.402324e-02     5.875304e-02     2.45       26      
+459        3.893416e-01     9.391997e-01     2.41       14      
+611        5.944132e-02     1.431280e-01     2.41       107     
+1022       3.427584e-01     8.120964e-01     2.37       63      
+789        4.510375e-01     9.984823e-01     2.21       103     
+941        5.066975e-02     1.109929e-01     2.19       11      
+180        4.600000e-01     1.000000e+00     2.17       26      
+972        2.298123e-01     4.985390e-01     2.17       38      
+267        4.626600e-01     1.000000e+00     2.16       53      
+948        1.662850e-01     3.574623e-01     2.15       27      
+999        7.951715e-02     1.706462e-01     2.15       27      
+227        3.857628e-01     8.108174e-01     2.10       44      
+946        2.502799e-02     5.259639e-02     2.10       76      
+819        1.576721e-01     3.306331e-01     2.10       24      
+842        4.814554e-01     1.000000e+00     2.08       28      
+862        4.884424e-01     1.000000e+00     2.05       19      
+1043       4.944010e-01     1.000000e+00     2.02       11      
+516        5.000000e-01     9.910000e-01     1.98       46      
+869        5.050750e-01     1.000000e+00     1.98       37      
+922        5.064832e-01     1.000000e+00     1.97       21      
+768        3.578382e-02     7.065027e-02     1.97       23      
+911        5.170344e-01     9.980130e-01     1.93       26      
+785        4.359715e-01     8.331538e-01     1.91       19      
+995        5.108978e-01     9.675287e-01     1.89       105     
+1007       2.557889e-01     4.820980e-01     1.88       77      
+385        5.279030e-01     9.855225e-01     1.87       15      
+1078       5.372410e-01     1.000000e+00     1.86       203     
+649        5.378649e-01     1.000000e+00     1.86       34      
+961        2.771549e-01     5.150764e-01     1.86       67      
+519        5.111318e-01     9.489545e-01     1.86       49      
+1048       5.397814e-01     1.000000e+00     1.85       130     
+883        5.359827e-01     9.918746e-01     1.85       42      
+606        1.623977e-01     2.971377e-01     1.83       21      
+1046       5.476349e-01     1.000000e+00     1.83       35      
+1025       2.276600e-01     4.139167e-01     1.82       56      
+643        5.354595e-01     9.699521e-01     1.81       41      
+914        1.746729e-01     3.120505e-01     1.79       41      
+309        5.638186e-01     1.000000e+00     1.77       12      
+903        7.297670e-02     1.283600e-01     1.76       10      
+291        5.907878e-01     1.000000e+00     1.69       10      
+524        5.909072e-01     1.000000e+00     1.69       28      
+875        3.951872e-01     6.685020e-01     1.69       53      
+733        3.227356e-01     5.414712e-01     1.68       18      
+530        6.080000e-01     1.000000e+00     1.64       54      
+901        5.048401e-01     8.100891e-01     1.60       183     
+803        4.837901e-01     7.550043e-01     1.56       23      
+604        5.072216e-01     7.882260e-01     1.55       50      
+813        5.799040e-01     8.942413e-01     1.54       31      
+1050       6.551703e-01     9.995619e-01     1.53       353     
+1051       6.551703e-01     9.995619e-01     1.53       353     
+485        3.519834e-01     5.327719e-01     1.51       25      
+496        6.706649e-01     1.000000e+00     1.49       32      
+442        5.066779e-01     7.533390e-01     1.49       12      
+820        3.151983e-01     4.671577e-01     1.48       59      
+765        6.864870e-01     1.000000e+00     1.46       38      
+638        6.947158e-01     1.000000e+00     1.44       23      
+396        6.958330e-01     1.000000e+00     1.44       12      
+627        1.779935e-01     2.556634e-01     1.44       10      
+199        2.031227e-01     2.914052e-01     1.43       10      
+276        6.994340e-01     1.000000e+00     1.43       15      
+145        7.022366e-01     1.000000e+00     1.42       10      
+292        7.041552e-01     1.000000e+00     1.42       24      
+1006       7.114474e-01     1.000000e+00     1.41       27      
+346        5.411765e-01     7.529412e-01     1.39       16      
+590        7.291084e-01     9.999177e-01     1.37       12      
+1009       4.015099e-02     5.487548e-02     1.37       16      
+968        7.318318e-01     1.000000e+00     1.37       21      
+441        7.225391e-01     9.827410e-01     1.36       85      
+878        7.393554e-01     1.000000e+00     1.35       66      
+933        7.408071e-01     9.975161e-01     1.35       10      
+1054       7.447061e-01     9.994222e-01     1.34       73      
+1023       7.460137e-01     1.000000e+00     1.34       116     
+405        6.095834e-01     8.165840e-01     1.34       11      
+294        7.471074e-01     1.000000e+00     1.34       15      
+1030       7.618458e-01     1.000000e+00     1.31       180     
+966        7.677133e-01     9.834836e-01     1.28       101     
+371        7.859273e-01     1.000000e+00     1.27       35      
+85         7.885010e-01     1.000000e+00     1.27       11      
+777        7.894639e-01     1.000000e+00     1.27       14      
+1060       7.971797e-01     9.999847e-01     1.25       106     
+209        7.100488e-01     8.881365e-01     1.25       34      
+909        8.064997e-01     1.000000e+00     1.24       73      
+974        5.924787e-01     7.275955e-01     1.23       13      
+778        8.161096e-01     1.000000e+00     1.23       69      
+734        8.187010e-01     1.000000e+00     1.22       33      
+1049       8.228713e-01     1.000000e+00     1.22       228     
+767        8.235037e-01     1.000000e+00     1.21       69      
+312        8.250582e-01     1.000000e+00     1.21       63      
+1001       8.322385e-01     1.000000e+00     1.20       93      
+257        8.339355e-01     1.000000e+00     1.20       53      
+171        5.175175e-01     6.161161e-01     1.19       26      
+323        8.400000e-01     1.000000e+00     1.19       48      
+420        8.483366e-01     1.000000e+00     1.18       23      
+1002       7.625195e-01     8.925959e-01     1.17       49      
+658        8.423039e-01     9.858807e-01     1.17       40      
+780        4.574266e-01     5.351372e-01     1.17       103     
+781        4.574266e-01     5.351372e-01     1.17       103     
+782        4.574266e-01     5.351372e-01     1.17       103     
+708        4.733905e-01     5.519634e-01     1.17       47      
+915        8.695236e-01     1.000000e+00     1.15       222     
+228        6.510846e-01     7.485211e-01     1.15       15      
+920        8.736354e-01     1.000000e+00     1.14       56      
+843        5.160174e-01     5.898942e-01     1.14       14      
+78         8.755020e-01     1.000000e+00     1.14       11      
+181        8.775000e-01     1.000000e+00     1.14       27      
+967        8.804506e-01     1.000000e+00     1.14       25      
+161        8.801843e-01     9.984639e-01     1.13       24      
+299        8.820458e-01     1.000000e+00     1.13       26      
+143        8.833582e-01     1.000000e+00     1.13       10      
+297        8.837209e-01     1.000000e+00     1.13       32      
+269        5.301901e-01     5.997998e-01     1.13       62      
+205        6.350034e-01     7.170899e-01     1.13       33      
+80         8.882750e-01     1.000000e+00     1.13       19      
+155        8.201411e-01     9.200627e-01     1.12       28      
+816        2.430651e-01     2.723848e-01     1.12       23      
+1057       8.923729e-01     1.000000e+00     1.12       42      
+497        3.870438e-01     4.314540e-01     1.11       27      
+449        8.976000e-01     1.000000e+00     1.11       60      
+94         8.985507e-01     1.000000e+00     1.11       19      
+274        8.987795e-01     1.000000e+00     1.11       61      
+573        9.003386e-01     1.000000e+00     1.11       12      
+289        9.127223e-01     1.000000e+00     1.10       11      
+931        9.128982e-01     1.000000e+00     1.10       22      
+970        9.171478e-01     1.000000e+00     1.09       116     
+865        9.182266e-01     1.000000e+00     1.09       116     
+916        9.229762e-01     1.000000e+00     1.08       105     
+917        9.233033e-01     1.000000e+00     1.08       107     
+594        9.258222e-01     1.000000e+00     1.08       19      
+367        9.261278e-01     9.996972e-01     1.08       82      
+462        9.269371e-01     1.000000e+00     1.08       40      
+216        8.472000e-01     9.138667e-01     1.08       17      
+672        9.276172e-01     1.000000e+00     1.08       50      
+774        9.302972e-01     9.999966e-01     1.07       47      
+881        9.304401e-01     1.000000e+00     1.07       35      
+579        9.318302e-01     1.000000e+00     1.07       92      
+68         9.323181e-01     1.000000e+00     1.07       18      
+575        9.324212e-01     1.000000e+00     1.07       11      
+935        9.330222e-01     1.000000e+00     1.07       181     
+1058       9.343191e-01     1.000000e+00     1.07       275     
+529        9.372027e-01     1.000000e+00     1.07       21      
+809        9.443237e-01     1.000000e+00     1.06       65      
+942        9.443913e-01     1.000000e+00     1.06       29      
+1017       9.446424e-01     1.000000e+00     1.06       223     
+260        5.047393e-01     5.331754e-01     1.06       18      
+423        9.501994e-01     1.000000e+00     1.05       39      
+411        9.503495e-01     1.000000e+00     1.05       43      
+930        9.517005e-01     1.000000e+00     1.05       12      
+976        6.949494e-01     7.277870e-01     1.05       46      
+91         9.553350e-01     1.000000e+00     1.05       12      
+1024       9.511017e-01     9.954823e-01     1.05       157     
+926        9.556210e-01     1.000000e+00     1.05       42      
+918        9.571593e-01     1.000000e+00     1.04       144     
+252        9.602685e-01     1.000000e+00     1.04       50      
+256        8.916559e-01     9.280401e-01     1.04       10      
+599        9.616826e-01     1.000000e+00     1.04       12      
+779        9.619161e-01     1.000000e+00     1.04       170     
+107        9.620725e-01     1.000000e+00     1.04       27      
+1055       9.621426e-01     1.000000e+00     1.04       231     
+616        9.628733e-01     1.000000e+00     1.04       62      
+880        9.639128e-01     1.000000e+00     1.04       77      
+118        9.640752e-01     1.000000e+00     1.04       12      
+1011       9.661585e-01     1.000000e+00     1.04       118     
+1035       9.666756e-01     1.000000e+00     1.03       184     
+568        9.683673e-01     1.000000e+00     1.03       146     
+703        9.688838e-01     1.000000e+00     1.03       39      
+799        7.532929e-01     7.770378e-01     1.03       168     
+890        9.699088e-01     1.000000e+00     1.03       39      
+101        7.671569e-01     7.904412e-01     1.03       30      
+514        9.770833e-01     1.000000e+00     1.02       102     
+861        9.773706e-01     1.000000e+00     1.02       41      
+978        9.779181e-01     1.000000e+00     1.02       51      
+471        9.783616e-01     1.000000e+00     1.02       26      
+469        9.783782e-01     1.000000e+00     1.02       26      
+470        9.783812e-01     1.000000e+00     1.02       26      
+261        9.786112e-01     1.000000e+00     1.02       30      
+463        9.780110e-01     9.992441e-01     1.02       49      
+1080       9.793153e-01     9.999982e-01     1.02       476     
+247        9.752751e-01     9.951094e-01     1.02       58      
+581        9.801625e-01     1.000000e+00     1.02       46      
+1005       9.806200e-01     1.000000e+00     1.02       69      
+392        9.828207e-01     1.000000e+00     1.02       106     
+969        9.830063e-01     1.000000e+00     1.02       202     
+793        8.742308e-01     8.889114e-01     1.02       295     
+794        8.742308e-01     8.889114e-01     1.02       295     
+325        9.840000e-01     1.000000e+00     1.02       42      
+885        9.845442e-01     1.000000e+00     1.02       70      
+913        8.673881e-01     8.805522e-01     1.02       10      
+35         9.864865e-01     1.000000e+00     1.01       21      
+84         7.590954e-01     7.689282e-01     1.01       78      
+645        9.881071e-01     1.000000e+00     1.01       54      
+339        9.884001e-01     1.000000e+00     1.01       11      
+92         9.891068e-01     1.000000e+00     1.01       29      
+641        9.892311e-01     1.000000e+00     1.01       31      
+386        9.892478e-01     1.000000e+00     1.01       69      
+412        4.948120e-01     5.000000e-01     1.01       46      
+771        9.896340e-01     1.000000e+00     1.01       54      
+907        9.897472e-01     1.000000e+00     1.01       60      
+404        9.900402e-01     1.000000e+00     1.01       74      
+1045       9.903403e-01     1.000000e+00     1.01       244     
+474        9.905587e-01     1.000000e+00     1.01       13      
+139        5.063371e-01     5.110900e-01     1.01       15      
+125        9.907579e-01     1.000000e+00     1.01       16      
+704        9.908356e-01     1.000000e+00     1.01       30      
+662        9.911164e-01     1.000000e+00     1.01       37      
+1000       9.922112e-01     1.000000e+00     1.01       80      
+306        9.923686e-01     1.000000e+00     1.01       45      
+337        9.928171e-01     1.000000e+00     1.01       353     
+253        9.934360e-01     1.000000e+00     1.01       48      
+307        9.934904e-01     1.000000e+00     1.01       55      
+707        9.939625e-01     1.000000e+00     1.01       23      
+349        9.940666e-01     1.000000e+00     1.01       60      
+398        9.944030e-01     1.000000e+00     1.01       109     
+366        9.945495e-01     1.000000e+00     1.01       65      
+483        9.951605e-01     1.000000e+00     1.00       72      
+508        9.410082e-01     9.453426e-01     1.00       25      
+713        9.154045e-01     9.195488e-01     1.00       19      
+786        9.955912e-01     1.000000e+00     1.00       33      
+438        9.957732e-01     1.000000e+00     1.00       48      
+902        9.954949e-01     9.995683e-01     1.00       488     
+105        9.925604e-01     9.962802e-01     1.00       14      
+436        9.971935e-01     1.000000e+00     1.00       30      
+342        9.972254e-01     1.000000e+00     1.00       23      
+501        9.974286e-01     1.000000e+00     1.00       83      
+157        9.974381e-01     1.000000e+00     1.00       43      
+399        9.985584e-01     1.000000e+00     1.00       17      
+629        9.974269e-01     9.986925e-01     1.00       29      
+873        9.987649e-01     1.000000e+00     1.00       19      
+210        9.988825e-01     1.000000e+00     1.00       48      
+176        5.229020e-01     5.234035e-01     1.00       13      
+338        9.992840e-01     1.000000e+00     1.00       10      
+705        9.994053e-01     1.000000e+00     1.00       107     
+445        9.996967e-01     1.000000e+00     1.00       40      
+446        9.996967e-01     1.000000e+00     1.00       27      
+762        9.997643e-01     1.000000e+00     1.00       12      
+712        9.998404e-01     1.000000e+00     1.00       49      
+1019       9.999028e-01     1.000000e+00     1.00       18      
+650        9.999186e-01     1.000000e+00     1.00       128     
+921        9.999233e-01     1.000000e+00     1.00       21      
+923        9.999282e-01     1.000000e+00     1.00       15      
+824        9.999593e-01     1.000000e+00     1.00       28      
+823        9.999713e-01     1.000000e+00     1.00       34      
+766        9.999797e-01     1.000000e+00     1.00       29      
+
+Total: 274 matrices found
+>> 
